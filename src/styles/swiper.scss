@@ -1,0 +1,16 @@
+.hero-swiper {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        background-color: rgb(212, 212, 212) !important;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        color: black;
+
+        &::after {
+            font-size: 20px !important;
+        }
+    }
+}
