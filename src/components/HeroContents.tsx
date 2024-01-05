@@ -73,8 +73,8 @@ export default function HeroContents() {
                     O‘zbekistonda bahramand bo‘lishingiz mumkin!
                   </p>
                   <button
-                    className="hover:bg-blue-800 px-5 py-2 rounded-full text-lg font-semibold flex items-center gap-2 shadow  border-blue-800 border-2 transition-all duration-500 [&>span]:hover:ml-5"
-                    onClick={() => handleSelectImage(index+1)}
+                    className="hover:bg-[#be4006] px-5 py-2 rounded-full text-lg font-semibold flex items-center gap-2 shadow  border-[#be4006] border-2 transition-all duration-500 [&>span]:hover:ml-5"
+                    onClick={() => handleSelectImage(index + 1)}
                   >
                     Batafsil
                     <span className="transition-all duration-500">

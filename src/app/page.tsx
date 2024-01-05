@@ -1,4 +1,8 @@
+import Cities from "@/components/Cities";
+import Feedbacks from "@/components/Feedbacks";
+import GalleryCards from "@/components/GalleryCards";
 import Hero from "@/components/Hero";
+import Hotels from "@/components/Hotels";
 import TopCites from "@/components/TopCites";
 
 export default function page() {
@@ -6,7 +10,11 @@ export default function page() {
     <>
       <main>
         <Hero />
-        <TopCites/>
+        <TopCites />
+        <Hotels />
+        <Feedbacks />
+        <GalleryCards />
+        <Cities/>
       </main>
     </>
   );

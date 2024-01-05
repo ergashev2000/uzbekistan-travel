@@ -1,16 +1,97 @@
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "swiper/css/effect-fade";
+@import 'swiper/css/effect-coverflow';
+
 .hero-swiper {
+    .swiper-button-next,
+    .swiper-button-prev {
+        background-color: #be4006 !important;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        position: absolute;
+        color: white;
+        top: 45px !important;
+
+        &::after {
+            font-size: 24px !important;
+        }
+    }
+
+    .swiper-button-prev {
+        right: 120px !important;
+        left: auto;
+
+        &:hover {
+            background-color: #be4006 !important;
+            transition: all .4s;
+        }
+    }
+
+    .swiper-button-next {
+        left: auto !important;
+        right: 30px;
+
+        &:hover {
+            background-color: #be4006 !important;
+            transition: all .4s;
+        }
+    }
+}
+
+.default-swiper{
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            background-color: #be4006 !important;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+            color: white;
+
+            &::after {
+                font-size: 20px !important;
+            }
+        }
+    
+}
+
+.feedback__wrapper {
 
     .swiper-button-next,
     .swiper-button-prev {
-        background-color: rgb(212, 212, 212) !important;
-        width: 40px;
-        height: 40px;
+        background-color: #FA7436 !important;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
         position: absolute;
-        color: black;
+        color: #fff;
+        bottom: 5px !important;
+        top: auto;
 
         &::after {
-            font-size: 20px !important;
+            font-size: 26px !important;
+        }
+    }
+
+    .swiper-button-prev {
+        left: 42%;
+
+        &:hover {
+            background-color: #be4006 !important;
+            transition: all .4s;
+        }
+    }
+
+    .swiper-button-next {
+        left: 52%;
+
+        &:hover {
+            background-color: #be4006 !important;
+            transition: all .4s;
         }
     }
 }

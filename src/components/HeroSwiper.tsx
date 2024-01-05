@@ -25,14 +25,8 @@ export default function HeroSwiper() {
     }
   };
 
-  //   const handleTouchEnd = () => {
-  //     // if (thumbsSwiper) {
-  //     //   setSelectedCardIndex(thumbsSwiper.realIndex);
-  //     // }
-  //   };
-
   return (
-    <div className="w-1/2 h-full flex items-end">
+    <div className="w-1/2 h-screen flex items-end">
       <Swiper
         ref={swiperRef}
         onSwiper={handleSetThumb}
@@ -42,28 +36,24 @@ export default function HeroSwiper() {
         slidesPerGroup={1}
         modules={[FreeMode, Navigation, Thumbs]}
         watchSlidesProgress={true}
-        // onTouchEnd={handleTouchEnd}
         className="hero-swiper"
         navigation
       >
         {[...Array(5)].map((_, index) => (
-          <SwiperSlide
-            key={index}
-            className="cursor-pointer py-8 pl-5"
-            onClick={() => handleSelectImage(index)}
-          >
+          <SwiperSlide key={index} className="pb-10 pt-24 pl-5">
             <div
-              className={`relative transition-all duration-500 rounded-lg overflow-hidden shadow-lg  ${
+              onClick={() => handleSelectImage(index)}
+              className={`cursor-pointer relative transition-all duration-500 rounded-lg overflow-hidden shadow-lg border-4 max-w-xs  ${
                 selectedCardIndex === index
-                  ? "scale-[120%] border border-blue-500"
-                  : "scale-100"
+                  ? "scale-[120%] border-[#FA7436]"
+                  : "scale-100 border-transparent"
               }`}
             >
               <Image
-                src={`https://picsum.photos/id/${index + 100}/500/600`}
+                src={`https://picsum.photos/id/${index + 13}/250/400`}
                 alt="Image"
-                width={100}
-                height={300}
+                width={1000}
+                height={1000}
                 className={`rounded w-full h-[300px] object-cover`}
               />
 
