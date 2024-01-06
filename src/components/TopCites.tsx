@@ -6,7 +6,7 @@ import React from "react";
 export default function TopCites() {
   return (
     <section>
-      <div className="container mx-auto py-16">
+      <div className="py-14">
         <Link href={"/"}>
           <h2 className="text-xl xl:text-2xl 2xl:text-3xl font-semibold w-fit my-10 flex items-center gap-2 [&>div]:hover:ml-2 [&>div]:hover:opacity-100 transition-all duration-300">
             Top Cities of <span className="text-[#FA7436]">Uzbekistan</span>

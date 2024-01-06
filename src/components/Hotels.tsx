@@ -7,9 +7,12 @@ import Image from "next/image";
 export default function Hotels() {
   return (
     <section>
-      <div className="max-w-[1600px] mx-auto my-10">
-        <Link href={"/"}>
-          <h2 className="text-xl xl:text-2xl 2xl:text-3xl font-semibold w-fit my-5 flex items-center gap-2 [&>div]:hover:ml-2 [&>div]:hover:opacity-100 transition-all duration-300 px-5">
+      <div className="py-14">
+        <Link
+          href={"https://uzbekistan.travel/en/"}
+          className="bg-red-500 py-5"
+        >
+          <h2 className="text-xl xl:text-2xl 2xl:text-3xl font-semibold w-fit mb-5 flex items-center gap-2 [&>div]:hover:ml-2 [&>div]:hover:opacity-100 transition-all duration-300">
             Order <span className="text-[#FA7436]">the best hotel in town</span>
             <div className=" transition-all duration-300 opacity-0">
               <ArrowIcon />

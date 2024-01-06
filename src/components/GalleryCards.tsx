@@ -11,7 +11,7 @@ export default function GalleryCards() {
 
   return (
     <section>
-      <div className="container mx-auto px-0 py-10">
+      <div className="pt-10 pb-5">
         <Link href={"/"} passHref>
           <h2 className="text-[60px] xl:text-2xl 2xl:text-3xl font-semibold w-fit my-10 flex items-center gap-2 [&>div]:hover:ml-2 [&>div]:hover:opacity-100 transition-all duration-300">
             Photo <span className="text-[#FA7436]">gallery</span>
