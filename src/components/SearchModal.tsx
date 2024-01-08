@@ -35,7 +35,7 @@ export default function SearchModal() {
       </button>
       {isOpenModal && (
         <div
-          className="fixed left-0 inset-0 top-0 w-full h-screen bg-black bg-opacity-90 z-20 bg-[url(https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/thumb_1608_1920_0_0_0_auto.jpg?alt=media&token=0136cdea-c40c-45ed-803a-ac397dd43d52)] bg-center bg-cover"
+          className="fixed left-0 top-0 w-full h-screen bg-black bg-opacity-80 z-50 bg-center bg-cover"
           id="search-modal"
         >
           <div className="max-w-xl w-full absolute left-1/2 -translate-x-1/2 top-32 bg-gray-200 rounded-lg p-7  ">

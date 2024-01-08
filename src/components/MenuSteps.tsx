@@ -3,9 +3,11 @@ import { useEffect, useRef, useState } from "react";
 export default function MenuSteps({
   sectionRefs,
   sectionNum,
+  titles,
 }: {
   sectionRefs: any;
   sectionNum: number;
+  titles?: any;
 }) {
   const [scrollId, setScrollId] = useState<number>(0);
   console.log("render");
@@ -42,20 +44,20 @@ export default function MenuSteps({
     }
   };
   return (
-    <>
-      <ul className="space-y-2 text-sm">
-        {Array.from({ length: 9 }).map((_, id) => (
+    <aside className="w-1/4 bg-white sticky top-10 h-fit p-5 border border-gray-300 rounded-lg mt-5">
+      <ul className="space-y-2 text-sm pl-4">
+        {titles?.map((item: any, i: any) => (
           <li
-            key={id}
-            onClick={() => scrollToSection(id)}
-            className={`cursor-pointer ${
-              id === scrollId ? "bg-red-400" : " bg-white"
+            key={i}
+            onClick={() => scrollToSection(i)}
+            className={`cursor-pointer transition-all duration-300 before:w-2 before:h-2 before:rounded-full before:bg-red-400 before:absolute relative before:-left-4 before:top-1/2 before:-translate-y-1/2 before:opacity-0 before:transition-all before:duration-300 ${
+              i === scrollId ? "text-[#FA7436] underline underline-offset-8 before:opacity-100" : " bg-white"
             }`}
           >
-            {id} Lorem ipsum dolor sit.
+            {item}
           </li>
         ))}
       </ul>
-    </>
+    </aside>
   );
 }

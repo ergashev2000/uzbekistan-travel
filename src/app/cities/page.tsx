@@ -21,11 +21,9 @@ export default function Page() {
     useRef<HTMLDivElement>(null),
   ];
 
-
-
   return (
     <div className="min-h-screen">
-      <DynamicHero />
+      {/* <DynamicHero /> */}
 
       <div className="container mx-auto">
         <div className="flex gap-5 p-10">
@@ -287,9 +285,7 @@ export default function Page() {
             </section>
           </article>
 
-          <aside className="w-1/4 bg-white sticky top-10 h-fit p-5 border border-gray-100 rounded-lg mt-5">
-            <MenuSteps sectionNum={9} sectionRefs={sectionRefs} />
-          </aside>
+            <MenuSteps sectionNum={9} sectionRefs={sectionRefs} titles={['salom']} />
         </div>
 
         <div>
