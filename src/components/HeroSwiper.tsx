@@ -57,7 +57,7 @@ export default function HeroSwiper() {
                 className={`rounded w-full h-[300px] object-cover`}
               />
 
-              <button className="absolute top-2 right-2 border bg-gray-100 rounded-full p-1 flex items-center justify-center">
+              <button className="absolute top-2 right-2 border text-white border-gray-100 rounded-full w-7 h-7 flex items-center justify-center">
                 <PlayIcon />
               </button>
             </div>

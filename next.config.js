@@ -3,11 +3,11 @@ const nextConfig = {
   images: {
     domains: [
       "fakeimg.pl",
-      "firebasestorage.googleapis.com",
       "picsum.photos",
       "uzbekistan.travel",
       "flowbite.s3.amazonaws.com",
       "images.unsplash.com",
+      "firebasestorage.googleapis.com",
     ],
   },
 };

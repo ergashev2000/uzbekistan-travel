@@ -12,7 +12,7 @@ body {
 
 @layer base {
     .underline-animation {
-        @apply before:w-full before:h-[1px] before:-bottom-0.5 before:bg-white before:absolute relative before:scale-x-0 before:transition-all before:duration-300 hover:before:scale-x-100 before:origin-left w-max;
+        @apply before:w-full before:h-[1px] before:-bottom-0.5 before:bg-[#FA7436] before:absolute relative before:scale-x-0 before:transition-all before:duration-300 hover:before:scale-x-100 before:origin-left w-max;
     }
 }
 

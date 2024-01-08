@@ -1,4 +1,5 @@
 import Attractions from "@/components/Attractions";
+import Blog from "@/components/Blog";
 import Cities from "@/components/Cities";
 import Feedbacks from "@/components/Feedbacks";
 import GalleryCards from "@/components/GalleryCards";
@@ -14,12 +15,13 @@ export default function page() {
         <Hero />
         <div className="container mx-auto">
           <TopCites />
-          <Hotels />
-          <Feedbacks />
-          <GalleryCards />
           <Cities />
           <Attractions />
+          <Feedbacks />
+          <GalleryCards />
+          <Hotels />
           <TourismForAll />
+          <Blog/>
         </div>
       </main>
     </>

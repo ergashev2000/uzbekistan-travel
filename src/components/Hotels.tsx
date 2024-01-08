@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Hotels() {
   return (
     <section>
-      <div className="py-14">
+      <div className="py-10">
         <Link
           href={"https://uzbekistan.travel/en/"}
           className="bg-red-500 py-5"

@@ -50,7 +50,6 @@ export default function HeroContents() {
           src="https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/Invest-in-Tashkent.mp4?alt=media&token=6116453d-c9fc-4cf5-959e-7363472d64f0"
           type="video/mp4"
         />
-        Your browser does not support the video tag.
       </video>
       <div className="w-1/2 px-10 relative">
         <Swiper
