@@ -38,7 +38,7 @@ export default function Hotels() {
                       height={100}
                       className="w-full object-cover rounded-md h-full"
                     />
-                    <span className="absolute bottom-2 right-2 bg-blue-800 w-6 flex justify-center items-center text-sm h-6 rounded shadow text-white">
+                    <span className="absolute bottom-2 right-2 bg-[#FA7436] w-6 flex justify-center items-center text-sm h-6 rounded shadow text-white">
                       9.1
                     </span>
                   </div>
@@ -63,7 +63,7 @@ export default function Hotels() {
                         }
                         target="_blank"
                       >
-                        <button className="px-4 text-sm whitespace-nowrap py-2 rounded-full bg-blue-800 border border-blue-800 hover:bg-transparent transition-all duration-500 text-white hover:text-black font-semibold">
+                        <button className="px-4 text-sm whitespace-nowrap py-2 rounded-full bg-[#FA7436] border border-[#FA7436] hover:bg-transparent transition-all duration-500 text-white hover:text-black font-semibold">
                           Book Now
                         </button>
                       </Link>

@@ -523,5 +523,86 @@
             "youtube": "https://www.youtube.com/@KhalidAlAmeri",
             "avatar": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/channels4_profile%20(1).jpg?alt=media&token=c90ae4cd-b284-4bf9-b90e-2409c1623aa2"
         }
+    ],
+    "attractions": {
+        "header": {
+            "title": "Достопримечательности",
+            "description": "Достопримечательности Узбекистана удивительно разнообразны.",
+            "banner_img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/ozodbek-erkinov-hvLu3ABC1n0-unsplash.jpg?alt=media&token=18764718-7a88-471a-9f15-0f1b8d00ac12",
+            "banner_img_tags": "uzbekistan tourism, uzbekistan attractions, registan samarqand uzbekistan",
+            "slug": [
+                {
+                    "id": 1,
+                    "slug_title": "Достопримечательности",
+                    "slug_path": ""
+                }
+            ]
+        },
+        "data": [
+            {
+                "id": 1,
+                "title": "1303 ступени к пещере Хазрата Дауда",
+                "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/Hazrati%20Daud%20(David).jpg?alt=media&token=8b925e10-efaf-4335-9a59-2acf31b0b191",
+                "slug": "/attractions/1303-stupeni-k-peschere-khazrata-dauda",
+                "city": "Самарканд"
+            },
+            {
+                "id": 2,
+                "title": "Ансамбль Дорут Тилловат – «Дом размышления»",
+                "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/Ensemble%20Dorut%20Tilovat%20-%20House%20of%20Reflection.jpg?alt=media&token=4ca77ac0-f9c2-4684-98ad-c5c880cb41ce",
+                "img_tags": "Ансамбль Дорут Тилловат – «Дом размышления», attractions, uzbekistan tourism",
+                "slug": "/attractions/ansambl-dorut-tillovat",
+                "city": "Кашкадарьинская"
+            }
+        ]
+    },
+    "detail_attractions": [
+        {
+            "id": 981723987212831,
+            "header": {
+                "title": "1303 ступени к пещере Хазрата Дауда",
+                "description": "",
+                "banner_img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/a3d653c204072a9827b37d3332ca4581.jpg?alt=media&token=adf5129e-c5ae-40e7-8eda-f899943c668e",
+                "city": "Самарканд",
+                "map_img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/280px-Relief_Map_of_Uzbekistan.png?alt=media&token=2934ecc2-fb35-49f0-8db9-7122ccd9cdd3",
+                                    "map": "https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d5140.321675285332!2d66.4333!3d39.4833!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMznCsDI4JzU5LjkiTiA2NsKwMjUnNTkuOSJF!5e1!3m2!1sru!2s!4v1704914219522!5m2!1sru!2s",
+                "slug": [
+                    {
+                        "id": 1,
+                        "slug_title": "Достопримечательности",
+                        "slug_path": "/attractions/dostoprimechatelnosti"
+                    },
+                    {
+                        "id": 2,
+                        "slug_title": "1303 ступени к пещере Хазрата Дауда",
+                        "slug_path": ""
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "id": 1,
+                    "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/IMG_3194-0-0-0-0-1602235578.jpg?alt=media&token=b9855347-90ea-4c04-9395-e2111593b34a",
+                    "img_tags": "1303 ступени к пещере Хазрата Дауда",
+                    "video": "",
+                    "paragraphs": [
+                        "По мусульманской версии, после своего царствования Давид был отправлен Богом на земли Азии, чтобы вести проповедническую деятельность. На территории Средней Азии Давид вызвал гнев и преследования со стороны огнепоклонников – зороастрийцев. Его преследовали долгое время, пока он не скрылся в горах. Спасаясь, Давид вознес руки к небу и обратился ко Всевышнему. Получив недюжинную силу и способность руками плавить железо, он раздвинул камни пещеры и укрылся внутри. Так, Дауд стал покровителем всех кузнецов. О нём и его способностях узнал правитель Самарканда. Он пленил миссионера и святой Дауд еще долгое время работал на правителя."
+                    ],
+                    "description": "Всего в 40 километрах от Самарканда, в селе Аксай находится удивительный археологический памятник, святыня и просто чудо природы – пещера Хазрата Дауда или святого Давида.Известно, что этот святой почитается сразу в трёх мировых религиях. Мусульмане его называют Хазрат Дауд, а православные и иудеи – Давид. Его история жизни окутана тайнами и легендами, у него был дар пророчества и исцеления. Святой Давид в 33 года стал правителем объединенного царства Израиля и Иудеи и царствовал на протяжении сорока лет.",
+                    "video_desc": ""
+                },
+                {
+                    "id": 2,
+                    "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/IMG_3384-0-0-0-0-1602235646.jpg?alt=media&token=26a054f3-3d9c-4fb0-a13b-0be87ad90a49",
+                    "img_tags": "1303 ступени к пещере Хазрата Дауда",
+                    "video": "",
+                    "paragraphs": [
+                        "Есть еще одна легенда о пещере Хазрата Дауда. Однажды царь Давид решил сразиться с огромным воином – Голиафом. Волшебным образом джинны перенесли царя в пещеру поблизости от Самарканда, чтобы Давид смог собраться с силами перед боем. Но сверхъестественные существа ифриты узнали, где пребывает Дауд, и на своих спинах принесли Голиафа. Святой Дауд был не готов к битве и был вынужден бежать, но Голиаф его настигал. И тогда святой обратился к Богу с просьбой о защите. Господь на пути раскидывал камни и громадные валуны. Дауд руками отбрасывал камни, расчищая себе дорогу. Он не сразу заметил, что в его руках буквально плавятся камни. Подбежав к пещере, Дауд расплавил вход и укрылся внутри, оставив позади себя разъярённого Голиафа."
+                    ],
+                    "description": "",
+                    "video_desc": ""
+                }
+            ]
+        }
     ]
 }

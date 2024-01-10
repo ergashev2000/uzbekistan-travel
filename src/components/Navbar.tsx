@@ -91,7 +91,9 @@ export default function Navbar() {
                 <Link href="/cities">
                   <span
                     className={`flex items-center gap-1 [&>svg]:w-[18px] [&>svg]:duration-200 [&>svg]:transition-all ${
-                      hoveredDropdown === 0 ? "[&>svg]:rotate-180" : "[&>svg]:rotate-0"
+                      hoveredDropdown === 0
+                        ? "[&>svg]:rotate-180"
+                        : "[&>svg]:rotate-0"
                     }`}
                   >
                     Города <DownIcon />
@@ -151,7 +153,7 @@ export default function Navbar() {
                 >
                   {travels.map(item => (
                     <motion.li key={item} whileHover={{ scale: 1.05 }}>
-                      <Link href={`/cities/${optimizePath(item)}`}>
+                      <Link href={`/tourism/${optimizePath(item)}`}>
                         <div className="font-semibold hover:bg-white 2xl:text-sm 2xl:py-1 xl:text-[15px] px-5 rounded-lg">
                           {item}
                         </div>
@@ -162,15 +164,48 @@ export default function Navbar() {
               </li>
               <li
                 className={`relative xl:text-[15px] 2xl:text-sm cursor-pointer p-2 ${
-                  hoveredDropdown === 0 ? "hovered" : ""
+                  hoveredDropdown === 2 ? "hovered" : ""
                 }`}
                 onMouseEnter={() => handleMouseEnter(2)}
                 onMouseLeave={handleMouseLeave}
               >
-                <Link href={"/"}>Turistik tashkilotlar uchun</Link>
+                <Link href={"/tourism"}>
+                  <span
+                    className={`flex items-center gap-1 [&>svg]:w-[18px] [&>svg]:duration-200 [&>svg]:transition-all ${
+                      hoveredDropdown === 2
+                        ? "[&>svg]:rotate-180"
+                        : "[&>svg]:rotate-0"
+                    }`}
+                  >
+                    Достопримечательности <DownIcon />
+                  </span>
+                </Link>
+
+                <motion.ul
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{
+                    opacity: hoveredDropdown === 2 ? 1 : 0,
+                    y: hoveredDropdown === 2 ? 10 : 20,
+                  }}
+                  transition={{ duration: 0.1 }}
+                  className={`absolute  transition-all duration-500 bg-custom-blur text-black max-w-[600px] h-auto py-1 whitespace-nowrap left-0 rounded-lg ${
+                    hoveredDropdown === 2 ? "" : "hidden"
+                  }`}
+                >
+                  {travels.map(item => (
+                    <motion.li key={item} whileHover={{ scale: 1.05 }}>
+                      <Link href={`/tourism/${optimizePath(item)}`}>
+                        <div className="font-semibold hover:bg-white 2xl:text-sm 2xl:py-1 xl:text-[15px] px-5 rounded-lg">
+                          {item}
+                        </div>
+                      </Link>
+                    </motion.li>
+                  ))}
+                </motion.ul>
               </li>
+
               <li className="p-2 xl:text-[15px] 2xl:text-sm cursor-pointer">
-                <Link href={"/"}>Diqqatga sazovor joylar</Link>
+                <Link href={"/"}>О нас</Link>
               </li>
             </ul>
           </nav>

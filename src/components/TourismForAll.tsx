@@ -19,12 +19,12 @@ export default function Attractions() {
           </h2>
         </Link>
 
-        <div className="default-swiper">
+        <div className="default-swiper max-w-full">
           <CustomSwiper
             navigation
             between={30}
             // autoplay={5000}
-            slidesNumber={2.5}
+            slidesNumber={3}
             loop
           >
             {alltourism.data?.map((item: any) => (
