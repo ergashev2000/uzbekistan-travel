@@ -17,7 +17,7 @@ export default function Attractions() {
         </Link>
 
         <div className="default-swiper">
-          <CustomSwiper
+          {/* <CustomSwiper
             navigation
             between={30}
             autoplay={5000}
@@ -29,7 +29,7 @@ export default function Attractions() {
             <MainCard />
             <MainCard />
             <MainCard />
-          </CustomSwiper>
+          </CustomSwiper> */}
         </div>
       </div>
     </section>
