@@ -6,9 +6,10 @@ import Image from "next/image";
 
 import data from "../../../../db.json";
 import { useParams } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import optimizePath from "@/util/optimizePath";
 import MenuSteps from "@/components/MenuSteps";
+import CustomSwiper from "@/components/SwiperCustom";
 
 interface Section {
   id: number;
@@ -31,11 +32,18 @@ interface DescriptionData {
   video_desc?: string;
 }
 
+interface FilterRes {
+  id: number;
+  title: string;
+  img: string;
+  slug: string;
+}
 export default function Page() {
   const { tourismId } = useParams();
   const [sections, setSections] = useState<Section[]>([]);
   const [headerData, setHeaderData] = useState({});
   const [titles, setTitles] = useState<string[]>([]);
+  const [filterRes, setFilterRes] = useState<FilterRes[]>([]);
 
   const [descriptionData, setDescriptionData] = useState<DescriptionData>({
     title: "",
@@ -63,7 +71,11 @@ export default function Page() {
     const resData = data.tourism.find(
       (item: any) => optimizePath(item.header.title) === tourismId
     );
+    const res = data.alltourism.data.filter(
+      (item: any) => optimizePath(item.title) !== tourismId
+    );
 
+    setFilterRes(res);
     if (resData) {
       const {
         data: { sections, description },
@@ -97,7 +109,9 @@ export default function Page() {
               )}
               <br />
               {descriptionData.description && (
-                <p className="indent-8">{descriptionData.description}</p>
+                <p className="indent-8 text-justify">
+                  {descriptionData.description}
+                </p>
               )}
               {descriptionData?.description_list.length > 0 && (
                 <ul className="space-y-3 py-2">
@@ -116,12 +130,14 @@ export default function Page() {
                   height="720"
                   allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
                   allowFullScreen
-                  className="rounded-lg w-full h-[500px]"
+                  className="rounded-lg w-full h-[500px] mb-5"
                 ></iframe>
               )}
               {descriptionData?.media_desc?.map((item: any, i: any) => (
                 <>
-                  <p key={i}>{item}</p>
+                  <p key={i} className="text-justify">
+                    {item}
+                  </p>
                   <br />
                 </>
               ))}
@@ -138,7 +154,7 @@ export default function Page() {
                   </h2>
                 )}
                 {item.description && (
-                  <p className="indent-8 xl:text-sm 2xl:text-base text-gray-700">
+                  <p className="indent-8 xl:text-sm 2xl:text-base text-gray-700 text-justify">
                     {item.description}
                   </p>
                 )}
@@ -160,7 +176,7 @@ export default function Page() {
                     item.media_desc?.map((item: any, i: any) => (
                       <p
                         key={i}
-                        className="w-full xl:text-sm 2xl:text-base text-gray-700"
+                        className="w-full xl:text-sm 2xl:text-base text-gray-700 text-justify"
                       >
                         {item}
                         <br />
@@ -177,7 +193,7 @@ export default function Page() {
                     ></iframe>
                   )}
                   {item.video_desc && (
-                    <p className="indent-4 xl:text-sm 2xl:text-base text-gray-700">
+                    <p className="indent-4 xl:text-sm 2xl:text-base text-gray-700 text-justify">
                       {item.video_desc}
                     </p>
                   )}
@@ -192,10 +208,14 @@ export default function Page() {
           <h3 className="text-2xl font-semibold">
             Другие виды<span className="text-[#FA7436]"> туризм</span>
           </h3>
-          <div className="flex items-center gap-5 pb-10 pt-5">
-            <MainCard />
-            <MainCard />
-            <MainCard />
+          <div className="default-swiper">
+            <CustomSwiper>
+              {filterRes?.map((item: any) => (
+                <Fragment key={item.id}>
+                  <MainCard data={item} />
+                </Fragment>
+              ))}
+            </CustomSwiper>
           </div>
         </div>
       </div>

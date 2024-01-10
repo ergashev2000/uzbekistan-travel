@@ -1,4 +1,32 @@
 {
+    "alltourism": {
+        "header": {
+            "title": "Туризм для всех",
+            "description": "В этой рубрике Вы откроете для себя Узбекистан по новому! Спорт, этно, история, гастрономия или медицина – здесь каждый сможет найти для себя вид туризма на любой вкус!",
+            "banner_img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/p2.jpg?alt=media&token=fa9c3668-8eff-4c7d-b89e-e138a4148c06",
+            "slug": [
+                {
+                    "id": 1,
+                    "slug_title": "Виды туризма",
+                    "slug_path": ""
+                }
+            ]
+        },
+        "data": [
+            {
+                "id": 98172398712831,
+                "title": "Спортивный туризм",
+                "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/1519218157_0-pohod-po-gruzii-svanetiya-0-0-0-0-1583156506.jpg?alt=media&token=bab42736-222c-43bd-8068-9d30d9bb27fd",
+                "slug": "/tourism/sportivnyy-turizm"
+            },
+            {
+                "id": 7879823193123,
+                "title": "Культурный туризм",
+                "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/img.jpg?alt=media&token=9bf55891-53cc-4b7b-8ef8-83fb1abe6d53",
+                "slug": "/tourism/kulturnyy-turizm"
+            }
+        ]
+    },
     "tourism": [
         {
             "id": "98172398712831",
@@ -225,7 +253,275 @@
                 ],
                 "description": "Современный мегаполис",
                 "banner_img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/thumb_754_1920_0_0_0_auto.jpg?alt=media&token=51c87881-7baf-459c-8db9-d80c37f7e0e9"
+            },
+            "data": {
+                "about": {
+                    "title": "Tashkent – The modern metropolis",
+                    "description": "Tashkent is the capital of Uzbekistan and also the largest city in Central Asia.",
+                    "banner_img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/5e53c06ca0049049451193.jpg?alt=media&token=475fa553-67f1-4abe-b84e-34db609227f3",
+                    "description_list": "For many years, Tashkent has been the most important business and cultural center of the country, attracting tourists and businessmen from various countries of the world."
+                },
+                "attractions": {
+                    "title": "Attractions",
+                    "description": "Tashkent has a large list of attractions. It will take several days to visit all of them.",
+                    "description_list": [
+                        "Wide avenues, green alleys, fountains and eco-parks for leisurely walks;",
+                        "Unique artifacts about the history and culture of the peoples of Central Asia in the numerous museums of the city;",
+                        "Majestic architectural ensembles, mosques and minarets;",
+                        "Theaters and galleries for every taste.",
+                        "Here everyone can create his or her own itinerary through the top attractions of the city!"
+                    ],
+                    "video": "https://www.youtube.com/embed/P8fcfqagsC0"
+                },
+                "gallery": {
+                    "title": "Photo gallery",
+                    "description": "Places, people, events - all the most intriguing in our Photo Gallery",
+                    "images": [
+                        "https://fakeimg.pl/250x100/",
+                        "https://fakeimg.pl/250x100/",
+                        "https://fakeimg.pl/250x100/"
+                    ],
+                    "image_3d": "https://momento360.com/e/u/b84ed8e07d1e43dcaeec74d89ca3232b?utm_campaign=embed&utm_source=other&heading=-4.927999999999997&pitch=-0.6159999999999997&field-of-view=75"
+                },
+                "climate": {
+                    "title": "Climate",
+                    "description": " Most time of the summer in Tashkent is hot, so do not forget about sunscreen and hats! Winter is mostly mild and snowless, but do not neglect warm things, it is so cool in the evening that you want to wear a scarf!"
+                },
+                "cuisine": {
+                    "title": "Cuisine",
+                    "description": "Tashkent restaurants with their variety and the level of service can surprise any gourmet. In the city, you can find not only national cuisine, which in Tashkent differs in taste from the identical dishes in the other parts of the country, but also the best representatives of the foreign gastronomic industry. In Tashkent, you can try Uyghur, Korean, Chinese, Japanese, European and even molecular cuisine. However, the most delicious cuisine is naturally Uzbek! Did you know that in December 2016 pilaf was included in the UNESCO Intangible Heritage List? Now you know it! Come to see and taste the most delicious food in the world! You can read more about the national cuisine of Uzbekistan at this link.",
+                    "images": [
+                        "https://fakeimg.pl/250x100/",
+                        "https://fakeimg.pl/250x100/",
+                        "https://fakeimg.pl/250x100/"
+                    ]
+                },
+                "photo_zones": {
+                    "title": "Photo zones",
+                    "description": "An integral part of every trip is photography! In this section, we introduce you the most beautiful places in this city, where you can make the best shots. P.S. Do not forget that during the visit the religious sights of Uzbekistan, women are advisable to cover the exposed parts of the body (shoulders, back and legs). Such attractions will be marked with",
+                    "zones": [
+                        {
+                            "id": 123,
+                            "zone_image": "https://fakeimg.pl/250x100/",
+                            "img_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex assumenda culpa odio"
+                        },
+                        {
+                            "id": 13,
+                            "zone_image": "https://fakeimg.pl/250x100/",
+                            "img_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex assumenda culpa odio"
+                        }
+                    ]
+                },
+                "history": {
+                    "title": "History 🏺",
+                    "description": "Tashkent is the capital of Uzbekistan and, concurrently, the largest city in Central Asia. In 2008, the archaeologists announced that the city is already 2,200 years old. One of the first mentions of the city was found in the chronicles written in the II century BC. In the ancient Chinese sources, Tashkent was called “Shi”, which means stone, and in the early Middle Ages, Shash or Chach.",
+                    "img": "https://fakeimg.pl/250x100/",
+                    "img_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex assumenda culpa odio"
+                },
+                "map": {
+                    "title": "Map",
+                    "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d177537.16644717447!2d69.15702485558086!3d41.292066908065!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2sTashkent!5e0!3m2!1sen!2s!4v1704616326664!5m2!1sen!2s"
+                }
+            },
+            "menus": [
+                "About the city",
+                "Attractions",
+                "Photo gallery",
+                "Climate",
+                "Cuisine",
+                "Photo zones",
+                "History",
+                "Map"
+            ]
+        }
+    ],
+    "allcities": {
+        "header": {
+            "title": "Города Узбекистана",
+            "description": "Популярные дестинации для туристов",
+            "banner_img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/guz.jpg?alt=media&token=54a044d6-d1fc-4737-94e6-01d10ff7ae0d",
+            "slug": [
+                {
+                    "id": 1,
+                    "slug_title": "Города Узбекистана",
+                    "slug_path": ""
+                }
+            ]
+        },
+        "data": [
+            {
+                "id": 98798123,
+                "title": "Ташкент",
+                "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/tashkent.jpg?alt=media&token=f5fa5987-e613-45d2-b197-bedd75a820e1",
+                "img2": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/AdobeStock_596864804_Preview.jpeg?alt=media&token=3bce2664-82e6-40a6-b0ce-2bbeae4b77ee",
+                "slug": "/cities/tashkent",
+                "description": "Ташкент – Современный мегаполис"
+            },
+            {
+                "id": 312312,
+                "title": "Самарканд",
+                "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/thumb_755_1920_0_0_0_auto.jpg?alt=media&token=581710ec-b92f-4170-b6e1-132d173107ed",
+                "slug": "/cities/samarkand",
+                "description": "Самарканд – Перекрёсток культур",
+                "img2": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/JEdlGQQRmulKXI53aOAAVzFgOUshxkSjFbyHg92K.webp?alt=media&token=956dd747-b9ee-46bb-9f38-a42b3eeadda3"
+            },
+            {
+                "id": 98791238123,
+                "title": "Бухара",
+                "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/bukhara-city.jpg?alt=media&token=8b7bee81-93c9-412a-b5b4-647cd6da057a",
+                "slug": "/cities/buhara",
+                "description": "Бухара - Столица исламской культуры",
+                "img2": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/download.webp?alt=media&token=9925d6a9-164c-43db-81e6-06a769c2b0e3"
+            },
+            {
+                "id": 12341232,
+                "title": "Хива",
+                "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/uzbekistan-4712936_1280.jpg?alt=media&token=c04fa023-66ff-4451-bd58-f655f2efe9ea",
+                "slug": "/cities/khiva",
+                "description": "Столица Тюркского мира",
+                "img2": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/868778.5ff8ebe11071867dabc3e2ab781c0b56.jpg?alt=media&token=d530b5df-82b4-40e8-9ba4-be814a53ec28"
+            },
+            {
+                "id": 12341123232,
+                "title": "Коканд",
+                "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/8fcf1ff2-b734-11ec-ae1d-061ce7ed910c.800x600.jpeg?alt=media&token=8efa2db8-16ac-4bcb-9775-7f41e8a6666e",
+                "slug": "/cities/kokand",
+                "description": "Город ремесленников",
+                "img2": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/kokand2.jpg?alt=media&token=4f668b19-a64f-4031-baa5-2a6508595632"
             }
+        ]
+    },
+    "banner_data": [
+        {
+            "id": 1,
+            "title": "Природа",
+            "description": "Живописные горы, цветущие долины, жаркие пустыни, реки и кристальные озера - всей этой красотой вы можете насладиться здесь, в Узбекистане!",
+            "banner_img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/thumb_1608_1920_0_0_0_auto.jpg?alt=media&token=0136cdea-c40c-45ed-803a-ac397dd43d52",
+            "banner_video": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/Invest-in-Tashkent.mp4?alt=media&token=6116453d-c9fc-4cf5-959e-7363472d64f0",
+            "slug": "/cities/tashkent"
+        },
+        {
+            "id": 2,
+            "title": "Ташкент",
+            "description": "Ташкент – это столица Узбекистана и по совместительству самый крупный город в Центральной Азии.",
+            "banner_img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/AdobeStock_596864804_Preview.jpeg?alt=media&token=3bce2664-82e6-40a6-b0ce-2bbeae4b77ee",
+            "banner_video": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/Tashkent-Uzbekistan-4K-Drone-Footage.mp4?alt=media&token=7a12d9a0-88a2-45b0-8306-6c0889f6153d",
+            "slug": "/cities/tashkent"
+        }
+    ],
+    "galereya": {
+        "header": {
+            "title": "Фотогалерея",
+            "description": "",
+            "banner_img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/IMG_7905.jpg?alt=media&token=1b2c8326-750c-4e3b-a450-4333e6b5b3bc",
+            "slug": [
+                {
+                    "id": 1,
+                    "slug_title": "Фотогалерея",
+                    "slug_path": ""
+                }
+            ]
+        },
+        "data": [
+            {
+                "header": {
+                    "id": 12,
+                    "title": "Город ремесленников",
+                    "description": "lorem",
+                    "banner_img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/5e53c06ca0049049451193.jpg?alt=media&token=dc6fb59f-08dd-4e7d-819a-f0cd8aabcefe",
+                    "slug": [
+                        {
+                            "id": 1,
+                            "slug_title": "Фотогалерея",
+                            "slug_path": "/foto-galereya"
+                        },
+                        {
+                            "id": 2,
+                            "slug_title": "Город ремесленников",
+                            "slug_path": ""
+                        }
+                    ]
+                },
+                "data": [
+                    {
+                        "id": 1,
+                        "title": "Коканд",
+                        "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/kokand2.jpg?alt=media&token=4f668b19-a64f-4031-baa5-2a6508595632",
+                        "city_category": "Город ремесленников"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Хива",
+                        "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/868778.5ff8ebe11071867dabc3e2ab781c0b56.jpg?alt=media&token=d530b5df-82b4-40e8-9ba4-be814a53ec28",
+                        "city_category": "Город ремесленников"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Самарканд",
+                        "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/download.webp?alt=media&token=9925d6a9-164c-43db-81e6-06a769c2b0e3",
+                        "city_category": "Город ремесленников"
+                    },
+                    {
+                        "id": 4,
+                        "title": "Самарканд",
+                        "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/JEdlGQQRmulKXI53aOAAVzFgOUshxkSjFbyHg92K.webp?alt=media&token=956dd747-b9ee-46bb-9f38-a42b3eeadda3",
+                        "city_category": "Город ремесленников"
+                    },
+                    {
+                        "id": 5,
+                        "title": "Коканд",
+                        "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/8fcf1ff2-b734-11ec-ae1d-061ce7ed910c.800x600.jpeg?alt=media&token=8efa2db8-16ac-4bcb-9775-7f41e8a6666e",
+                        "city_category": "Город ремесленников"
+                    },
+                    {
+                        "id": 6,
+                        "title": "Коканд",
+                        "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/8fcf1ff2-b734-11ec-ae1d-061ce7ed910c.800x600.jpeg?alt=media&token=8efa2db8-16ac-4bcb-9775-7f41e8a6666e",
+                        "city_category": "Город ремесленников"
+                    },
+                    {
+                        "id": 521,
+                        "title": "Коканд",
+                        "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/8fcf1ff2-b734-11ec-ae1d-061ce7ed910c.800x600.jpeg?alt=media&token=8efa2db8-16ac-4bcb-9775-7f41e8a6666e",
+                        "city_category": "Город ремесленников"
+                    },
+                    {
+                        "id": 631,
+                        "title": "Коканд",
+                        "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/8fcf1ff2-b734-11ec-ae1d-061ce7ed910c.800x600.jpeg?alt=media&token=8efa2db8-16ac-4bcb-9775-7f41e8a6666e",
+                        "city_category": "Город ремесленников"
+                    }
+                ]
+            }
+        ]
+    },
+    "feedback": [
+        {
+            "id": 1,
+            "title": " “It was so amazing. I love Uzbekistan so much. Please come to Bukhara”",
+            "name": "Daud Kim",
+            "video": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/10000000_205029389318756_1342992308157030614_n_mp4_efg%3De30_nc_h.mp4?alt=media&token=a9f1813c-d26b-4d77-a1fe-d9d9a720a76c",
+            "instagram": "https://www.instagram.com/jaehan9192/",
+            "youtube": "https://www.youtube.com/channel/UCZvmd8vkAM_oMC_f90vWfag",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/325609541_740062014208798_6539433824789075908_n.jpg?alt=media&token=ca71ed54-6387-4148-96d7-ac186a9b22d2"
+        },
+        {
+            "id": 2,
+            "title": "What Can $100 Get in World's Cheapest Country?",
+            "name": "Drew Binsky",
+            "video": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/What%20Can%20%241%20Get%20in%20World%E2%80%99s%20Cheapest%20Country_%20%23travel.mp4?alt=media&token=78bedb09-6224-4bde-b6a4-5ac9cc85eb1c",
+            "instagram": "https://www.instagram.com/drewbinsky/",
+            "youtube": "https://www.youtube.com/@drewbinsky",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/channels4_profile.jpg?alt=media&token=37888957-f12c-4947-a6b5-55bb93781cad"
+        },
+        {
+            "id": 3,
+            "title": "The World’s Cheapest Country? (My First Day In Uzbekistan)",
+            "name": "Khalid Al Ameri",
+            "video": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/The-World-s-Cheapest-Country-My-First-Day-In-Uzbekistan.mp4?alt=media&token=c1cf50e9-d711-4bed-b37d-5b03823076b5",
+            "instagram": "https://www.instagram.com/khalidalameri",
+            "youtube": "https://www.youtube.com/@KhalidAlAmeri",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/channels4_profile%20(1).jpg?alt=media&token=c90ae4cd-b284-4bf9-b90e-2409c1623aa2"
         }
     ]
 }

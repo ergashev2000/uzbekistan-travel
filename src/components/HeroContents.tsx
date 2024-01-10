@@ -9,19 +9,28 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-import { ArrowIcon } from "@/assets/iconSvg";
+import { ArrowIcon, BgElement } from "@/assets/iconSvg";
+import Image from "next/image";
 
-export default function HeroContents() {
+export default function HeroContents({
+  data,
+  selectedIndex,
+}: {
+  data: any;
+  selectedIndex: any;
+}) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const swiperRef = useRef<any | null>(null);
-  const [selectedCardIndex, setSelectedCardIndex] = useState(0);
 
   const handleSelectImage = (index: number) => {
-    setSelectedCardIndex(index);
     if (swiperRef.current) {
       swiperRef.current?.swiper.slideTo(index);
     }
   };
+
+  useEffect(() => {
+    handleSelectImage(selectedIndex);
+  }, [selectedIndex]);
 
   useEffect(() => {
     const videoElement = videoRef.current;
@@ -31,27 +40,62 @@ export default function HeroContents() {
         videoElement.play().catch(error => {
           console.error("Error playing video:", error);
         });
-      }, 3000);
+      }, 5000);
 
       return () => clearTimeout(timeoutId);
     }
   }, []);
 
+  useEffect(() => {
+    const newVideoSrc = data.banner_data[selectedIndex]?.banner_video;
+    if (newVideoSrc) {
+      if (videoRef.current) {
+        videoRef.current.src = newVideoSrc;
+        videoRef.current.load();
+
+        const posterDisplayTime = 5000;
+        videoRef.current.setAttribute(
+          "poster",
+          data.banner_data[selectedIndex]?.banner_img
+        );
+
+        setTimeout(() => {
+          if (videoRef.current) {
+            videoRef.current.play();
+          }
+        }, posterDisplayTime);
+      }
+    }
+  }, [data.banner_data, selectedIndex]);
+
   return (
     <>
-      <video
-        ref={videoRef}
-        loop
-        muted
-        className="absolute inset-0 w-full h-full object-cover"
-        poster="https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/thumb_1608_1920_0_0_0_auto.jpg?alt=media&token=0136cdea-c40c-45ed-803a-ac397dd43d52"
-      >
-        <source
-          src="https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/Invest-in-Tashkent.mp4?alt=media&token=6116453d-c9fc-4cf5-959e-7363472d64f0"
-          type="video/mp4"
+      {data.banner_data[selectedIndex]?.banner_video ? (
+        <video
+          ref={videoRef}
+          loop
+          muted
+          className="absolute inset-0 w-full h-full object-cover bg-black"
+          poster={data.banner_data[selectedIndex]?.banner_img}
+        >
+          <source
+            src={data.banner_data[selectedIndex]?.banner_video}
+            type="video/mp4"
+          />
+        </video>
+      ) : (
+        <Image
+          src={data.banner_data[selectedIndex]?.banner_img}
+          alt="lorem"
+          width={1000}
+          height={1000}
+          className="absolute inset-0 w-full h-full object-cover"
         />
-      </video>
-      <div className="w-1/2 px-10 relative">
+      )}
+      <span className="w-1/2 absolute left-0 bottom-0 z-10 pointer-events-none max-h-screen overflow-hidden">
+        <BgElement />
+      </span>
+      <div className="w-1/2 px-10 relative z-10">
         <Swiper
           ref={swiperRef}
           spaceBetween={10}
@@ -59,22 +103,17 @@ export default function HeroContents() {
           slidesPerGroup={1}
           modules={[FreeMode, Navigation, Thumbs]}
           direction={"vertical"}
-          className="max-h-screen"
+          speed={900}
+          simulateTouch={false}
+          className="max-h-[calc(100vh-100px)] mt-20"
         >
-          {[...Array(5)].map((_, index) => (
+          {data?.banner_data?.map((item: any, index: any) => (
             <SwiperSlide key={index}>
               <div className="h-full flex flex-col justify-center gap-20 pt-20 items-center">
                 <div className="relative text-gray-100 space-y-6">
-                  <h3 className="text-[60px] font-semibold">Tabiat</h3>
-                  <p className="text-xl ">
-                    Xushmanzara tog‘lar, gullagan vodiylar, jazirama cho‘llar,
-                    daryolar va zilol ko‘llar - bu go‘zallikning barchasidan
-                    O‘zbekistonda bahramand bo‘lishingiz mumkin!
-                  </p>
-                  <button
-                    className="hover:bg-[#be4006] px-5 py-2 rounded-full text-lg font-semibold flex items-center gap-2 shadow  border-[#be4006] border-2 transition-all duration-500 [&>span]:hover:ml-5"
-                    onClick={() => handleSelectImage(index + 1)}
-                  >
+                  <h3 className="text-[60px] font-semibold">{item.title}</h3>
+                  <p className="text-xl ">{item.description}</p>
+                  <button className="hover:bg-[#be4006] px-5 py-2 rounded-full text-lg font-semibold flex items-center gap-2 shadow  border-[#be4006] border-2 transition-all duration-500 [&>span]:hover:ml-5">
                     Batafsil
                     <span className="transition-all duration-500">
                       <ArrowIcon />

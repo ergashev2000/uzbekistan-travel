@@ -5,7 +5,7 @@ export default function DynamicHero({ header }: { header?: any}) {
   return (
     <div
       className={`h-[65vh] relative bg-no-repeat bg-center w-full bg-cover -z-0 `}
-      style={{ backgroundImage: `url(${header.banner_img})`}}
+      style={{ backgroundImage: `url(${header?.banner_img})`}}
     >
       <div className="absolute w-full h-full bg-black bg-opacity-5" />
       <div className="container mx-auto h-full w-full flex items-center">
@@ -22,8 +22,8 @@ export default function DynamicHero({ header }: { header?: any}) {
               </Fragment>
             ))}
           </p>
-          <h2 className="text-[60px] font-semibold">{header.title}</h2>
-          <p>{header.description}</p>
+          <h2 className="text-[60px] font-semibold">{header?.title}</h2>
+          <p>{header?.description}</p>
         </div>
       </div>
     </div>

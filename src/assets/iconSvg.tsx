@@ -180,3 +180,77 @@ export const CheckedIcon = () => {
     </svg>
   );
 };
+
+
+export const DownIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="lucide lucide-chevron-down"
+    >
+      <path d="m6 9 6 6 6-6" />
+    </svg>
+  );
+};
+
+export const BgElement = () => {
+  return (
+    <svg
+      width="700"
+      height="708"
+      viewBox="0 0 1071 1061"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g opacity="0.5" filter="url(#filter0_f_0_79)">
+        <path
+          d="M895.828 814.729C520 1033 619 814.729 211 790.5C-304.708 247.602 -375 137.5 -80.9999 38.5C-124.273 -452.053 269.079 206.633 486.055 357.878C755.633 353.183 1000.31 664.843 895.828 814.729Z"
+          fill="url(#paint0_linear_0_79)"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_f_0_79"
+          x="-403.953"
+          y="-290.209"
+          width="1474.45"
+          height="1351.07"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="BackgroundImageFix"
+            result="shape"
+          />
+          <feGaussianBlur
+            stdDeviation="75"
+            result="effect1_foregroundBlur_0_79"
+          />
+        </filter>
+        <linearGradient
+          id="paint0_linear_0_79"
+          x1="-89.2692"
+          y1="47.2396"
+          x2="488.481"
+          y2="957.04"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#666666" />
+          <stop offset="0.555364" stop-color="#4A4A4A" />
+          <stop offset="1" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+};

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import LogoFooter from "@/assets/images/logo-white.png";
+import LogoFooter from "@/assets/images/logo-dark.png";
 import Link from "next/link";
 import { footerMenus } from "@/util/contentMenus";
 import {
@@ -113,7 +113,7 @@ export default function Footer() {
           </div>
 
           <p className="pt-10 text-center text-sm text-gray-200">
-            Copyright © 2018-2023 National PR-centre
+            Copyright © 2018-2023
           </p>
         </div>
       </div>

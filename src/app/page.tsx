@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import Hotels from "@/components/Hotels";
 import TopCites from "@/components/TopCites";
 import TourismForAll from "@/components/TourismForAll";
+import Routes from "@/components/Routes";
 
 export default function page() {
   return (
@@ -15,13 +16,14 @@ export default function page() {
         <Hero />
         <div className="container mx-auto">
           <TopCites />
+          <Routes />
           <Cities />
           <Attractions />
           <Feedbacks />
           <GalleryCards />
-          <Hotels />
           <TourismForAll />
-          <Blog/>
+          <Hotels />
+          <Blog />
         </div>
       </main>
     </>

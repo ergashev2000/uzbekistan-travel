@@ -27,7 +27,7 @@ export default function Modal({
           <div className="relative overflow-hidden rounded-lg">
             <Image
               alt="asd"
-              src={selected.url}
+              src={selected.img}
               width={1000}
               height={1000}
               className="w-full object-contain h-[calc(100vh-60px)]"
@@ -40,7 +40,7 @@ export default function Modal({
             </button>
             <div className="absolute bottom-0 left-0 bg-white bg-opacity-50 w-full px-2 py-1">
               <h3 className="font-semibold">{selected.title}</h3>
-              <p className="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
+              {selected.description && <p className="text-sm">{selected.description}</p>}
             </div>
           </div>
         </motion.div>

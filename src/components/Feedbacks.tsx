@@ -7,7 +7,7 @@ export default function Feedbacks() {
       <div className="flex items-center py-10 gap-10">
         <div className="space-y-5 w-max">
           <h2 className="text-[60px] font-semibold">
-            What people say <span className="text-[#FA7436]">about Us.</span>
+            What people say <span className="text-[#FA7436]">about Uzbekistan.</span>
           </h2>
           <p className="text-gray-600">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae

@@ -4,10 +4,11 @@
 
 
 @import './swiper.scss';
+@import './animations.scss';
 
 body {
-    // background-color: #f7f7f7;
-    background-color: #FAF8ED;
+    background-color: #f7f7f7;
+    // background-color: #FAF8ED;
 }
 
 @layer base {
@@ -55,4 +56,16 @@ body {
         }
     }
 
+}
+
+.bg-custom-blur {
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.bg-element {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.8231464460784313) 0%, rgba(0, 0, 0, 0.6018579306722689) 74%, rgba(0, 0, 0, 0.18449098389355745) 100%);
 }
