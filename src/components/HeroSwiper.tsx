@@ -33,7 +33,7 @@ export default function HeroSwiper({
   };
 
   return (
-    <div className="w-1/2 h-screen flex items-end">
+    <div className="w-1/2 h-screen  items-end hidden xl:flex">
       <Swiper
         ref={swiperRef}
         onSwiper={handleSetThumb}

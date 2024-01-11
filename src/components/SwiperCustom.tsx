@@ -11,6 +11,7 @@ import {
   Autoplay,
   EffectCoverflow,
 } from "swiper/modules";
+import { defoultBreakpoints } from "@/util/breackPoints";
 
 type SwiperProps = {
   children: React.ReactNode;
@@ -71,6 +72,7 @@ const CustomSwiper = ({
           disabledClass: "swiper-button-disabled",
         }
       }
+      breakpoints={defoultBreakpoints}
     >
       {React.Children.map(children, child => (
         <SwiperSlide className="py-5">{child}</SwiperSlide>

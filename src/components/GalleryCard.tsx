@@ -20,7 +20,7 @@ const Card = ({ setSelected, item }: { setSelected: any; item: any }) => {
         src={item.img}
         className="w-full h-full bg-base-100 shadow-xl image-full rounded-lg block"
       />
-      <div className="flex rounded-b-lg flex-wrap mt-2 pointer-events-none absolute -bottom-1 left-0 bg-black text-white bg-opacity-50 opacity-0 w-full py-1 px-3 font-semibold transition-all duration-200">
+      <div className="flex rounded-b-lg flex-wrap mt-2 pointer-events-none absolute -bottom-1 max-xl:opacity-100 left-0 bg-black text-white bg-opacity-50 opacity-0 w-full py-1 px-3 font-semibold transition-all duration-200">
         {item.title}
       </div>
     </div>
@@ -35,7 +35,7 @@ export default function List({
   setSelected: any;
 }) {
   return (
-    <div className="columns-2 md:columns-3 xl:columns-4  2xl:columns-4 gap-4 max-w-full">
+    <div className="columns-1 md:columns-2 xl:columns-4  2xl:columns-4 gap-4 max-w-full">
       {datalist?.map((item: any) => (
         <Card key={item.id} setSelected={setSelected} item={item} />
       ))}

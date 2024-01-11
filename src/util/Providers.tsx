@@ -2,7 +2,6 @@
 
 import { Provider } from "react-redux";
 import store from "@/redux/store";
-import SearchModal from "@/components/SearchModal";
 
 function Providers({ children }: React.PropsWithChildren) {
   return (

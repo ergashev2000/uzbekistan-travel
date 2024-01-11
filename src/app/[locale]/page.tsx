@@ -1,3 +1,4 @@
+
 import Attractions from "@/components/Attractions";
 import Blog from "@/components/Blog";
 import Cities from "@/components/Cities";
@@ -7,16 +8,16 @@ import Hero from "@/components/Hero";
 import Hotels from "@/components/Hotels";
 import TopCites from "@/components/TopCites";
 import TourismForAll from "@/components/TourismForAll";
-import Routes from "@/components/Routes";
 
-export default function page() {
+
+export default function Page() {
+
   return (
     <>
       <main>
         <Hero />
-        <div className="container mx-auto">
+        <div className="container mx-auto px-1">
           <TopCites />
-          <Routes />
           <Cities />
           <Attractions />
           <Feedbacks />

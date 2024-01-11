@@ -1,16 +1,20 @@
 "use client";
+
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { useParams, usePathname } from "next/navigation";
+
+import SearchModal from "./SearchModal";
+import optimizePath from "@/util/optimizePath";
 import { motion } from "framer-motion";
 
-import Image from "next/image";
-
+import { ArrowIcon, DownIcon, SearchIcon } from "@/assets/iconSvg";
 import LogoWhite from "@/assets/images/logo_white.png";
 import RussiaFlag from "@/assets/icons/russia-flag.svg";
-import Link from "next/link";
-import { ArrowIcon, DownIcon, SearchIcon } from "@/assets/iconSvg";
-import SearchModal from "./SearchModal";
-import { useEffect, useState } from "react";
-import optimizePath from "@/util/optimizePath";
-import { usePathname } from "next/navigation";
+import EnglishFlag from "@/assets/icons/english-flag.svg";
+
+import { attractions } from "../../db.json";
 
 const shahar = [
   "Ташкент",
@@ -50,9 +54,12 @@ const travels = [
 ];
 
 export default function Navbar() {
-  const [hoveredDropdown, setHoveredDropdown] = useState(null);
-
   const pathname = usePathname();
+  const params = useParams();
+  const [lang, setLang] = useState(params?.locale);
+
+  const [hoveredDropdown, setHoveredDropdown] = useState(null);
+  const [isChecked, setIsChecked] = useState<boolean>(false);
 
   const handleMouseEnter = (index: any) => {
     setHoveredDropdown(index);
@@ -62,12 +69,14 @@ export default function Navbar() {
     setHoveredDropdown(null);
   };
 
+  const handleCheckLang = (e: any) => setLang(e.target.value);
+
   useEffect(() => {
     handleMouseLeave();
   }, [pathname]);
 
   return (
-    <div className="fixed backdrop-blur bg-black bg-opacity-40 w-full z-20 transition-all duration-500">
+    <div className="fixed backdrop-blur bg-black bg-opacity-40 w-full z-20 transition-all duration-500 hidden xl:block">
       <div className="flex items-center justify-between container mx-auto py-2 ">
         <Link href={"/"}>
           <div className="xl:w-28 2xl:w-40 w-28">
@@ -169,7 +178,7 @@ export default function Navbar() {
                 onMouseEnter={() => handleMouseEnter(2)}
                 onMouseLeave={handleMouseLeave}
               >
-                <Link href={"/tourism"}>
+                <Link href={"/attractions"}>
                   <span
                     className={`flex items-center gap-1 [&>svg]:w-[18px] [&>svg]:duration-200 [&>svg]:transition-all ${
                       hoveredDropdown === 2
@@ -192,11 +201,11 @@ export default function Navbar() {
                     hoveredDropdown === 2 ? "" : "hidden"
                   }`}
                 >
-                  {travels.map(item => (
-                    <motion.li key={item} whileHover={{ scale: 1.05 }}>
-                      <Link href={`/tourism/${optimizePath(item)}`}>
-                        <div className="font-semibold hover:bg-white 2xl:text-sm 2xl:py-1 xl:text-[15px] px-5 rounded-lg">
-                          {item}
+                  {attractions?.data.map(item => (
+                    <motion.li key={item.id} whileHover={{ scale: 1.05 }}>
+                      <Link href={`/attractions/${optimizePath(item.title)}`}>
+                        <div className="font-semibold hover:bg-white 2xl:text-sm 2xl:py-1 xl:text-[15px] px-5 rounded-lg line-clamp-">
+                          {item.title}
                         </div>
                       </Link>
                     </motion.li>
@@ -212,15 +221,83 @@ export default function Navbar() {
           <div className="flex items-center gap-5">
             <SearchModal />
 
-            <div className="flex items-center gap-1 text-white font-semibold">
-              <Image
-                src={RussiaFlag}
-                alt="image"
-                width={40}
-                height={20}
-                className="w-5"
-              />
-              <span>Uz</span>
+            <div className="relative text-white">
+              <button
+                className="text-[14px] gap-1 w-24 flex items-center"
+                onClick={() => setIsChecked(prev => !prev)}
+              >
+                <Image
+                  src={lang === "en" ? EnglishFlag : RussiaFlag}
+                  alt="Flag Icon"
+                  width={18}
+                  height={18}
+                />
+                {lang === "en" ? "English" : "Русский"}
+              </button>
+
+              <div
+                className={`w-max h-auto bg-white text-black shadow-md rounded absolute right-0 z-20 top-full text-[15px] py-1 px-3 mt-2 ${
+                  isChecked ? "block" : "hidden"
+                }`}
+              >
+                <h5 className="font-semibold px-1 pt-1">Select:</h5>
+                <Link
+                  href={`/${lang === "ru" ? "ru" : "en"}${pathname.substring(
+                    3
+                  )}`}
+                  locale="en"
+                  className="flex items-center gap-2 px-1"
+                >
+                  <input
+                    type="radio"
+                    id="lang-en"
+                    name="lang"
+                    onChange={handleCheckLang}
+                    checked={lang === "en"}
+                    className="my-2 bg-red-500 text-red-500"
+                  />
+                  <label
+                    htmlFor="lang-en"
+                    className="hover:text-red-500 transition-all duration-300 rounded cursor-pointer flex items-center gap-1"
+                  >
+                    <Image
+                      src={EnglishFlag}
+                      alt="lang icon"
+                      width={18}
+                      height={18}
+                    />
+                    English
+                  </label>
+                </Link>
+                <Link
+                  href={`/${lang === "en" ? "ru" : "en"}${pathname.substring(
+                    3
+                  )}`}
+                  locale="ru"
+                  className="flex items-center gap-2 p-1"
+                >
+                  <input
+                    type="radio"
+                    id="lang-ru"
+                    name="lang"
+                    checked={lang === "ru"}
+                    onChange={handleCheckLang}
+                  />
+                  <label
+                    htmlFor="lang-ru"
+                    className="hover:text-red-500 transition-all duration-300 rounded cursor-pointer flex items-center gap-1"
+                  >
+                    <Image
+                      src={RussiaFlag}
+                      alt="lang icon"
+                      width={18}
+                      height={18}
+                      className="shadow-lg"
+                    />
+                    Русский
+                  </label>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

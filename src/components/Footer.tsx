@@ -15,9 +15,9 @@ export default function Footer() {
     <footer>
       <div className="bg-black text-white w-full pt-12 pb-5">
         <div>
-          <div className="container mx-auto flex gap-5">
-            <div className="space-y-5 w-2/5">
-              <Link href={"/"}>
+          <div className="container mx-auto flex gap-5 px-2 max-xl:flex-col-reverse">
+            <div className="space-y-5 w-2/5 max-xl:w-full">
+              <Link href={"/"} className="max-xl:hidden">
                 <Image
                   src={LogoFooter}
                   alt="uzbekistan travel logo"
@@ -26,7 +26,7 @@ export default function Footer() {
                   className="w-44"
                 />
               </Link>
-              <div className="flex gap-5 py-5">
+              <div className="flex gap-5 py-5 max-xl:flex-col">
                 <div>
                   <Link href={"tel+998909686858"}>
                     <span className="text-sm font-semibold underline-animation hover:text-[#FA7436] transition-all duration-300">
@@ -62,7 +62,7 @@ export default function Footer() {
                 </Link>
               </p>
 
-              <ul className="flex gap-5 items-center">
+              <ul className="flex gap-5 items-center max-xl:justify-center">
                 <li>
                   <Link href={"/"}>
                     <span className="w-10 h-10 rounded-full bg-gray-200 flex justify-center items-center text-black hover:bg-[#ea6070] hover:text-white transition-all duration-500">
@@ -87,16 +87,25 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div className="flex gap-5 justify-around w-3/5">
+            <div className="flex gap-5 justify-around w-3/5 max-xl:w-full max-xl:flex-col max-xl:items-center">
+              <Link href={"/"} className="max-xl:block hidden">
+                <Image
+                  src={LogoFooter}
+                  alt="uzbekistan travel logo"
+                  width={1000}
+                  height={1000}
+                  className="w-44"
+                />
+              </Link>
               {footerMenus.map((menus, i) => (
                 <ul
                   key={i}
-                  className="w-1/3 text-gray-300 text-[16px] [&>li]:w-fit space-y-2 "
+                  className="w-1/3 text-gray-300 text-[16px] [&>li]:w-fit space-y-2 max-xl:w-full"
                 >
                   {menus.map((menu, j) => (
                     <li
                       key={menu.id}
-                      className="first:text-lg first:text-white first:font-semibold underline-animation first:before:bg-transparent [&>a]:first:cursor-default"
+                      className="first:text-lg max-xl:w-fit mx-auto first:text-white first:font-semibold underline-animation first:before:bg-transparent [&>a]:first:cursor-default"
                     >
                       {j === 0 ? (
                         <h3>{menu.menu}</h3>

@@ -1,7 +1,7 @@
 import DynamicHero from "@/components/DynamicHero";
 import React, { Fragment } from "react";
 
-import data from "../../../db.json";
+import data from "../../../../db.json";
 import MainCard from "@/components/MainCard";
 import Image from "next/image";
 import CustomSwiper from "@/components/SwiperCustom";

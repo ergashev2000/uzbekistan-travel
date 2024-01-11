@@ -28,7 +28,7 @@ export default function SearchModal() {
   return (
     <>
       <button
-        className="w-10 h-10 rounded-full bg-white flex items-center justify-center"
+        className="w-8 h-8 rounded-full bg-white bg-opacity-80 flex items-center justify-center text-sm"
         onClick={() => setIsOpenModal(prev => !prev)}
       >
         <SearchIcon />
@@ -51,9 +51,9 @@ export default function SearchModal() {
             </div>
 
             <ul className="pt-5 space-y-2">
-              <li className="bg-white py-2 px-4 rounded">
+              {/* <li className="bg-white py-2 px-4 rounded">
                 Lorem ipsum dolor sit amet.
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

@@ -1,15 +1,18 @@
-import { ArrowIcon } from "@/assets/iconSvg";
 import Link from "next/link";
-import React from "react";
+
 import CustomSwiper from "./SwiperCustom";
 import BlogCard from "./BlogCard";
+import { ArrowIcon } from "@/assets/iconSvg";
+
+import { allblogs } from "../../db.json";
+import { Fragment } from "react";
 
 export default function Blog() {
   return (
     <section>
       <div className="py-14">
         <Link href={"/"} className="w-fit block">
-          <h2 className="text-[60px] xl:text-2xl 2xl:text-3xl font-semibold w-fit my-5 flex items-center gap-2 [&>div]:hover:ml-2 [&>div]:hover:opacity-100 transition-all duration-300">
+          <h2 className="text-2xl xl:text-3xl 2xl:text-4xl font-semibold w-fit my-5 flex items-center gap-2 [&>div]:hover:ml-2 [&>div]:hover:opacity-100 transition-all duration-300 flex-wrap">
             Get update with<span className="text-[#FA7436]">latest blog</span>
             <div className=" transition-all duration-300 opacity-0">
               <ArrowIcon />
@@ -25,11 +28,11 @@ export default function Blog() {
             pagination
             navigation
           >
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
+            {allblogs?.map(item => (
+              <Fragment key={item.id}>
+                <BlogCard data={item} />
+              </Fragment>
+            ))}
           </CustomSwiper>
         </div>
       </div>

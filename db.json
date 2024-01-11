@@ -570,7 +570,7 @@
                     {
                         "id": 1,
                         "slug_title": "Достопримечательности",
-                        "slug_path": "/attractions/dostoprimechatelnosti"
+                        "slug_path": "/attractions"
                     },
                     {
                         "id": 2,
@@ -603,6 +603,73 @@
                     "video_desc": ""
                 }
             ]
+        }
+    ],
+    "hotels": [
+        {
+            "id": 1,
+            "title": "Hilton Tashkent City",
+            "reviews": "9.1",
+            "description": "Located in Tashkent, Hilton Tashkent City has a bar and a terrace. Among the facilities of this property are a restaurant, indoor pool and a Pan-Asian rooftop restaurant with city views. The property offers a 24-hour front desk and room service, along with free WiFi throughout.",
+            "city": "Tashkent",
+            "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/490848710.webp?alt=media&token=10ee0660-1809-4288-b073-73fb4a9b86eb",
+            "img_tags": "hotel,  uzbekistan tourism",
+            "booking_url": "https://www.booking.com/hotel/uz/hilton-tashkent-city.en-gb.html?aid=375815&label=uz-TEmopTcBK8ZoVa6d%2AYdBNAS538267828034%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-146342137510%3Akwd-2547330301%3Alp1028523%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Yf23yREhrOV9ewivaZVuzFs&sid=0a4117c37dd3fe32d268422e0df84bf3"
+        },
+        {
+            "id": 2,
+            "title": "Hyatt Regency Tashkent",
+            "reviews": "9.0",
+            "description": "Hyatt Regency Tashkent offers accommodation in the heart of Tashkent. This luxury hotel offers restaurants, indoor swimming pool and free WiFi.",
+            "city": "Tashkent",
+            "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/468332463.webp?alt=media&token=34863acf-4b9d-4ff7-9a13-4735ad41e1c0",
+            "booking_url": "https://www.booking.com/hotel/uz/hyatt-regency-tashkent.en-gb.html?aid=375815&label=uz-TEmopTcBK8ZoVa6d%2AYdBNAS538267828034%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-146342137510%3Akwd-2547330301%3Alp1028523%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Yf23yREhrOV9ewivaZVuzFs&sid=0a4117c37dd3fe32d268422e0df84bf3&all_sr_blocks=199528302_269950240_2_2_0;checkin=2024-01-12;checkout=2024-01-13;dest_id=-2579372;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=199528302_269950240_2_2_0;hpos=1;matching_block_id=199528302_269950240_2_2_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=199528302_269950240_2_2_0__16967;srepoch=1704951608;srpvid=4dec27d27aed0024;type=total;ucfs=1&#hotelTmpl"
+        },
+        {
+            "id": 3,
+            "title": "Zarafshon Parkside",
+            "reviews": "9.0",
+            "description": "Zarafshon Parkside has a seasonal outdoor swimming pool, fitness centre, a garden and terrace in Samarkand. Among the facilities of this property are a restaurant, free shuttle service and room service, along with free WiFi throughout the property.",
+            "city": "Samarkand",
+            "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/410076410.webp?alt=media&token=ba33c130-cda3-4d5a-9140-37219ff184f3",
+            "img_tags": "hotel,  uzbekistan tourism",
+            "booking_url": "https://www.booking.com/hotel/uz/zarafshon-parkside.en-gb.html?aid=375815&label=uz-TEmopTcBK8ZoVa6d%2AYdBNAS538267828034%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-146342137510%3Akwd-2547330301%3Alp1028523%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Yf23yREhrOV9ewivaZVuzFs&sid=0a4117c37dd3fe32d268422e0df84bf3"
+        },
+        {
+            "id": 4,
+            "title": "InterContinental Tashkent, an IHG Hotel",
+            "reviews": "9.5",
+            "description": "InterContinental Tashkent, an IHG Hotel is a 5-star property situated in Tashkent. Featuring a restaurant, the property also has a bar, as well as a hot tub and a hammam. The wellness area includes an indoor pool, fitness centre and sauna, while a terrace is also available.",
+            "city": "Tashkent",
+            "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/487242795.webp?alt=media&token=16804940-b27a-47d3-adb8-0b4e4674c539",
+            "booking_url": "https://www.booking.com/hotel/uz/intercontinental-hotels-tashkent-an-ihg.en-gb.html?aid=375815&label=uz-TEmopTcBK8ZoVa6d%2AYdBNAS538267828034%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-146342137510%3Akwd-2547330301%3Alp1028523%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Yf23yREhrOV9ewivaZVuzFs&sid=0a4117c37dd3fe32d268422e0df84bf3"
+        },
+        {
+            "id": 5,
+            "title": "Shohjahon Palace Hotel & Spa",
+            "reviews": "9.1",
+            "description": "Located in Samarkand, Shohjahon Palace Hotel & Spa offers 4-star accommodation with a shared lounge, a terrace and a bar. Providing a restaurant, the property also has a garden, as well as an indoor pool and a sauna.",
+            "city": "Samarkand",
+            "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/514434001.webp?alt=media&token=faeeac4e-4b29-4826-8e15-945b5d1e883b",
+            "booking_url": "https://www.booking.com/hotel/uz/shohjahon-palace-samarkand.en-gb.html?aid=375815&label=uz-TEmopTcBK8ZoVa6d%2AYdBNAS538267828034%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-146342137510%3Akwd-2547330301%3Alp1028523%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Yf23yREhrOV9ewivaZVuzFs&sid=0a4117c37dd3fe32d268422e0df84bf3"
+        }
+    ],
+    "allblogs": [
+        {
+            "id": 1,
+            "title": "Достопримечательности Бухары",
+            "date": "01.07.2022",
+            "read_time": "5",
+            "slug": "",
+            "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/_DSC3870-Edit-min.webp?alt=media&token=dfb0ee95-65b8-4fe1-866e-f74ca0e1389f"
+        },
+        {
+            "id": 2,
+            "title": "Ичан-Кала - сокровище посреди оазиса",
+            "date": "30.06.2022",
+            "read_time": "5",
+            "slug": "",
+            "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/a2pku1rvqcg5590df3vfu0ekujtxtou3.webp?alt=media&token=ce6be089-f977-496a-a5a6-b5727aec67bb"
         }
     ]
 }

@@ -11,7 +11,7 @@ export default function MainCard({ data }: { data: any }) {
 
   return (
     <Link href={data?.slug}>
-      <div className="relative border-4 border-white max-w-md w-full rounded-xl overflow-hidden group hover:shadow-lg cursor-pointer transition-all duration-300">
+      <div className="relative border-4 border-white max-w-md w-full rounded-2xl overflow-hidden group hover:shadow-lg cursor-pointer transition-all duration-300">
         <span className=" group-hover:bg-opacity-50 absolute left-0 bottom-0 w-full h-16 bg-black bg-opacity-0 transition-all duration-500 hover:shadow-2xl z-10" />
         <Image
           src={data.img}

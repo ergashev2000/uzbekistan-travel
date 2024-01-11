@@ -3,7 +3,7 @@ import CustomSwiper from "./SwiperCustom";
 import { InstagramIcon, YoutubeIcon } from "@/assets/iconSvg";
 import Link from "next/link";
 
-import { feedback } from '../../db.json' 
+import { feedback } from "../../db.json";
 
 export default function FeedbackCard() {
   return (
@@ -18,31 +18,28 @@ export default function FeedbackCard() {
         {feedback?.map((item, index) => (
           <div
             key={index}
-            className="p-2 2xl:p-3 mb-12 rounded-xl border-4 bg-white shadow-xl relative flex flex-col gap-2 items-center max-w-md mx-auto"
+            className="p-2 2xl:p-3 mb-12 max-xl:mb-2 rounded-xl border-4 bg-white shadow-xl relative flex flex-col gap-2 items-center max-w-md mx-auto"
           >
-            
             <video
               controls
-              className="w-full h-96 object-cover max-w-xl rounded-lg overflow-hidden"
+              className="w-full h-96 max-xl:h-72 object-cover max-w-xl rounded-lg overflow-hidden"
             >
               <source src={item.video} />
             </video>
 
             <div className="flex flex-col justify-between gap-2">
-              <em>
-               {item.title}
-              </em>
+              <em>{item.title}</em>
               <div className="flex items-center justify-between gap-2">
                 <div className="flex items-center gap-2">
                   <Image
                     src={item.avatar}
-                    alt="saa"
+                    alt={item.title}
                     width={200}
                     height={200}
                     className="w-12 h-12 rounded-full object-cover object-center"
                   />
                   <div>
-                    <h5 className="font-semibold">{item.name }</h5>
+                    <h5 className="font-semibold">{item.name}</h5>
                   </div>
                 </div>
                 <ul className="flex gap-2 items-center">

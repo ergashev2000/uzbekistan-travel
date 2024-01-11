@@ -75,7 +75,7 @@ export default function HeroContents({
           ref={videoRef}
           loop
           muted
-          className="absolute inset-0 w-full h-full object-cover bg-black"
+          className="absolute inset-0 w-full h-full object-cover bg-black hidden xl:block"
           poster={data.banner_data[selectedIndex]?.banner_img}
         >
           <source
@@ -92,10 +92,17 @@ export default function HeroContents({
           className="absolute inset-0 w-full h-full object-cover"
         />
       )}
-      <span className="w-1/2 absolute left-0 bottom-0 z-10 pointer-events-none max-h-screen overflow-hidden">
+      <Image
+        src={data.banner_data[selectedIndex]?.banner_img}
+        alt="lorem"
+        width={1000}
+        height={1000}
+        className="absolute inset-0 w-full h-full object-cover block xl:hidden"
+      />
+      <span className="w-1/2 absolute left-0 bottom-0 z-10 pointer-events-none max-h-screen overflow-hidden hidden xl:block">
         <BgElement />
       </span>
-      <div className="w-1/2 px-10 relative z-10">
+      <div className="w-full px-10 relative z-10 xl:w-1/2 max-xl:px-1">
         <Swiper
           ref={swiperRef}
           spaceBetween={10}
@@ -111,8 +118,8 @@ export default function HeroContents({
             <SwiperSlide key={index}>
               <div className="h-full flex flex-col justify-center gap-20 pt-20 items-center">
                 <div className="relative text-gray-100 space-y-6">
-                  <h3 className="text-[60px] font-semibold">{item.title}</h3>
-                  <p className="text-xl ">{item.description}</p>
+                  <h3 className="text-4xl xl:text-5xl font-semibold">{item.title}</h3>
+                  <p className="text-xl max-xl:text-base">{item.description}</p>
                   <button className="hover:bg-[#be4006] px-5 py-2 rounded-full text-lg font-semibold flex items-center gap-2 shadow  border-[#be4006] border-2 transition-all duration-500 [&>span]:hover:ml-5">
                     Batafsil
                     <span className="transition-all duration-500">

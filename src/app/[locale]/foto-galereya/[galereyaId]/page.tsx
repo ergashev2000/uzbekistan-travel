@@ -7,7 +7,7 @@ import Modal from "@/components/GalleryModal";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
-import data from "../../../../db.json";
+import data from "../../../../../db.json";
 import { useParams } from "next/navigation";
 import optimizePath from "@/util/optimizePath";
 interface Section {
