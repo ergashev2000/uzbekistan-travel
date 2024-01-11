@@ -24,7 +24,7 @@ export default function Page() {
   }, []);
 
   return (
-    <div className="min-h-screen container mx-auto py-24 ">
+    <div className="min-h-screen">
       <DynamicHero header={headerData} />
 
       <div className="grid grid-cols-3 gap-5 py-10">

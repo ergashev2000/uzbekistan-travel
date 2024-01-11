@@ -1,17 +1,16 @@
 "use client";
 
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useParams } from "next/navigation";
 
-import { detail_attractions, attractions } from "../../../../../db.json";
-
-import optimizePath from "@/util/optimizePath";
-import MenuSteps from "@/components/MenuSteps";
 import CustomSwiper from "@/components/SwiperCustom";
 import DynamicHero from "@/components/DynamicHero";
 import MainCard from "@/components/MainCard";
-import Link from "next/link";
+import optimizePath from "@/util/optimizePath";
+
+import { detail_attractions, attractions } from "../../../../../db.json";
 
 interface Section {
   id: number;
@@ -47,11 +46,11 @@ export default function Page() {
   }, [attractionId]);
 
   return (
-    <div className="min-h-screen container mx-auto py-24 ">
+    <div className="min-h-screen py-5 xl:py-24">
       <DynamicHero header={headerData} />
 
-      <div className=" flex gap-10 p-10">
-        <article className="w-3/4 space-y-2">
+      <div className="flex xl:gap-5 xl:p-10 py-5 flex-col xl:flex-row gap-2">
+        <article className="w-full xl:w-3/4 space-y-2">
           {sections?.map((item: any, i: any) => (
             <section key={i}>
               {item.description && (
@@ -91,7 +90,7 @@ export default function Page() {
                     height="720"
                     allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
                     allowFullScreen
-                    className="rounded-lg w-full h-[500px] my-10 overflow-hidden"
+                    className="rounded-lg w-full h-[240px] xl:h-[500px] my-10 overflow-hidden"
                   ></iframe>
                 )}
                 {item.video_desc && (
@@ -105,7 +104,7 @@ export default function Page() {
 
           {headerData?.map && (
             <section>
-              <h2 className="text-3xl font-semibold py-5 mt-10">Map</h2>
+              <h2 className="text-xl xl:text-3xl font-semibold py-5 mt-10">Map</h2>
               <iframe
                 src={headerData?.map}
                 width="1200"
@@ -113,13 +112,13 @@ export default function Page() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="w-full rounded-xl"
+                className="w-full rounded-xl h-[240px] xl:h-[500px]"
               ></iframe>
             </section>
           )}
         </article>
 
-        <aside className="w-1/4 bg-white sticky top-20 h-fit p-5 border border-gray-300 rounded-lg">
+        <aside className="w-full max-xl:mt-5 xl:w-1/4 bg-white xl:sticky xl:top-20 h-fit p-5 border border-gray-300 rounded-lg">
           {headerData?.city && (
             <div className="flex items-center justify-between gap-2">
               <h4>Область</h4>{" "}
@@ -139,7 +138,7 @@ export default function Page() {
           )}
         </aside>
       </div>
-      <div className="py-14">
+      <div className="py-10">
         <h3 className="text-2xl font-semibold">
           Другие виды<span className="text-[#FA7436]"> туризм</span>
         </h3>

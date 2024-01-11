@@ -24,10 +24,10 @@ export default function Page() {
   }, []);
 
   return (
-    <div className="min-h-screen container mx-auto py-24 ">
+    <div className="min-h-screen container mx-auto py-24 max-xl:py-5 px-2">
       <DynamicHero header={headerData} />
 
-      <div className="grid grid-cols-3 gap-5 py-10">
+      <div className="grid grid-cols-3 gap-5 py-10 max-xl:grid-cols-1">
         {sections?.map(item => (
           <Fragment key={item.id}>
             <MainCard data={item} />
@@ -36,11 +36,11 @@ export default function Page() {
       </div>
 
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-semibold my-5">
+        <h2 className="text-3xl font-semibold my-5 max-xl:text-lg">
           Исторические Города
           <span className="text-[#FA7436]"> Узбекистана</span>
         </h2>
-        <p className="text-sm text-gray-600 indent-4 text-justify">
+        <p className="text-sm text-gray-600 indent-4 text-justify max-xl:text-[14px]">
           В этой рубрике мы ближе познакомим вас с таFкими древними городами
           Узбекистана, как Ташкент, Самарканд, Бухара, Хива, Шахрисабз.
           Блистательные города нашей страны, являвшиеся некогда частью Великого

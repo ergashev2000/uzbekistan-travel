@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
   const [selectedCardIndex, setSelectedCardIndex] = useState(0);
   return (
     <>
-      <div className="relative h-screen py-20 flex items-center justify-between]">
+      <div className="h-screen py-20 flex items-center justify-between]">
         <HeroContents data={data} selectedIndex={selectedCardIndex} />
         <HeroSwiper
           data={data}

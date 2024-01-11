@@ -23,6 +23,7 @@ type SwiperProps = {
   pagination?: boolean;
   className?: string;
   navigation?: boolean;
+  brackpoint?: any
 };
 
 const CustomSwiper = ({
@@ -34,6 +35,7 @@ const CustomSwiper = ({
   autoplay,
   pagination = false,
   navigation = false,
+  brackpoint = defoultBreakpoints,
 }: SwiperProps) => {
   return (
     <Swiper
@@ -72,7 +74,7 @@ const CustomSwiper = ({
           disabledClass: "swiper-button-disabled",
         }
       }
-      breakpoints={defoultBreakpoints}
+      breakpoints={brackpoint}
     >
       {React.Children.map(children, child => (
         <SwiperSlide className="py-5">{child}</SwiperSlide>

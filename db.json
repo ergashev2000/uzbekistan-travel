@@ -234,6 +234,41 @@
             }
         }
     ],
+    "travelsRu": [
+        "Спортивный туризм",
+        "Этнический туризм",
+        "Молодежный туризм",
+        "Экотуризм",
+        "Гастро туризм",
+        "Медицинский туризм",
+        "Культурный туризм",
+        "MICE туризм",
+        "Паломнический туризм",
+        "Литературный туризм",
+        "Промышленный туризм",
+        "Медленный туризм",
+        "Приключенческий туризм",
+        "Геотуризм"
+    ],
+    "cityMenuRu": [
+        "Ташкент",
+        "Самарканд",
+        "Бухара",
+        "Хива",
+        "Шахрисабз",
+        "Муйнак",
+        "Заамин",
+        "Термез",
+        "Гулистан",
+        "Нукус",
+        "Наманган",
+        "Карши",
+        "Навои",
+        "Коканд",
+        "Андижан",
+        "Фергана",
+        "Регионы Узбекистана"
+    ],
     "cities": [
         {
             "id": "123",
@@ -445,50 +480,16 @@
                 "data": [
                     {
                         "id": 1,
-                        "title": "Коканд",
-                        "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/kokand2.jpg?alt=media&token=4f668b19-a64f-4031-baa5-2a6508595632",
+                        "title": "Marifat mosque",
+                        "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/farhodjon-chinberdiev-z8RHHh3a21o-unsplash.jpg?alt=media&token=d70fb54c-92bf-4cea-afc3-73746ae1e5b7",
+                        "img_tags": "Marifat mosque in Zaamin, Jizzakh., Wetravel, Uzbekistan",
                         "city_category": "Город ремесленников"
                     },
                     {
                         "id": 2,
                         "title": "Хива",
                         "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/868778.5ff8ebe11071867dabc3e2ab781c0b56.jpg?alt=media&token=d530b5df-82b4-40e8-9ba4-be814a53ec28",
-                        "city_category": "Город ремесленников"
-                    },
-                    {
-                        "id": 3,
-                        "title": "Самарканд",
-                        "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/download.webp?alt=media&token=9925d6a9-164c-43db-81e6-06a769c2b0e3",
-                        "city_category": "Город ремесленников"
-                    },
-                    {
-                        "id": 4,
-                        "title": "Самарканд",
-                        "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/JEdlGQQRmulKXI53aOAAVzFgOUshxkSjFbyHg92K.webp?alt=media&token=956dd747-b9ee-46bb-9f38-a42b3eeadda3",
-                        "city_category": "Город ремесленников"
-                    },
-                    {
-                        "id": 5,
-                        "title": "Коканд",
-                        "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/8fcf1ff2-b734-11ec-ae1d-061ce7ed910c.800x600.jpeg?alt=media&token=8efa2db8-16ac-4bcb-9775-7f41e8a6666e",
-                        "city_category": "Город ремесленников"
-                    },
-                    {
-                        "id": 6,
-                        "title": "Коканд",
-                        "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/8fcf1ff2-b734-11ec-ae1d-061ce7ed910c.800x600.jpeg?alt=media&token=8efa2db8-16ac-4bcb-9775-7f41e8a6666e",
-                        "city_category": "Город ремесленников"
-                    },
-                    {
-                        "id": 521,
-                        "title": "Коканд",
-                        "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/8fcf1ff2-b734-11ec-ae1d-061ce7ed910c.800x600.jpeg?alt=media&token=8efa2db8-16ac-4bcb-9775-7f41e8a6666e",
-                        "city_category": "Город ремесленников"
-                    },
-                    {
-                        "id": 631,
-                        "title": "Коканд",
-                        "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/8fcf1ff2-b734-11ec-ae1d-061ce7ed910c.800x600.jpeg?alt=media&token=8efa2db8-16ac-4bcb-9775-7f41e8a6666e",
+                        "img_tags": "Khiva, Wetravel, Uzbekistan",
                         "city_category": "Город ремесленников"
                     }
                 ]
@@ -565,7 +566,7 @@
                 "banner_img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/a3d653c204072a9827b37d3332ca4581.jpg?alt=media&token=adf5129e-c5ae-40e7-8eda-f899943c668e",
                 "city": "Самарканд",
                 "map_img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/280px-Relief_Map_of_Uzbekistan.png?alt=media&token=2934ecc2-fb35-49f0-8db9-7122ccd9cdd3",
-                                    "map": "https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d5140.321675285332!2d66.4333!3d39.4833!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMznCsDI4JzU5LjkiTiA2NsKwMjUnNTkuOSJF!5e1!3m2!1sru!2s!4v1704914219522!5m2!1sru!2s",
+                "map": "https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d5140.321675285332!2d66.4333!3d39.4833!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMznCsDI4JzU5LjkiTiA2NsKwMjUnNTkuOSJF!5e1!3m2!1sru!2s!4v1704914219522!5m2!1sru!2s",
                 "slug": [
                     {
                         "id": 1,

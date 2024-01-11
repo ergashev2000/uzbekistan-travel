@@ -4,16 +4,17 @@ import { InstagramIcon, YoutubeIcon } from "@/assets/iconSvg";
 import Link from "next/link";
 
 import { feedback } from "../../db.json";
+import { feedbackBreakpoints } from "@/util/breackPoints";
 
 export default function FeedbackCard() {
   return (
     <div className="default-swiper">
       <CustomSwiper
-        effect={"coverflow"}
         slidesNumber={2}
         between={20}
         loop
         navigation
+        brackpoint={feedbackBreakpoints}
       >
         {feedback?.map((item, index) => (
           <div

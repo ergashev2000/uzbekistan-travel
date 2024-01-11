@@ -105,7 +105,7 @@ export default function Footer() {
                   {menus.map((menu, j) => (
                     <li
                       key={menu.id}
-                      className="first:text-lg max-xl:w-fit mx-auto first:text-white first:font-semibold underline-animation first:before:bg-transparent [&>a]:first:cursor-default"
+                      className="first:text-lg max-xl:w-fit max-xl:mx-auto first:text-white first:font-semibold underline-animation first:before:bg-transparent [&>a]:first:cursor-default"
                     >
                       {j === 0 ? (
                         <h3>{menu.menu}</h3>

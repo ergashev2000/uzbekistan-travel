@@ -269,9 +269,9 @@ export const BgElement = () => {
           width="1474.45"
           height="1351.07"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -291,8 +291,8 @@ export const BgElement = () => {
           y2="957.04"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#666666" />
-          <stop offset="0.555364" stop-color="#4A4A4A" />
+          <stop stopColor="#666666" />
+          <stop offset="0.555364" stopColor="#4A4A4A" />
           <stop offset="1" />
         </linearGradient>
       </defs>

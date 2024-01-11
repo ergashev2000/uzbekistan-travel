@@ -30,8 +30,8 @@ export default function Hotels() {
       }}
     >
       <section>
-        <div className="py-10">
-          <h2 className="text-2xl py-5 xl:text-3xl 2xl:text-4xl font-semibold w-fit mb-5 flex items-center gap-2 [&>div]:hover:ml-2 [&>div]:hover:opacity-100 transition-all duration-300 flex-wrap max-xl:mb-0">
+        <div className="py-5 xl:py-10">
+          <h2 className="text-lg py-5 xl:text-3xl 2xl:text-4xl font-semibold w-fit mb-5 flex items-center gap-2 [&>div]:hover:ml-2 [&>div]:hover:opacity-100 transition-all duration-300 flex-wrap max-xl:mb-0">
             Luxury Hotels in <span className="text-[#FA7436]">Uzbekistan</span>
           </h2>
           <div className="default-swiper">

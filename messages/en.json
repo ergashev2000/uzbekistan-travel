@@ -1,5 +1,11 @@
 {
     "Index": {
-        "title": "Hello world!"
+        "title": "hello"
+    },
+    "Navigation": {
+        "cities": "Cities",
+        "tourismAll": "Tourism for all",
+        "attractions": "Attractions",
+        "about": "About Us"
     }
 }

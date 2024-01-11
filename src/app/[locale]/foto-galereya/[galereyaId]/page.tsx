@@ -1,15 +1,15 @@
 "use client";
 
-import { ArrowIcon } from "@/assets/iconSvg";
+import React, { useEffect, useState } from "react";
+import { useParams } from "next/navigation";
 import DynamicHero from "@/components/DynamicHero";
 import List from "@/components/GalleryCard";
 import Modal from "@/components/GalleryModal";
-import Link from "next/link";
-import React, { useEffect, useState } from "react";
+
+import optimizePath from "@/util/optimizePath";
 
 import data from "../../../../../db.json";
-import { useParams } from "next/navigation";
-import optimizePath from "@/util/optimizePath";
+
 interface Section {
   id: number;
   title: string;
@@ -25,13 +25,14 @@ interface HeaderData {
 }
 
 export default function Page() {
+  const { galereyaId } = useParams();
+
   const [selected, setSelected] = useState(null);
   const [imagesdata, setImagesData] = useState<Section[]>([]);
   const [headerData, setHeaderData] = useState<HeaderData | undefined>(
     undefined
   );
 
-  const { galereyaId } = useParams();
 
   useEffect(() => {
     const resData = data.galereya?.data?.find(
@@ -50,7 +51,7 @@ export default function Page() {
     <div className="min-h-screen">
       <DynamicHero header={headerData} />
 
-      <div className="container mx-auto px-5 py-10">
+      <div className="container mx-auto xl:px-5 px-1 py-5 xl:py-10">
         <List setSelected={setSelected} datalist={imagesdata} />
         <Modal selected={selected} setSelected={setSelected} />
       </div>

@@ -1,10 +1,11 @@
 "use client";
 
-import DynamicHero from "@/components/DynamicHero";
 import React, { Fragment, useEffect, useState } from "react";
 
-import resData from "../../../../db.json";
+import DynamicHero from "@/components/DynamicHero";
 import MainCard from "@/components/MainCard";
+
+import { attractions } from "../../../../db.json";
 
 interface Section {
   id: number;
@@ -17,18 +18,18 @@ export default function Page() {
   const [headerData, setHeaderData] = useState({});
 
   useEffect(() => {
-    if (resData) {
-      setSections(resData.attractions.data);
-      setHeaderData(resData.attractions.header);
+    if (attractions) {
+      setSections(attractions.data);
+      setHeaderData(attractions.header);
     }
   }, []);
 
   return (
-    <div className="min-h-screen container mx-auto py-24 ">
+    <div className="min-h-screen py-5 xl:py-24">
       <DynamicHero header={headerData} />
 
-      <div className="pt-5 space-y-2">
-        <h2 className="text-3xl font-semibold py-2">
+      <div className="pt-3 space-y-2">
+        <h2 className="text-lg md:text-3xl font-semibold py-2">
           Узбекистан – страна с древней историей и богатой культурой.{" "}
         </h2>
         <p className="text-gray-600 indent-5 text-justify">
@@ -42,7 +43,7 @@ export default function Page() {
           развлекательные и природные достопримечательности Узбекистана.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-5 py-10">
+      <div className="grid grid-cols-3 gap-5 py-10 max-xl:grid-cols-1">
         {sections?.map(item => (
           <Fragment key={item.id}>
             <MainCard data={item} />

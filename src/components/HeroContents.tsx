@@ -116,7 +116,7 @@ export default function HeroContents({
         >
           {data?.banner_data?.map((item: any, index: any) => (
             <SwiperSlide key={index}>
-              <div className="h-full flex flex-col justify-center gap-20 pt-20 items-center">
+              <div className="h-full flex flex-col justify-center gap-20 pt-20 max-xl:pt-5 items-center">
                 <div className="relative text-gray-100 space-y-6">
                   <h3 className="text-4xl xl:text-5xl font-semibold">{item.title}</h3>
                   <p className="text-xl max-xl:text-base">{item.description}</p>

@@ -28,16 +28,16 @@ export default function TopCites() {
       }}
     >
       <section>
-        <div className="py-14 max-xl:px-1">
+        <div className="pb-10 xl:py-10 max-xl:px-1">
           <Link href={"/cities"} className="w-fit block">
-            <h2 className="text-2xl xl:text-3xl 2xl:text-4xl font-semibold w-max my-10 flex items-center gap-2 [&>div]:hover:ml-2 [&>div]:hover:opacity-100 transition-all duration-300">
+            <h2 className="text-lg xl:text-3xl 2xl:text-4xl font-semibold w-max my-10 max-xl:my-4 flex items-center gap-2 [&>div]:hover:ml-2 [&>div]:hover:opacity-100 transition-all duration-300">
               Top Cities of <span className="text-[#FA7436]">Uzbekistan</span>
               <div className=" transition-all duration-300 opacity-0">
                 <ArrowIcon />
               </div>
             </h2>
           </Link>
-          <div className="flex gap-2 xl:gap-3 2xl:gap-5 items-center justify-between flex-col">
+          <div className="flex gap-2 xl:gap-3 2xl:gap-5 items-center justify-between max-xl:flex-col">
             <div className="relative w-1/3 max-xl:w-full block 2xl:h-[600px] h-[300px] xl:h-[400px] rounded-lg overflow-hidden hover:[&>a]:opacity-100">
               <Image
                 src={data.allcities.data[0]?.img}
@@ -50,10 +50,10 @@ export default function TopCites() {
                 href={data.allcities.data[0]?.slug}
                 className="absolute w-full h-full max-xl:opacity-100 bg-black bg-opacity-30 inset-1 left-0 top-0 opacity-0 transition-all duration-500 cursor-pointer"
               >
-                <p className="text-white p-5  max-xl:text-sm">
+                <p className="text-white p-1 xl:p-3 max-xl:text-sm">
                   {data.allcities.data[0]?.description}
                 </p>
-                <h3 className="absolute bottom-5 left-5 text-white font-semibold text-2xl flex items-center gap-5  max-xl:text-base">
+                <h3 className="absolute xl:bottom-3 bottom-1 left-1 max-xl:[&>svg]:hidden xl:left-3 text-white font-semibold text-2xl flex items-center gap-5 max-xl:text-base">
                   {data.allcities.data[0]?.title} <ArrowIcon />
                 </h3>
               </Link>
@@ -71,10 +71,10 @@ export default function TopCites() {
                   href={data.allcities.data[1]?.slug}
                   className="absolute w-full h-full max-xl:opacity-100 bg-black bg-opacity-30 inset-1 left-0 top-0 opacity-0 transition-all duration-500 cursor-pointer"
                 >
-                  <p className="text-white p-3 max-xl:text-sm">
+                  <p className="text-white p-1 xl:p-3 max-xl:text-sm">
                     {data.allcities.data[1]?.description}{" "}
                   </p>
-                  <h3 className="absolute bottom-3 left-3 text-white font-semibold text-2xl flex items-center gap-5 max-xl:text-base">
+                  <h3 className="absolute xl:bottom-3 bottom-1 left-1 max-xl:[&>svg]:hidden xl:left-3 text-white font-semibold text-2xl flex items-center gap-5 max-xl:text-base">
                     {data.allcities.data[1]?.title} <ArrowIcon />
                   </h3>
                 </Link>
@@ -91,10 +91,10 @@ export default function TopCites() {
                   href={data.allcities.data[2]?.slug}
                   className="absolute w-full h-full bg-black max-xl:opacity-100 bg-opacity-30 inset-1 left-0 top-0 opacity-0 transition-all duration-500 cursor-pointer"
                 >
-                  <p className="text-white p-3  max-xl:text-sm">
+                  <p className="text-white p-1 xl:p-3 max-xl:text-sm">
                     {data.allcities.data[2]?.description}
                   </p>
-                  <h3 className="absolute bottom-3 left-3 text-white font-semibold text-2xl flex items-center gap-5  max-xl:text-base">
+                  <h3 className="absolute xl:bottom-3 bottom-1 left-1 max-xl:[&>svg]:hidden xl:left-3 text-white font-semibold text-2xl flex items-center gap-5 max-xl:text-base">
                     {data.allcities.data[2]?.title} <ArrowIcon />
                   </h3>
                 </Link>
@@ -112,10 +112,10 @@ export default function TopCites() {
                 href={data.allcities.data[3]?.slug}
                 className="absolute w-full h-full bg-black bg-opacity-30 inset-1 left-0 top-0 opacity-0  max-xl:opacity-100 transition-all duration-500 cursor-pointer"
               >
-                <p className="text-white p-5 text-lg  max-xl:text-sm">
+                <p className="text-white p-1 xl:p-3 max-xl:text-sm">
                   {data.allcities.data[3]?.description}
                 </p>
-                <h3 className="absolute bottom-5 left-5 text-white font-semibold text-2xl flex items-center gap-5  max-xl:text-base ">
+                <h3 className="absolute xl:bottom-3 bottom-1 left-1 max-xl:[&>svg]:hidden xl:left-3 text-white font-semibold text-2xl flex items-center gap-5 max-xl:text-base">
                   {data.allcities.data[3]?.title} <ArrowIcon />
                 </h3>
               </Link>

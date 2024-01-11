@@ -91,7 +91,7 @@ export default function Page() {
   }, [tourismId]);
 
   return (
-    <div className="min-h-screen  pt-24 container mx-auto py-10">
+    <div className="min-h-screen">
       <DynamicHero header={headerData} />
 
       <div className=" flex gap-5 p-10">

@@ -10,7 +10,6 @@ export default function MenuSteps({
   titles?: any;
 }) {
   const [scrollId, setScrollId] = useState<number>(0);
-  console.log("render");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,14 +43,16 @@ export default function MenuSteps({
     }
   };
   return (
-    <aside className="w-1/4 bg-white sticky top-20 h-fit p-5 border border-gray-300 rounded-lg">
+    <aside className="w-1/4 bg-white sticky top-20 h-fit p-5 border border-gray-300 rounded-lg max-xl:hidden">
       <ul className="space-y-2 text-sm pl-4">
         {titles?.map((item: any, i: any) => (
           <li
             key={i}
             onClick={() => scrollToSection(i)}
             className={`cursor-pointer transition-all duration-300 before:w-2 before:h-2 before:rounded-full before:bg-red-400 before:absolute relative before:-left-4 before:top-1/2 before:-translate-y-1/2 before:opacity-0 before:transition-all before:duration-300 ${
-              i === scrollId ? "text-[#FA7436] underline underline-offset-8 before:opacity-100" : " bg-white"
+              i === scrollId
+                ? "text-[#FA7436] underline underline-offset-8 before:opacity-100"
+                : " bg-white"
             }`}
           >
             {item}

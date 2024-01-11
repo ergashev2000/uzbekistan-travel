@@ -81,31 +81,33 @@ export default function Page() {
   }
 
   return (
-    <div className="min-h-screen container mx-auto py-24 ">
+    <div className="min-h-screen">
       <DynamicHero header={headerData} />
 
-      <div className="flex gap-5 p-10">
-        <article className="w-3/4 space-y-10">
+      <div className="flex gap-5 p-10 max-xl:py-2 max-xl:px-0">
+        <article className="w-3/4 space-y-10 max-xl:w-full max-xl:space-y-3">
           <section id="0" ref={sectionRefs[0]}>
-            <h2 className="text-3xl font-semibold">{sections.about?.title}</h2>
-            <p className="py-4">{sections.about?.description}</p>
+            <h2 className="xl:text-3xl font-semibold text-lg">
+              {sections.about?.title}
+            </h2>
+            <p className="py-2">{sections.about?.description}</p>
             {sections.about?.banner_img && (
               <Image
                 src={sections.about?.banner_img}
-                alt="lorem"
+                alt={sections.about?.title}
                 width={1000}
                 height={1000}
-                className="w-full h-[500px] object-cover rounded-lg"
+                className="w-full h-[500px] object-cover rounded-lg max-xl:h-[200px]"
               />
             )}
             <p className="py-5">{sections.about?.description_list}</p>
           </section>
 
           <section id="1" ref={sectionRefs[1]}>
-            <h3 className="text-2xl font-semibold py-3">
+            <h3 className="text-2xl font-semibold py-2">
               {sections.attractions?.title}
             </h3>
-            <p className="py-4">{sections.attractions?.description}</p>
+            <p className="py-2">{sections.attractions?.description}</p>
             <ul className="space-y-4 pb-5">
               {sections.attractions?.description_list?.map((item: any) => (
                 <li className="flex gap-2" key={item}>
@@ -123,7 +125,7 @@ export default function Page() {
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
-              className="w-full h-[500px] rounded-lg"
+              className="w-full h-[500px] rounded-lg max-xl:h-[200px]"
             />
           </section>
 
@@ -134,9 +136,9 @@ export default function Page() {
             <p className="text-sm text-gray-600">
               {sections.gallery?.description}
             </p>
-            <div className="flex items-center gap-5 py-5">
+            <div className="flex items-center gap-5 py-5 max-xl:flex-col">
               {sections.gallery?.images?.map((item: any, i: any) => (
-                <div className="w-1/3 h-[250px]" key={i}>
+                <div className="w-1/3 h-[220px] max-xl:w-full" key={i}>
                   <Image
                     src={item}
                     alt="salom"
@@ -152,7 +154,7 @@ export default function Page() {
               <iframe
                 src={sections.gallery?.image_3d}
                 frameBorder="0"
-                className="w-full h-[500px]"
+                className="w-full h-[500px] max-xl:h-[200px]"
               />
             </div>
           </section>
@@ -170,9 +172,9 @@ export default function Page() {
             </h3>
             <p>{sections.cuisine?.description}</p>
 
-            <div className="flex items-center gap-5 py-5">
+            <div className="flex items-center gap-5 py-5 max-xl:flex-col">
               {sections.cuisine?.images?.map((item: any, i: any) => (
-                <div className="w-1/3 h-[250px]" key={i}>
+                <div className="w-1/3 h-[220px] max-xl:w-full" key={i}>
                   <Image
                     src={item}
                     alt="salom"
@@ -197,7 +199,7 @@ export default function Page() {
                   alt=""
                   width={1000}
                   height={1000}
-                  className="w-full h-[500px] rounded-lg"
+                  className="w-full h-[500px] max-xl:h-[200px] rounded-lg"
                   title="seo uchun"
                 />
                 <p className=" py-2 text-sm">

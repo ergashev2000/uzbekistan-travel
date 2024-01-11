@@ -1,5 +1,11 @@
 {
     "Index": {
-        "title": "Hello world rusion!"
+        "title": "privet"
+    },
+    "Navigation": {
+        "cities": "Города",
+        "tourismAll": "Туризм для всех",
+        "attractions": "Достопримечательности",
+        "about": "О нас"
     }
 }

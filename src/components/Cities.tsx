@@ -5,23 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import CitiesCard from "./CitiesCard";
 
-import data from "../../db.json";
-import { Fragment, useRef } from "react";
-import { useScroll, useTransform, motion, animate } from "framer-motion";
-
-const fadeInAnimation = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: (index: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.15 * index,
-    },
-  }),
-};
+import { allcities } from "../../db.json";
+import { useRef } from "react";
+import { motion } from "framer-motion";
+import { fadeInAnimation } from "@/util/framerMotion";
 
 export default function Cities() {
   const ref = useRef<HTMLDivElement>(null);
@@ -29,7 +16,7 @@ export default function Cities() {
     <div>
       <section ref={ref}>
         <Link href={"/cities"} className="w-fit block">
-          <h2 className="text-2xl xl:text-3xl 2xl:text-4xl font-semibold w-fit my-10 flex items-center gap-2 [&>div]:hover:ml-2 [&>div]:hover:opacity-100 transition-all duration-300">
+          <h2 className="text-lg xl:text-3xl 2xl:text-4xl font-semibold w-fit my-4 xl:my-10 flex items-center gap-2 [&>div]:hover:ml-2 [&>div]:hover:opacity-100 transition-all duration-300">
             Города <span className="text-[#FA7436]">Узбекистана</span>
             <div className=" transition-all duration-300 opacity-0">
               <ArrowIcon />
@@ -38,7 +25,7 @@ export default function Cities() {
         </Link>
 
         <div className="grid grid-cols-4 gap-2 mb-10 transition-all duration-500 max-xl:grid-cols-1">
-          {data.allcities.data.map((city: any, index: any) => (
+          {allcities.data.map((city: any, index: any) => (
             <motion.div
               variants={fadeInAnimation}
               initial="initial"
