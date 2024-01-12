@@ -1,13 +1,14 @@
 "use client";
 
-import { ArrowIcon } from "@/assets/iconSvg";
+import React, { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useRef } from "react";
 
-import data from "../../db.json";
 import { useScroll, useTransform } from "framer-motion";
 import { motion } from "framer-motion";
+import data from "../../db.json";
+
+import { ArrowIcon } from "@/assets/iconSvg";
 
 export default function TopCites() {
   const ref = useRef<HTMLDivElement>(null);

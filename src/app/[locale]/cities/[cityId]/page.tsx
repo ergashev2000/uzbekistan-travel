@@ -12,7 +12,8 @@ import CustomSwiper from "@/components/SwiperCustom";
 import optimizePath from "@/util/optimizePath";
 
 import { ArrowIcon, CheckedIcon } from "@/assets/iconSvg";
-import data from "../../../../../db.json";
+import { cities, allcities } from "../../../../../db.json";
+import Loading from "@/components/Loading";
 
 type Section = {
   id: number;
@@ -61,8 +62,8 @@ export default function Page() {
   ];
 
   useEffect(() => {
-    if (cityId && data) {
-      const resData = data.cities.find(
+    if (cityId && cities) {
+      const resData = cities.find(
         (item: any) => optimizePath(item.header.title) === cityId
       );
 
@@ -77,7 +78,7 @@ export default function Page() {
   }, [cityId]);
 
   if (!sections) {
-    return "loading...";
+    return <Loading/>;
   }
 
   return (
@@ -290,7 +291,7 @@ export default function Page() {
         <p className="text-sm">Popular destinations for tourists</p>
         <div className="default-swiper">
           <CustomSwiper slidesNumber={3} between={20}>
-            {data.allcities?.data?.map((item: any) => (
+            {allcities?.data?.map((item: any) => (
               <Fragment key={item.id}>
                 <MainCard data={item} />
               </Fragment>

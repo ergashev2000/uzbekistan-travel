@@ -1,10 +1,11 @@
 import Image from "next/image";
-import CustomSwiper from "./SwiperCustom";
-import { InstagramIcon, YoutubeIcon } from "@/assets/iconSvg";
 import Link from "next/link";
 
-import { feedback } from "../../db.json";
+import CustomSwiper from "./SwiperCustom";
 import { feedbackBreakpoints } from "@/util/breackPoints";
+
+import { InstagramIcon, YoutubeIcon } from "@/assets/iconSvg";
+import { feedback } from "../../db.json";
 
 export default function FeedbackCard() {
   return (

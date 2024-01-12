@@ -1,10 +1,7 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-
-import { useScroll, useTransform } from "framer-motion";
-import { motion } from "framer-motion";
 
 import List from "./GalleryCard";
 import Modal from "./GalleryModal";

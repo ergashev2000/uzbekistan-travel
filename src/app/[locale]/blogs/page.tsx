@@ -2,11 +2,11 @@ import { DateIcon } from "@/assets/iconSvg";
 
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+
 import BlogList from "@/components/BlogList";
 
 export default function Page() {
   const t = useTranslations("Index");
-
   return (
     <div className="min-h-screen pt-24 container mx-auto py-10">
       <div className="text-sm font-semibold items-center flex gap-2 pb-5">

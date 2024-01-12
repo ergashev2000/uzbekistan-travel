@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
@@ -9,7 +9,6 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-import { PlayIcon } from "@/assets/iconSvg";
 
 export default function HeroSwiper({
   data,
@@ -59,10 +58,6 @@ export default function HeroSwiper({
                 height={1000}
                 className={`rounded w-full h-[200px] object-cover`}
               />
-
-              {/* <button className="absolute top-2 right-2 border text-black border-black rounded-full w-7 h-7 flex items-center justify-center">
-                <PlayIcon />
-              </button> */}
             </div>
           </SwiperSlide>
         ))}

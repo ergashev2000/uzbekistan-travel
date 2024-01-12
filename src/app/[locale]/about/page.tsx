@@ -1,8 +1,7 @@
 import Image from 'next/image';
-import React from 'react'
+import Link from 'next/link';
 
 import BannerImg from '@/assets/images/about-banner.webp' 
-import Link from 'next/link';
 
 export default function page() {
     return (

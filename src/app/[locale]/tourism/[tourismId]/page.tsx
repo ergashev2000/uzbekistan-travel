@@ -1,15 +1,16 @@
 "use client";
 
+import { Fragment, useEffect, useRef, useState } from "react";
+import Image from "next/image";
+import { useParams } from "next/navigation";
+
 import DynamicHero from "@/components/DynamicHero";
 import MainCard from "@/components/MainCard";
-import Image from "next/image";
-
-import data from "../../../../../db.json";
-import { useParams } from "next/navigation";
-import { Fragment, useEffect, useRef, useState } from "react";
 import optimizePath from "@/util/optimizePath";
 import MenuSteps from "@/components/MenuSteps";
 import CustomSwiper from "@/components/SwiperCustom";
+
+import data from "../../../../../db.json";
 
 interface Section {
   id: number;

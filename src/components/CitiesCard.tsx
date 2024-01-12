@@ -1,8 +1,10 @@
 "use client";
-import { ArrowIcon } from "@/assets/iconSvg";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+
+import { ArrowIcon } from "@/assets/iconSvg";
 
 const CitiesCard = ({ city }: { city: any }) => {
   const [isHovered, setIsHovered] = useState(false);

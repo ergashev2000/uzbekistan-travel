@@ -37,12 +37,6 @@ export default function Page() {
       (item: any) => optimizePath(item.header.title) === attractionId
     );
 
-    console.log(detail_attractions);
-    console.log(attractionId);
-    console.log(optimizePath(detail_attractions[1].header.title));
-    
-    
-
     if (resData) {
       const { data, header } = resData;
 

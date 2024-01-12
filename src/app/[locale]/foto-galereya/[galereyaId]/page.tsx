@@ -8,7 +8,7 @@ import Modal from "@/components/GalleryModal";
 
 import optimizePath from "@/util/optimizePath";
 
-import data from "../../../../../db.json";
+import { galereya } from "../../../../../db.json";
 
 interface Section {
   id: number;
@@ -35,7 +35,7 @@ export default function Page() {
 
 
   useEffect(() => {
-    const resData = data.galereya?.data?.find(
+    const resData = galereya?.data?.find(
       (item: any) => optimizePath(item.header?.title) === galereyaId
     );
 

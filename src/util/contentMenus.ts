@@ -8,9 +8,12 @@ export const footerMenus = [
     { menu: "Map of Uzbekistan", id: 6, slug: "/" },
   ],
   [
-    { menu: "For Agencies", id: 7, slug: "/" },
-    { menu: "Tourism legislation", id: 8, slug: "/" },
-    { menu: "Tourist routes", id: 9, slug: "/" },
+    { menu: "Menu", id: 7, slug: "/" },
+    { menu: "Cities", id: 8, slug: "/cities" },
+    { menu: "Tourism for all", id: 9, slug: "/tourism" },
+    { menu: "Attractions", id: 11, slug: "/attractions" },
+    { menu: "Foto gallery", id: 12, slug: "/foto-galereya" },
+    { menu: "About Us", id: 13, slug: "/about" },
   ],
   [
     { menu: "Press", id: 10, slug: "/" },

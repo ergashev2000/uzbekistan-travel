@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
+
+import { footerMenus } from "@/util/contentMenus";
 
 import LogoFooter from "@/assets/images/logo-dark.png";
-import Link from "next/link";
-import { footerMenus } from "@/util/contentMenus";
 import {
   FacebookIcon,
   InstagramIcon,

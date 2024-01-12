@@ -1,15 +1,17 @@
 "use client";
 
-import Link from "next/link";
-import CustomSwiper from "./SwiperCustom";
-import { ArrowIcon } from "@/assets/iconSvg";
-import MainCard from "./MainCard";
-
-import { alltourism } from "../../db.json";
 import { Fragment, useRef } from "react";
+import Link from "next/link";
 
 import { useScroll, useTransform } from "framer-motion";
 import { motion } from "framer-motion";
+
+import CustomSwiper from "./SwiperCustom";
+import MainCard from "./MainCard";
+
+import { ArrowIcon } from "@/assets/iconSvg";
+import { alltourism } from "../../db.json";
+
 
 export default function Attractions() {
   const ref = useRef<HTMLDivElement>(null);

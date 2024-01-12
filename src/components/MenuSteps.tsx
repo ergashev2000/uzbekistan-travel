@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 
 export default function MenuSteps({
   sectionRefs,
-  sectionNum,
   titles,
 }: {
   sectionRefs: any;

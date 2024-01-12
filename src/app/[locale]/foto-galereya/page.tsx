@@ -1,21 +1,20 @@
-import DynamicHero from "@/components/DynamicHero";
-import React, { Fragment } from "react";
-
-import data from "../../../../db.json";
-import MainCard from "@/components/MainCard";
+import { Fragment } from "react";
 import Image from "next/image";
-import CustomSwiper from "@/components/SwiperCustom";
 import Link from "next/link";
+
+import DynamicHero from "@/components/DynamicHero";
+import CustomSwiper from "@/components/SwiperCustom";
 import optimizePath from "@/util/optimizePath";
 import { ArrowIcon } from "@/assets/iconSvg";
+import data from "../../../../db.json";
 
 export default function page() {
   return (
     <div className="min-h-screen">
       <DynamicHero header={data.galereya.header} />
       <div className="container mx-auto py-10">
-        {data.galereya.data?.map((item: any) => (
-          <>
+        {data.galereya.data?.map((item: any, index: any) => (
+          <Fragment key={item.index}>
             <Link
               href={`/foto-galereya/${optimizePath(item?.header?.title)}`}
               className="w-fit block"
@@ -50,7 +49,7 @@ export default function page() {
                 ))}
               </CustomSwiper>
             </div>
-          </>
+          </Fragment>
         ))}
       </div>
     </div>

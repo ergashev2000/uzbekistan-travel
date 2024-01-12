@@ -1,7 +1,6 @@
-import { ClockIcon, DateIcon } from "@/assets/iconSvg";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { ClockIcon, DateIcon } from "@/assets/iconSvg";
 
 export default function BlogCard({ data }: { data: any }) {
   return (

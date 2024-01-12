@@ -3,19 +3,19 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useParams, usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
+
+import { motion } from "framer-motion";
 
 import SearchModal from "./SearchModal";
 import optimizePath from "@/util/optimizePath";
-import { motion } from "framer-motion";
+import NavbarMenu from "./NavbarMenu";
+import LangChange from "./LangChange";
 
 import { DownIcon } from "@/assets/iconSvg";
 import LogoWhite from "@/assets/images/logo_white.png";
 
 import { attractions, cityMenuRu, travelsRu } from "../../db.json";
-import NavbarMenu from "./NavbarMenu";
-import LangChange from "./LangChange";
 
 export default function Navbar() {
   const t = useTranslations("Navigation");
@@ -36,6 +36,8 @@ export default function Navbar() {
                 src={LogoWhite}
                 alt="Uzbekistan travel logo"
                 className="w-full"
+                width={100}
+                height={40}
               />
             </div>
           </Link>
@@ -67,7 +69,7 @@ export default function Navbar() {
                       y: hoveredDropdown === 0 ? 10 : 20,
                     }}
                     transition={{ duration: 0.1 }}
-                    className={`absolute  transition-all duration-500 bg-custom-blur text-black max-w-[600px] h-auto py-1 whitespace-nowrap left-0 rounded-lg ${
+                    className={`absolute  transition-all duration-500 bg-custom-blur text-black max-w-[600px] h-auto py-1 whitespace-nowrap left-0 top-6 rounded-lg ${
                       hoveredDropdown === 0 ? "" : "hidden"
                     }`}
                   >
@@ -108,7 +110,7 @@ export default function Navbar() {
                       y: hoveredDropdown === 1 ? 10 : 20,
                     }}
                     transition={{ duration: 0.1 }}
-                    className={`absolute  transition-all duration-500 bg-custom-blur text-black max-w-[600px] h-auto py-1 whitespace-nowrap left-0 rounded-lg ${
+                    className={`absolute  transition-all duration-500 bg-custom-blur text-black max-w-[600px] h-auto py-1 whitespace-nowrap top-6 left-0 rounded-lg ${
                       hoveredDropdown === 1 ? "" : "hidden"
                     }`}
                   >
@@ -149,7 +151,7 @@ export default function Navbar() {
                       y: hoveredDropdown === 2 ? 10 : 20,
                     }}
                     transition={{ duration: 0.1 }}
-                    className={`absolute  transition-all duration-500 bg-custom-blur text-black max-w-[600px] h-auto py-1 whitespace-nowrap left-0 rounded-lg ${
+                    className={`absolute  transition-all duration-500 bg-custom-blur text-black max-w-[600px] h-auto py-1 whitespace-nowrap top-6 left-0 rounded-lg ${
                       hoveredDropdown === 2 ? "" : "hidden"
                     }`}
                   >

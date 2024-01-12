@@ -1,5 +1,5 @@
-import { DateIcon } from "@/assets/iconSvg";
 import Image from "next/image";
+import { DateIcon } from "@/assets/iconSvg";
 import { allblogs } from "../../db.json";
 
 export default function BlogList() {

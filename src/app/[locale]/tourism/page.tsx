@@ -1,10 +1,10 @@
 "use client";
 
-import DynamicHero from "@/components/DynamicHero";
 import React, { Fragment, useEffect, useState } from "react";
 
-import resData from "../../../../db.json";
+import DynamicHero from "@/components/DynamicHero";
 import MainCard from "@/components/MainCard";
+import resData from "../../../../db.json";
 
 interface Section {
   id: number;

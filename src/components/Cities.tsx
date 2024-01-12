@@ -1,14 +1,14 @@
 "use client";
 
-import { ArrowIcon } from "@/assets/iconSvg";
-import Image from "next/image";
-import Link from "next/link";
-import CitiesCard from "./CitiesCard";
-
-import { allcities } from "../../db.json";
 import { useRef } from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
+
+import CitiesCard from "./CitiesCard";
 import { fadeInAnimation } from "@/util/framerMotion";
+
+import { ArrowIcon } from "@/assets/iconSvg";
+import { allcities } from "../../db.json";
 
 export default function Cities() {
   const ref = useRef<HTMLDivElement>(null);
@@ -24,7 +24,7 @@ export default function Cities() {
           </h2>
         </Link>
 
-        <div className="grid grid-cols-4 gap-2 mb-10 transition-all duration-500 max-xl:grid-cols-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2 mb-10 transition-all duration-500">
           {allcities.data.map((city: any, index: any) => (
             <motion.div
               variants={fadeInAnimation}

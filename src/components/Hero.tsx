@@ -1,13 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import data from "../../db.json";
+import { useLocale } from "next-intl";
 
 import HeroContents from "./HeroContents";
 import HeroSwiper from "./HeroSwiper";
-import { BgElement } from "@/assets/iconSvg";
-import { useLocale } from "next-intl";
 import Loading from "./Loading";
+
+import data from "../../db.json";
 
 type BannerT = {
   id: number;

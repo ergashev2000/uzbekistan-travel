@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
@@ -10,9 +12,6 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import { ArrowIcon, BgElement } from "@/assets/iconSvg";
-import Image from "next/image";
-import { useLocale } from "next-intl";
-import Link from "next/link";
 
 export default function HeroContents({
   data,
