@@ -5,7 +5,7 @@ export default function DynamicHero({ header }: { header?: any }) {
 
   return (
     <div className="xl:pt-20 2xl:pt-24">
-      <div className="text-sm font-semibold items-center flex flex-wrap gap-2 pb-2 lg:pb-5 max-xl:text-[14px]">
+      <div className="text-sm font-semibold items-center flex flex-wrap gap-2 py-2 lg:pb-5 max-xl:text-[14px]">
         <Link href={"/"}> Главная</Link>
         {header?.slug?.map((item: any) => (
           <Fragment key={item.id}>

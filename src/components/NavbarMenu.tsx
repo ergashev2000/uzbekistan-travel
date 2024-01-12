@@ -145,6 +145,14 @@ export default function NavbarMenu() {
                   </li>
                   <li>
                     <Link
+                      href={"/foto-galereya"}
+                      className="text-3xl font-semibold text-white"
+                    >
+                      {t("gallery")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
                       href={"/about"}
                       className="text-3xl font-semibold text-white"
                     >
@@ -215,7 +223,7 @@ export default function NavbarMenu() {
         />
       </Link>
       <div>
-        <LangChange/>
+        <LangChange />
       </div>
     </header>
   );

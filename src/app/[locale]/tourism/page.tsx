@@ -27,7 +27,7 @@ export default function Page() {
     <div className="min-h-screen">
       <DynamicHero header={headerData} />
 
-      <div className="grid grid-cols-3 gap-5 py-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 lg:gap-4 py-5 ">
         {sections?.map(item => (
           <Fragment key={item.id}>
             <MainCard data={item} />

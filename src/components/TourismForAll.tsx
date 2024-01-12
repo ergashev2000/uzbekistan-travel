@@ -29,9 +29,9 @@ export default function Attractions() {
       }}
     >
       <section>
-        <div className="py-5 xl:py-10">
-          <Link href={"/"} className="w-fit block">
-            <h2 className="text-lg xl:text-3xl 2xl:text-4xl font-semibold w-fit my-5 flex items-center gap-2 [&>div]:hover:ml-2 [&>div]:hover:opacity-100 transition-all duration-300">
+        <div className="py-2">
+          <Link href={"/tourism"} className="w-fit block">
+            <h2 className="text-lg xl:text-3xl 2xl:text-4xl font-semibold w-fit flex items-center gap-2 [&>div]:hover:ml-2 [&>div]:hover:opacity-100 transition-all duration-300">
               Туризм для <span className="text-[#FA7436]">всех</span>
               <div className=" transition-all duration-300 opacity-0">
                 <ArrowIcon />

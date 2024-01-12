@@ -20,10 +20,7 @@ export default function HeroSwiper({
   setSelectedCardIndex?: any;
   selectedCardIndex?: any;
 }) {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const swiperRef = useRef<any | null>(null);
-
-  const handleSetThumb = (e: any) => setThumbsSwiper(e);
 
   const handleSelectImage = (index: number) => {
     setSelectedCardIndex(index);
@@ -36,7 +33,6 @@ export default function HeroSwiper({
     <div className="w-1/2 h-screen  items-end hidden xl:flex">
       <Swiper
         ref={swiperRef}
-        onSwiper={handleSetThumb}
         // loop={true}
         spaceBetween={25}
         slidesPerView={2.3}
@@ -46,11 +42,11 @@ export default function HeroSwiper({
         className="hero-swiper w-full"
         navigation
       >
-        {data.banner_data.map((item: any, index: any) => (
+        {data?.map((item: any, index: any) => (
           <SwiperSlide key={item.id} className="pb-10 pt-24 ml-4">
             <div
               onClick={() => handleSelectImage(index)}
-              className={`cursor-pointer relative max-w-[400px] ml-3 transition-all duration-500 rounded-lg overflow-hidden shadow-lg border-4  ${
+              className={`cursor-pointer relative max-w-[400px] h-32 ml-3 transition-all duration-500 rounded-xl overflow-hidden shadow-lg border-2  ${
                 selectedCardIndex === index
                   ? "scale-[120%] border-[#FA7436]"
                   : "scale-100 border-transparent"
@@ -64,9 +60,9 @@ export default function HeroSwiper({
                 className={`rounded w-full h-[200px] object-cover`}
               />
 
-              <button className="absolute top-2 right-2 border text-black border-black rounded-full w-7 h-7 flex items-center justify-center">
+              {/* <button className="absolute top-2 right-2 border text-black border-black rounded-full w-7 h-7 flex items-center justify-center">
                 <PlayIcon />
-              </button>
+              </button> */}
             </div>
           </SwiperSlide>
         ))}

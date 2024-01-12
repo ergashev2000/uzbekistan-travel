@@ -164,6 +164,9 @@ export default function Navbar() {
                     ))}
                   </motion.ul>
                 </li>
+                <li className="p-2 xl:text-[15px] 2xl:text-sm cursor-pointer">
+                  <Link href={"/foto-galereya"}>{t("gallery")}</Link>
+                </li>
 
                 <li className="p-2 xl:text-[15px] 2xl:text-sm cursor-pointer">
                   <Link href={"/about"}>{t("about")}</Link>

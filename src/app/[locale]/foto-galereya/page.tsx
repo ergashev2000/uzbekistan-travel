@@ -7,6 +7,7 @@ import Image from "next/image";
 import CustomSwiper from "@/components/SwiperCustom";
 import Link from "next/link";
 import optimizePath from "@/util/optimizePath";
+import { ArrowIcon } from "@/assets/iconSvg";
 
 export default function page() {
   return (
@@ -19,8 +20,10 @@ export default function page() {
               href={`/foto-galereya/${optimizePath(item?.header?.title)}`}
               className="w-fit block"
             >
-              <h2 className="text-xl xl:text-2xl 2xl:text-3xl font-semibold w-max flex items-center gap-2 [&>div]:hover:ml-2 [&>div]:hover:opacity-100 transition-all duration-300">
-                Города
+              <h2 className="text-base lg:text-lg xl:text-xl 2xl:text-2xl font-semibold w-fit">
+                <span className="flex items-center gap-2 [&>div]:hover:ml-2 [&>div]:hover:opacity-100 transition-all duration-300 w-fit">
+                  Посмотреть все фотографии о городе <ArrowIcon />
+                </span>
               </h2>
             </Link>
             <div className="default-swiper">

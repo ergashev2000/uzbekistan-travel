@@ -94,8 +94,8 @@ export default function Page() {
     <div className="min-h-screen">
       <DynamicHero header={headerData} />
 
-      <div className=" flex gap-5 p-10">
-        <article className="w-3/4 space-y-10">
+      <div className=" flex flex-row-reverse gap-5 xl:gap-10 py-5 xl:py-10">
+        <article className="w-full lg:w-3/4 space-y-5 lg:space-y-10">
           <section id="0" ref={sectionRefs[0]}>
             {descriptionData.img && (
               <Image
@@ -103,17 +103,17 @@ export default function Page() {
                 alt={descriptionData.seo_keywords}
                 width={1000}
                 height={1000}
-                className="w-full rounded-lg h-[500px] object-cover object-center"
+                className="w-full rounded-lg h-[250px] xl:h-[500px] object-cover object-center"
               />
             )}
             <br />
             {descriptionData.description && (
-              <p className="indent-8 text-justify">
+              <p className="indent-8 text-[15px] lg:text-base lg:text-justify">
                 {descriptionData.description}
               </p>
             )}
             {descriptionData?.description_list.length > 0 && (
-              <ul className="space-y-3 py-2">
+              <ul className="space-y-3 py-2 text-[15px] lg:text-base ">
                 {descriptionData?.description_list?.map((item: any, i: any) => (
                   <li key={i}>{item}</li>
                 ))}
@@ -127,23 +127,23 @@ export default function Page() {
                 height="720"
                 allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
                 allowFullScreen
-                className="rounded-lg w-full h-[500px] mb-5"
+                className="rounded-lg w-full lg:h-[350px] h-[240px] xl:h-[500px] mb-5"
               ></iframe>
             )}
             {descriptionData?.media_desc?.map((item: any, i: any) => (
-              <>
-                <p key={i} className="text-justify">
+              <Fragment key={i}>
+                <p className="indent-8 text-[15px] lg:text-base lg:text-justify">
                   {item}
                 </p>
                 <br />
-              </>
+              </Fragment>
             ))}
           </section>
 
           {sections?.map((item: any, i: any) => (
             <section key={i} id={i} ref={sectionRefs[i]}>
               {item.title && (
-                <h2 className="text-3xl font-semibold py-2">
+                <h2 className="text-lg md:text-xl xl:text-3xl font-semibold py-2">
                   {item.title.split(" ")[0]}{" "}
                   <span className="text-[#FA7436]">
                     {item.title.split(" ").slice(1).join(" ")}
@@ -151,13 +151,13 @@ export default function Page() {
                 </h2>
               )}
               {item.description && (
-                <p className="indent-8 xl:text-sm 2xl:text-base text-gray-700 text-justify">
+                <p className="indent-8 text-[15px] lg:text-base  text-gray-700 lg:text-justify">
                   {item.description}
                 </p>
               )}
               <br />
               <div className="flex flex-col gap-4">
-                <div className="rounded-lg overflow-hidden h-fit w-full xl:h-[400px] 2xl:h-[520px] flex justify-center items-center">
+                <div className="rounded-lg overflow-hidden w-full h-[240px] md:h-[350px] xl:h-[450px] flex justify-center items-center">
                   {item.img && (
                     <Image
                       src={item.img}
@@ -173,7 +173,7 @@ export default function Page() {
                   item.media_desc?.map((item: any, i: any) => (
                     <p
                       key={i}
-                      className="w-full xl:text-sm 2xl:text-base text-gray-700 text-justify"
+                      className="w-full text-[15px] lg:text-base  text-gray-700 lg:text-justify"
                     >
                       {item}
                       <br />
@@ -186,11 +186,11 @@ export default function Page() {
                     height="720"
                     allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
                     allowFullScreen
-                    className="rounded-lg w-full h-[500px] my-10 overflow-hidden"
+                    className="rounded-lg w-full md:-[350px] h-[240px] xl:h-[450px] my-2 xl:my-10 overflow-hidden"
                   ></iframe>
                 )}
                 {item.video_desc && (
-                  <p className="indent-4 xl:text-sm 2xl:text-base text-gray-700 text-justify">
+                  <p className="indent-4 text-[15px] lg:text-base  text-gray-700 lg:text-justify">
                     {item.video_desc}
                   </p>
                 )}

@@ -24,10 +24,10 @@ export default function Page() {
   }, []);
 
   return (
-    <div className="min-h-screen container mx-auto py-24 max-xl:py-5 px-2">
+    <div className="min-h-screen">
       <DynamicHero header={headerData} />
 
-      <div className="grid grid-cols-3 gap-5 py-10 max-xl:grid-cols-1">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 lg:gap-4 py-5 ">
         {sections?.map(item => (
           <Fragment key={item.id}>
             <MainCard data={item} />
@@ -35,7 +35,7 @@ export default function Page() {
         ))}
       </div>
 
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto py-5">
         <h2 className="text-3xl font-semibold my-5 max-xl:text-lg">
           Исторические Города
           <span className="text-[#FA7436]"> Узбекистана</span>

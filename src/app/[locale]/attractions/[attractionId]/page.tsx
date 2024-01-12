@@ -37,6 +37,12 @@ export default function Page() {
       (item: any) => optimizePath(item.header.title) === attractionId
     );
 
+    console.log(detail_attractions);
+    console.log(attractionId);
+    console.log(optimizePath(detail_attractions[1].header.title));
+    
+    
+
     if (resData) {
       const { data, header } = resData;
 
@@ -46,11 +52,11 @@ export default function Page() {
   }, [attractionId]);
 
   return (
-    <div className="min-h-screen py-5 xl:py-24">
+    <div className="min-h-screen">
       <DynamicHero header={headerData} />
 
-      <div className="flex xl:gap-5 xl:p-10 py-5 flex-col xl:flex-row gap-2">
-        <article className="w-full xl:w-3/4 space-y-2">
+      <div className="flex xl:gap-5 xl:p-10 py-5 flex-col lg:flex-row gap-2">
+        <article className="w-full lg:w-3/4 space-y-2">
           {sections?.map((item: any, i: any) => (
             <section key={i}>
               {item.description && (
@@ -104,7 +110,7 @@ export default function Page() {
 
           {headerData?.map && (
             <section>
-              <h2 className="text-xl xl:text-3xl font-semibold py-5 mt-10">Map</h2>
+              <h2 className="text-xl lg:text-3xl font-semibold py-5 mt-10">Map</h2>
               <iframe
                 src={headerData?.map}
                 width="1200"
@@ -112,13 +118,13 @@ export default function Page() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="w-full rounded-xl h-[240px] xl:h-[500px]"
+                className="w-full rounded-xl h-[250px] lg:h-[400px]"
               ></iframe>
             </section>
           )}
         </article>
 
-        <aside className="w-full max-xl:mt-5 xl:w-1/4 bg-white xl:sticky xl:top-20 h-fit p-5 border border-gray-300 rounded-lg">
+        <aside className="w-full max-xl:mt-5 lg:w-1/4 bg-white lg:sticky xl:top-20 h-fit p-5 border border-gray-300 rounded-lg">
           {headerData?.city && (
             <div className="flex items-center justify-between gap-2">
               <h4>Область</h4>{" "}

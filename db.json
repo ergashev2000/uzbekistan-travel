@@ -236,38 +236,13 @@
     ],
     "travelsRu": [
         "Спортивный туризм",
-        "Этнический туризм",
-        "Молодежный туризм",
-        "Экотуризм",
-        "Гастро туризм",
-        "Медицинский туризм",
-        "Культурный туризм",
-        "MICE туризм",
-        "Паломнический туризм",
-        "Литературный туризм",
-        "Промышленный туризм",
-        "Медленный туризм",
-        "Приключенческий туризм",
-        "Геотуризм"
+        "Культурный туризм"
     ],
     "cityMenuRu": [
         "Ташкент",
         "Самарканд",
         "Бухара",
-        "Хива",
-        "Шахрисабз",
-        "Муйнак",
-        "Заамин",
-        "Термез",
-        "Гулистан",
-        "Нукус",
-        "Наманган",
-        "Карши",
-        "Навои",
-        "Коканд",
-        "Андижан",
-        "Фергана",
-        "Регионы Узбекистана"
+        "Хива"
     ],
     "cities": [
         {
@@ -368,6 +343,314 @@
                 "History",
                 "Map"
             ]
+        },
+        {
+            "id": "2",
+            "header": {
+                "title": "Самарканд",
+                "slug": [
+                    {
+                        "id": 1,
+                        "slug_title": "Города Узбекистана",
+                        "slug_path": "/cities"
+                    },
+                    {
+                        "id": 2,
+                        "slug_title": "Самарканд",
+                        "slug_path": ""
+                    }
+                ],
+                "description": "Перекрёсток культур",
+                "banner_img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/thumb_755_1920_0_0_0_auto.jpg?alt=media&token=f43f04f0-bf9a-4f28-a54f-c99b88e2d494"
+            },
+            "data": {
+                "about": {
+                    "title": "Самарканд – Перекрёсток культур",
+                    "description": "Самарканд поистине можно назвать уникальным городом!",
+                    "banner_img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/istockphoto-1156403507-612x612.jpg?alt=media&token=91185ee1-ff19-4441-bffe-57f5c7b8c58f",
+                    "description_list": "Как только не называли его величайшие поэты и философы мира – сад души, жемчужина востока, зеркало мира и даже лик земли – у них не получилось бы описать всю красоту и богатство этого прекрасного города."
+                },
+                "attractions": {
+                    "title": "Топовые достопримечательности",
+                    "description": "Культурное наследие Самарканда довольно велико, на протяжении многих веков город являлся ключевым центром Великого Шёлкового пути. В начале XXI века город внесли в список Всемирного наследия ЮНЕСКО под названием «Самарканд – перекресток культур»! Посетив город, вы удивитесь количеству расположенных здесь исторических памятников, но мы постараемся показать вам наиболее популярные достопримечательности, которые непременно стоит увидеть!",
+                    "description_list": [
+                        "Мечеть и мавзолей Биби-Ханым",
+                        "Некрополь Шахи Зинда",
+                        "Мавзолей Гур Эмир",
+                        "Площадь Регистан ",
+                        "Древнее городище Афросиаб",
+                        "Мавзолей Рухабад",
+                        "Мемориальный комплекс имама Аль-Бухари"
+                    ],
+                    "video": "https://www.youtube.com/embed/f6DRqbhXbWU"
+                },
+                "gallery": {
+                    "title": "Фотогалерея",
+                    "description": "Места, люди, события - все самое интересное вы найдете в нашей фотогалерее!",
+                    "images": [
+                        "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/thumb_1594_1140_0_0_0_auto.jpg?alt=media&token=54e27215-522c-41f7-8e52-163ea74cb109",
+                        "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/thumb_371_1140_0_0_0_auto.jpg?alt=media&token=790573bc-e886-496e-8ca3-6a8ae4d7ef78",
+                        "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/yumi-kim-ofhso5YyN3o-unsplash.jpg?alt=media&token=29b2fed2-641f-4165-9655-2e42077ea33c"
+                    ],
+                    "image_3d": ""
+                },
+                "climate": {
+                    "title": "Климат",
+                    "description": "Климат Самарканда имеет четко выраженную сезонность. Зима обычно мягкая и температура не часто падает ниже 0 °C. Так как резкие похолодания бывают очень редко и в основном ночью. Лето здесь очень жаркое, поэтому не забудьте прихватить с собой головной убор и солнцезащитные очки."
+                },
+                "cuisine": {
+                    "title": "Подарки и сувениры",
+                    "description": "Самаркандские сувенирные лавки могут порадовать любителей подделок из дерева, ткани и прочих материалов. По традиции, большая часть мастерских находятся в старых медресе и все поделки делаются вручную местными мастерами. Но в Самарканде, помимо обычных сувениров, вы сможете найти еще несколько особенностей, которых не встретите в других регионах страны. Прежде всего советуем вам посетить Сиабский базар, который находится рядом с мечетью Биби-Ханум, практически в центре старого Самарканда. На этом базаре вы сможете найти огромное количество сухофруктов, орехов и сладостей. Среди всего прочего можно выделить вышеупомянутые лепешки и самаркандскую халву. Также в Самаркандской области есть бумажная фабрика называемая «Мерос». Ее мастера сохранили способ приготовления бумаги из тутовой коры. Этот способ зародился в X-XI века и отличался особой долговечностью. На этой фабрике вы сможете купить необычные бумажные подделки, такие как открытки, блокноты, маски, и даже платья, кукол и сумочки.",
+                    "images": [
+                        "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/UZB_2556-0-0-0-0-1582610571.jpg?alt=media&token=3dfdf303-a829-4692-9c43-8d155661ebb2",
+                        "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/UZB_2553-0-0-0-0-1582610435.jpg?alt=media&token=c5ecde70-6d54-4659-8c2d-b93df13b099c",
+                        "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/46-0-0-0-0-1583736249.jpg?alt=media&token=be2de741-4552-455b-b1e4-f7a72d2d8c2c"
+                    ]
+                },
+                "photo_zones": {
+                    "title": "Фотозоны",
+                    "description": "Неотъемлемая часть каждого путешествия — это фотографии! В этой рубрике мы познакомим Вас с самыми красивыми местами этого города, где Вы сможете сделать самые лучшие кадры. P.S. Не забывайте, что при посещении религиозных достопримечательностей Узбекистана женщинам желательно прикрыть открытые части тела (плечи, спина и ноги) Такие достопримечательности будут отмечены символами",
+                    "zones": [
+                        {
+                            "id": 123,
+                            "zone_image": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/NB0_7296-0-0-0-0-1582617380.jpg?alt=media&token=7b71719d-277c-4765-a0af-e7f4c0b5e8d1",
+                            "img_desc": "Регистан - главная площадь и самая узнаваемая достопримечательность города Самарканда. На ней находятся три знаменитых медресе - Улугбека, Шердор и Тилла-Кари."
+                        },
+                        {
+                            "id": 13,
+                            "zone_image": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/samarkand-57-0-0-0-0-1582624199.jpg?alt=media&token=22cec0bf-43d3-404c-85bf-3d6c7ebdd085",
+                            "img_desc": "Гур-Эмир - мавзолей Амира Тимура (Тамерлана), его наставника Мир Сайида Барака и некоторых членов династии Тимуридов."
+                        },
+                        {
+                            "id": 1513,
+                            "zone_image": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/samarkand-39-0-0-0-0-1583737273.jpg?alt=media&token=02797c2c-c4c4-46e3-89e1-554e8a5c0c6f",
+                            "img_desc": "Международный центр Имама Аль Бухари расположен рядом с мемориальным комплексом и имеет очень большую и красивую территорию. Не упустите возможность сделать пару красивых фотографий находясь в этом комплексе!"
+                        }
+                    ]
+                },
+                "history": {
+                    "title": "История",
+                    "description": "Самарканд можно только увидеть и остаться навечно пленённым, тем переплетением времени и различных культур, находящихся на его территории. Вы знали, что Самарканд является ровесником таких древних столиц мира как Рим и Нанкин? Да, да! Город появился примерно 2 750 лет назад, что дает ему право называться одним из самых древних городов не только Центральной Азии, но и мира. Пик процветания города приходится на времена правления Амира Тимура (Тамерлана) и его потомков. Именно тогда Самарканд стал столицей его могучей империи. Существует легенда о том, как Тимур выбирал свою столицу… Для того, чтобы определиться с выбором, он приказал своим подданным проехать по всем городам и повесить на их воротах тушу барана и через месяц лично сделал обход. На всех воротах туши успели сгнить, и только на вратах Самарканда она была почти полностью целой и даже стала подвяленной. Увидев это Тимур сказал: «В этом городе самый чистый воздух и здоровая земля. ",
+                    "img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/Samarkand-Entrance-into-the-History-0-0-0-0-1582609736.jpg?alt=media&token=219439ac-ac9d-4d70-8288-7c2ab93eb3d4",
+                    "img_desc": "Столица будет здесь!». Благодаря внуку Тамерлана, Мирзо Улугбеку, город стал центром мировой науки. Самарканд вошел в список «50 городов, которые стоит посетить в этой жизни»."
+                },
+                "map": {
+                    "title": "Карта",
+                    "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d393028.2844209779!2d66.8999050410156!3d39.6827078238605!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d191960077df7%3A0x487636d9d13f2f57!2z0KHQsNC80LDRgNC60LDQvdC0LCDQodCw0LzQsNGA0LrQsNC90LTRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQt9Cx0LXQutC40YHRgtCw0L0!5e0!3m2!1sru!2sus!4v1705042992461!5m2!1sru!2sus"
+                }
+            },
+            "menus": [
+                "О городе",
+                "Достопримечательности",
+                "Фотогалерея",
+                "Климат",
+                "Подарки и сувениры",
+                "Фотозоны",
+                "История",
+                "Карта"
+            ]
+        },
+        {
+            "id": "3",
+            "header": {
+                "title": "Бухара",
+                "slug": [
+                    {
+                        "id": 1,
+                        "slug_title": "Города Узбекистана",
+                        "slug_path": "/cities"
+                    },
+                    {
+                        "id": 2,
+                        "slug_title": "Бухара",
+                        "slug_path": ""
+                    }
+                ],
+                "description": "Столица исламской культуры",
+                "banner_img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/thumb_762_1920_0_0_0_auto.jpg?alt=media&token=264e9c49-d918-4dcf-b76a-c9949710f46a"
+            },
+            "data": {
+                "about": {
+                    "title": "Бухара - Столица исламской культуры",
+                    "description": "Священная Бухара – одна из туристических жемчужин Узбекистана. Исторический центр города внесен в список Всемирного наследия ЮНЕСКО. Возраст города превышает 2500 лет.",
+                    "banner_img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/5e56562fe6430590498576.jpg?alt=media&token=ca5c1fa9-9cd2-4e45-82ab-c6b46c1fce4e",
+                    "description_list": "Скажем одно, кто не был в Бухаре, тот потерял многое."
+                },
+                "attractions": {
+                    "title": "Топовые достопримечательности",
+                    "description": "Хотите окунуться в атмосферу древней восточной сказки, посетите топовые достопримечательности Бухары:",
+                    "description_list": [
+                        "Архитектурный комплекс Пои-Калон, признанный Шанхайской организацией сотрудничества 'Восьмым чудом'",
+                        "Крепость Арк,",
+                        "Мавзолей Саманидов,",
+                        "Мавзолей Чашма-Аюб",
+                        "Мечеть Магаки-Аттари",
+                        "Медресе Улугбека",
+                        "Медресе Мири-Араб",
+                        "Ансамбль Ляби-Хауз и многое другое."
+                    ],
+                    "video": "https://www.youtube.com/embed/_CH06TjqAxg"
+                },
+                "gallery": {
+                    "title": "Фотогалерея",
+                    "description": "Места, люди, события - все самое интересное вы найдете в нашей фотогалерее!",
+                    "images": [
+                        "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/thumb_1461_1140_0_0_0_auto.jpg?alt=media&token=26644753-3582-4ca1-ad77-6b943d99c648",
+                        "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/thumb_60_1140_0_0_0_auto.jpg?alt=media&token=ec1620b0-da10-4e69-bb19-bfaae83c4a2a"
+                    ],
+                    "image_3d": ""
+                },
+                "climate": {
+                    "title": "Климат",
+                    "description": "Климат здесь можно охарактеризовать как жаркий и засушливый летом, поэтому путешествуя в это время года по Бухаре, обязательно возьмите с собой зонтик и солнцезащитный крем. Зимы же в Бухаре довольно мягкие, но не стоит пренебрегать теплыми вещами."
+                },
+                "cuisine": {
+                    "title": "Подарки и сувениры",
+                    "description": "На бухарских улицах можно встретить множество различных сувенирных лавочек и мастерских. Порой кажется, что все сувениры одинаковые, но это не так! Каждому продавцу будет чем Вас удивить! Бухара — это ткацкая столица Узбекистана! Если хотите приобрести стильные и современные элементы гардероба, которые еще и плюс ко всему имеют национальные нотки, то Вы просто обязаны посетить Бухару! Большая часть магазинов расположена вдоль площади Ляби-Хауз и в Торговых куполах, которые находятся рядом со знаменитым ансамблем Пои-Калян. Помимо одежды тут можно приобрести и саму ткань икат. Такую ткань применил в своей коллекции торговый дом Armani. Она, конечно, не дешевая, но ее цена полностью оправдывает себя. Также Бухара славится своими коврами. Качество ковров ничуть не уступают Индийским, Пакистанским и Иранским, а порой даже превосходят! Для любителей экзотики, Бухара может предложить музыкальные инструменты, которые изготавливаются на ее территории с особой искусностью или же ножи ручной работы.",
+                    "images": [
+                        "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/vishivka-0-0-0-0-1582718197.jpg?alt=media&token=9d70edd9-12ef-4dd7-b279-cae0c3cd3384",
+                        "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/ubor-0-0-0-0-1582718242.jpg?alt=media&token=65b18cc7-d0d2-461c-b7d3-62e0dccd0602"
+                    ]
+                },
+                "photo_zones": {
+                    "title": "Фотозоны",
+                    "description": "Неотъемлемая часть каждого путешествия — это фотографии! В этой рубрике мы познакомим Вас с самыми красивыми местами этого города, где Вы сможете сделать самые лучшие кадры.\n P.S. Не забывайте, что при посещении религиозных достопримечательностей Узбекистана женщинам желательно прикрыть открытые части тела (плечи, спина и ноги) Такие достопримечательности будут отмечены символами",
+                    "zones": [
+                        {
+                            "id": 123,
+                            "zone_image": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/IMGP4417-0-0-0-0-1583740336.jpg?alt=media&token=be905fe9-b3c4-4b60-93ff-d8b94fe300b3",
+                            "img_desc": "Арк - это древняя цитадель, которая разрушалась и перестраивалась много раз за свою тысячелетнюю историю и каждый раз становилась все лучше и крепче. Сейчас Вы можете воочию насладиться ее величаем и запечатлеть на память!"
+                        },
+                        {
+                            "id": 13,
+                            "zone_image": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/20--0-0-0-0-1583744365.jpg?alt=media&token=74ccc931-bced-4d0c-ada8-b261f98a533d",
+                            "img_desc": "Мавзолей Саманидов расположился в исторической части Бухары. Он является ярким представителем исламской архитектуры Центральной Азии. Он был возведен Исмаилом Самани, вторым эмиром государства Саманидов."
+                        },
+                        {
+                            "id": 1513,
+                            "zone_image": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/chor-minor.webp?alt=media&token=1bb299f8-8209-4d26-8458-4408ecce41fb",
+                            "img_desc": "Медресе Халифа Ниязкула, также известное как Чор-Минор, открылось в 1807 году. Из-за своего необычного вида оно сразу же полюбилось как жителям города, так и гостям."
+                        }
+                    ]
+                },
+                "history": {
+                    "title": "История",
+                    "description": "Этому величественному городу по самым скромным подсчетам больше 2500 лет и на его территории находится множество древних мечетей, медресе и усыпальниц исламских святых. Люди испокон веков говорили, что на все мусульманские города с неба нисходит благодатный свет, и только над Бухарой он поднимется к небу. Также, Бухара — это единственный город в Центральной Азии, история которого была практически полностью задокументирована известным историком Х века – Наршахи. В своих трудах он рассказал, что ни один город не имел столько названий как Бухара. В Китае V века его называли Нюми, позже в источниках Империи Тан, его называли Ань, Аньси, Бухо и Бухэ. Но чаще всего в истории его упоминают именно под названием Бухара. По данным этимологов это название произошло от согдийского «buharak», что переводится как «счастливое место».",
+                    "img_desc": "Сейчас на территории Бухары сохранились более 140 памятников, относящихся к разным эпохам, кварталы и даже целые районы, возведенные не один век назад. Бухару, также называют городом поэзии и сказок, так как легендами и историями окутан весь старый город! Кстати говоря, историческая часть города была внесена в список городов Всемирного наследия ЮНЕСКО в 1993 году."
+                },
+                "map": {
+                    "title": "Карта",
+                    "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d98122.00831811994!2d64.422798!3d39.777536!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f50060e65993cd5%3A0xc87beaf40e48e767!2z0JHRg9GF0LDRgNCwLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2sus!4v1705044850105!5m2!1sru!2sus"
+                }
+            },
+            "menus": [
+                "О городе",
+                "Достопримечательности",
+                "Фотогалерея",
+                "Климат",
+                "Подарки и сувениры",
+                "Фотозоны",
+                "История",
+                "Карта"
+            ]
+        },
+        {
+            "id": "4",
+            "header": {
+                "title": "Хива",
+                "slug": [
+                    {
+                        "id": 1,
+                        "slug_title": "Города Узбекистана",
+                        "slug_path": "/cities"
+                    },
+                    {
+                        "id": 2,
+                        "slug_title": "Хива",
+                        "slug_path": ""
+                    }
+                ],
+                "description": "Столица Тюркского мира",
+                "banner_img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/thumb_763_1920_0_0_0_auto.jpg?alt=media&token=ec094e44-79ce-4259-8f19-f6dc09846102"
+            },
+            "data": {
+                "about": {
+                    "title": "Хива – Столица Тюркского мира",
+                    "description": "Хива –  красивейший город-оазис с древними стенами, минаретами и уникальными глиняными постройками. \n В рамках XI сессии Организации Исламского Сотрудничества (ОИС) в Баку, Хива объявлена туристической столицей исламского мира 2024 года!",
+                    "banner_img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/IMG_3126-0-0-0-0-1592392591.jpg?alt=media&token=4d008476-12c6-439f-ae1a-cbbe9d487e6d",
+                    "description_list": "Возраст Хивы насчитывает более 2500 лет. Хотите окунуться в историю и увидеть истинную красоту древнего Востока, посетите Хиву."
+                },
+                "attractions": {
+                    "title": "Топовые достопримечательности",
+                    "description": "Древняя Хива – объект Всемирного наследия ЮНЕСКО. И согласно этому все достопримечательности находятся под защитой всемирной организации.\n Что можно посмотреть в Хиве:",
+                    "description_list": [
+                        "Главную крепость – Ичан-кала, крепость Куня- Арк, крепость Дишан-кала;",
+                        "Древние мечети и медресе, минареты, мавзолеи – их в Хиве насчитывается более 100;",
+                        "Дворцы и резиденции хивинских правителей;",
+                        "Древние караван-сараи и бани;",
+                        "Государственный кукольный театр и музей Авесты"
+                    ],
+                    "video": "https://www.youtube.com/embed/41orvBi8qVQ"
+                },
+                "gallery": {
+                    "title": "Фотогалерея",
+                    "description": "Места, люди, события - все самое интересное вы найдете в нашей фотогалерее!",
+                    "images": [
+                        "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/thumb_478_1140_0_0_0_auto.jpg?alt=media&token=5ed73bee-b55c-458e-b7a1-2f36eb437db6",
+                        "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/thumb_60_1140_0_0_0_auto.jpg?alt=media&token=ec1620b0-da10-4e69-bb19-bfaae83c4a2a"
+                    ],
+                    "image_3d": ""
+                },
+                "climate": {
+                    "title": "Климат",
+                    "description": "Климат в Хиве сухой и приближенный к погодным условиям пустынь. Лето жаркое, но ветряное, а зимой температура очень часто падает ниже 0°С, так что не забудьте теплые вещи! Они Вам пригодятся"
+                },
+                "cuisine": {
+                    "title": "Подарки и сувениры",
+                    "description": "В Хиве, также как в других городах Узбекистана, можно купить множество разнообразных сувениров. Среди них можно выделить несколько особенно интересных вещей, которые можно купить только в Хорезмской области. Первое это куклы ручной работы. На территории Хивы имеется кукольный театр, которому по самым скромным подсчетам около 2000 лет! Поэтому изготовление кукол для представлений уходит глубоко в века, но любовь к кукольным спектаклям не угасает до сих пор. Также одним из основных достоинств хорезмийцев являются шапки Чугурма, которые изготавливают еще с древних времен. На вид она довольно громоздкая и тяжелая, но на деле довольно легкая и удобная. Шапка сделана так, что создает особый микроклимат и тем самым спасает от перегрева летом и защищает от холода зимой. В древности такие шапки стоили очень недешево. Их стоимость приравнивалась к стоимости верблюда и поэтому ее могли себе позволить только состоятельные люди. Сейчас цена на нее гораздо ниже и любителям необычных головных уборов она должна понравится! Также на территории Хивы можно приобрести разнообразные поделки из дерева. Местные мастера создают все, начиная от крошечных шахматных фигурок заканчивая посохами и даже резными дверями! Какой бы не был у Вас изощренный вкус, местные умельцы смогут угодить Вам.",
+                    "images": [
+                        "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/mast.jpg?alt=media&token=94381e92-a0f9-4969-a078-511e2b0c47e8",
+                        "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/shkatulkitashkent-0-0-0-0-1583745658.jpg?alt=media&token=01c9bf1c-6175-46e6-985b-728c16ec85ab",
+                        "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/IMG_4597-0-0-0-0-1582809625.jpg?alt=media&token=639b01dd-b5dc-41be-9f75-f7f67df4ee23"
+                    ]
+                },
+                "photo_zones": {
+                    "title": "Фотозоны",
+                    "description": "Неотъемлемая часть каждого путешествия — это фотографии! В этой рубрике мы познакомим Вас с самыми красивыми местами этого города, где Вы сможете сделать самые лучшие кадры. \n P.S. Не забывайте, что при посещении религиозных достопримечательностей Узбекистана женщинам желательно прикрыть открытые части тела (плечи, спина и ноги) Такие достопримечательности будут отмечены символами",
+                    "zones": [
+                        {
+                            "id": 123,
+                            "zone_image": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/IMG_4450-0-0-0-0-1583140327.jpg?alt=media&token=387b5a6a-0038-4ac0-91a4-42a12e4be863",
+                            "img_desc": "Существует легенда, что город возник вокруг колодца Хейвак, который выкопали по приказу Сима, сына того самого Ноя из Библии. За свою длинную историю, Хива пережила разные династии правителей Хорезма но начиная с древности всегда оставалась его столицей."
+                        },
+                        {
+                            "id": 13,
+                            "zone_image": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/DSC_0262-0-0-0-0-1583141025.jpg?alt=media&token=226d270c-5209-4cd4-9960-7846b44d3f06",
+                            "img_desc": "Здесь все кажется не привычным — кухня, люди, речь, даже архитектура. Почти все сохранено в первозданном виде. Улочки вымощены камнем. Словно шахматные фигуры отовсюду виднеются минареты, купола медресе и мечетей. Даже современные постройки декорированы под старину. \n В 1990 году город был включен в Список Всемирного наследия ЮНЕСКО."
+                        }
+                    ]
+                },
+                "history": {
+                    "title": "История",
+                    "description": "Хива это один из древнейших городов Узбекистана, который был основан более 2500 лет назад. Также это единственный город, на территории которого располагается настоящая средневековая крепость – Ичан Кала. Древняя цитадель, обнесенная могучей городской стеной, предстает в облике средневекового восточного города, каждое строение которого – архитектурный памятник и отдельная достопримечательность. Интересно то, что в этом историческом городе-музее продолжают жить и работать люди. \nСуществует легенда, что город возник вокруг колодца Хейвак, который выкопали по приказу Сима, сына того самого Ноя из Библии. За свою длинную историю, Хива пережила разные династии правителей Хорезма но начиная с древности всегда оставалась его столицей.",
+                    "img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/Dsc_0513---khiva-0-0-0-0-1582806011.jpg?alt=media&token=4da52d7f-f1fd-4042-b49e-e2a057d60be3", 
+                    "img_desc": "Сейчас на территории Бухары сохранились более 140 памятников, относящихся к разным эпохам, кварталы и даже целые районы, возведенные не один век назад. Бухару, также называют городом поэзии и сказок, так как легендами и историями окутан весь старый город! Кстати говоря, историческая часть города была внесена в список городов Всемирного наследия ЮНЕСКО в 1993 году."
+                },
+                "map": {
+                    "title": "Карта",
+                    "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d191571.62387895864!2d60.350003!3d41.389147!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41dfa413ffe48cf9%3A0xcd75f47f7a6dc0cd!2z0KXQuNCy0LAsINCl0L7RgNC10LfQvNGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2sus!4v1705046338686!5m2!1sru!2sus"
+                }
+            },
+            "menus": [
+                "О городе",
+                "Достопримечательности",
+                "Фотогалерея",
+                "Климат",
+                "Подарки и сувениры",
+                "Фотозоны",
+                "История",
+                "Карта"
+            ]
         }
     ],
     "allcities": {
@@ -426,19 +709,37 @@
             }
         ]
     },
-    "banner_data": [
+    "banner_data_ru": [
         {
             "id": 1,
-            "title": "Природа",
-            "description": "Живописные горы, цветущие долины, жаркие пустыни, реки и кристальные озера - всей этой красотой вы можете насладиться здесь, в Узбекистане!",
-            "banner_img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/thumb_1608_1920_0_0_0_auto.jpg?alt=media&token=0136cdea-c40c-45ed-803a-ac397dd43d52",
-            "banner_video": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/Invest-in-Tashkent.mp4?alt=media&token=6116453d-c9fc-4cf5-959e-7363472d64f0",
-            "slug": "/cities/tashkent"
+            "title": "Культурное наследие",
+            "description": "Культура Узбекистана имеет богатейшую историю, которая неразрывно была связана многовековыми традициями и укладом жизни народов Центральной Азии",
+            "banner_img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/uzbekistan.webp?alt=media&token=375b5f50-27f1-4e31-9c33-bfa7d90ce844",
+            "banner_video": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/Uzbekistan-8K-HDR-60p.mp4?alt=media&token=9bb413f6-4e91-4236-8cf5-6d59dc42973c",
+            "slug": "/foto-galereya"
         },
         {
             "id": 2,
             "title": "Ташкент",
             "description": "Ташкент – это столица Узбекистана и по совместительству самый крупный город в Центральной Азии.",
+            "banner_img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/AdobeStock_596864804_Preview.jpeg?alt=media&token=3bce2664-82e6-40a6-b0ce-2bbeae4b77ee",
+            "banner_video": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/Tashkent-Uzbekistan-4K-Drone-Footage.mp4?alt=media&token=7a12d9a0-88a2-45b0-8306-6c0889f6153d",
+            "slug": "/cities/tashkent"
+        }
+    ],
+    "banner_data_en": [
+        {
+            "id": 1,
+            "title": "Cultural heritage of Uzbekistan",
+            "description": "The culture of Uzbekistan has a rich history, which was inextricably linked by centuries-old traditions and lifestyle of the peoples of Central Asia",
+            "banner_img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/uzbekistan.webp?alt=media&token=375b5f50-27f1-4e31-9c33-bfa7d90ce844",
+            "banner_video": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/Uzbekistan-8K-HDR-60p.mp4?alt=media&token=9bb413f6-4e91-4236-8cf5-6d59dc42973c",
+            "slug": "/foto-galereya"
+        },
+        {
+            "id": 2,
+            "title": "Tashkent",
+            "description": "Tashkent is the capital of Uzbekistan and also the largest city in Central Asia.",
             "banner_img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/AdobeStock_596864804_Preview.jpeg?alt=media&token=3bce2664-82e6-40a6-b0ce-2bbeae4b77ee",
             "banner_video": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/Tashkent-Uzbekistan-4K-Drone-Footage.mp4?alt=media&token=7a12d9a0-88a2-45b0-8306-6c0889f6153d",
             "slug": "/cities/tashkent"
@@ -479,6 +780,27 @@
                 },
                 "data": [
                     {
+                        "id": 129011,
+                        "title": "Бухара",
+                        "img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/thumb_60_1140_0_0_0_auto.jpg?alt=media&token=ec1620b0-da10-4e69-bb19-bfaae83c4a2a",
+                        "img_tags": "Бухара, Jizzakh., Wetravel, Uzbekistan",
+                        "city_category": "Город ремесленников"
+                    },
+                    {
+                        "id": 12909011,
+                        "title": "Ичан-Кала",
+                        "img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/thumb_477_1140_0_0_0_auto.jpg?alt=media&token=c6686141-a390-42b8-bda0-4326a361f936",
+                        "img_tags": "Ичан-Кала",
+                        "city_category": "Город ремесленников"
+                    },
+                    {
+                        "id": 1229011,
+                        "title": "Древний город Хива",
+                        "img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/thumb_478_1140_0_0_0_auto.jpg?alt=media&token=5ed73bee-b55c-458e-b7a1-2f36eb437db6",
+                        "img_tags": "Древний город Хива, Wetravel, Uzbekistan",
+                        "city_category": "Город ремесленников"
+                    },
+                    {
                         "id": 1,
                         "title": "Marifat mosque",
                         "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/farhodjon-chinberdiev-z8RHHh3a21o-unsplash.jpg?alt=media&token=d70fb54c-92bf-4cea-afc3-73746ae1e5b7",
@@ -486,10 +808,59 @@
                         "city_category": "Город ремесленников"
                     },
                     {
+                        "id": 18039198013,
+                        "title": "Ансамбль Пои-Калон",
+                        "img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/thumb_1461_1140_0_0_0_auto.jpg?alt=media&token=26644753-3582-4ca1-ad77-6b943d99c648",
+                        "img_tags": "Ансамбль Пои-Калон, Jizzakh., Wetravel, Uzbekistan",
+                        "city_category": "Город ремесленников"
+                    },
+                    {
+                        "id": 132423423,
+                        "title": "Гур-Эмир - мавзолей Амира Тимура (Тамерлана)",
+                        "img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/samarkand-57-0-0-0-0-1582624199.jpg?alt=media&token=22cec0bf-43d3-404c-85bf-3d6c7ebdd085",
+                        "img_tags": "Гур-Эмир - мавзолей Амира Тимура (Тамерлана), Jizzakh., Wetravel, Uzbekistan",
+                        "city_category": "Город ремесленников"
+                    },
+                    {
                         "id": 2,
                         "title": "Хива",
                         "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/868778.5ff8ebe11071867dabc3e2ab781c0b56.jpg?alt=media&token=d530b5df-82b4-40e8-9ba4-be814a53ec28",
                         "img_tags": "Khiva, Wetravel, Uzbekistan",
+                        "city_category": "Город ремесленников"
+                    },
+                    {
+                        "id": 9838091232,
+                        "title": "Международный центр Имама Аль Бухари",
+                        "img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/samarkand-39-0-0-0-0-1583737273.jpg?alt=media&token=02797c2c-c4c4-46e3-89e1-554e8a5c0c6f",
+                        "img_tags": "Международный центр Имама Аль Бухари, Wetravel, Uzbekistan",
+                        "city_category": "Город ремесленников"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Мечеть Биби-Ханым",
+                        "img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/thumb_1594_1140_0_0_0_auto.jpg?alt=media&token=54e27215-522c-41f7-8e52-163ea74cb109",
+                        "img_tags": "Мечеть Биби-Ханым, Wetravel, Uzbekistan travel",
+                        "city_category": "Город ремесленников"
+                    },
+                    {
+                        "id": 4,
+                        "title": "Площадь Регистан",
+                        "img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/thumb_371_1140_0_0_0_auto.jpg?alt=media&token=790573bc-e886-496e-8ca3-6a8ae4d7ef78",
+                        "img_tags": "Площадь Регистан, Wetravel, Uzbekistan travel",
+                        "city_category": "Город ремесленников"
+                    },
+                    {
+                        "id": 4,
+                        "title": "Beautiful golden decorations in the Tilla-Kari mosk",
+                        "img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/yumi-kim-ofhso5YyN3o-unsplash.jpg?alt=media&token=29b2fed2-641f-4165-9655-2e42077ea33c",
+                        "img_tags": "Площадь Регистан, Wetravel, Uzbekistan travel",
+                        "city_category": "Город ремесленников"
+                    },
+                    {
+                        "id": 5,
+                        "title": "Регистан",
+                        "img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/NB0_7296-0-0-0-0-1582617380.jpg?alt=media&token=7b71719d-277c-4765-a0af-e7f4c0b5e8d1",
+                        "img_tags": "Площадь Регистан, Wetravel, Uzbekistan travel",
                         "city_category": "Город ремесленников"
                     }
                 ]
@@ -529,7 +900,7 @@
         "header": {
             "title": "Достопримечательности",
             "description": "Достопримечательности Узбекистана удивительно разнообразны.",
-            "banner_img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/ozodbek-erkinov-hvLu3ABC1n0-unsplash.jpg?alt=media&token=18764718-7a88-471a-9f15-0f1b8d00ac12",
+            "banner_img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/uzbekistan.jpg?alt=media&token=b5f84f73-6cae-43da-ac2e-9be8ac0c1ede",
             "banner_img_tags": "uzbekistan tourism, uzbekistan attractions, registan samarqand uzbekistan",
             "slug": [
                 {
@@ -552,7 +923,7 @@
                 "title": "Ансамбль Дорут Тилловат – «Дом размышления»",
                 "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/Ensemble%20Dorut%20Tilovat%20-%20House%20of%20Reflection.jpg?alt=media&token=4ca77ac0-f9c2-4684-98ad-c5c880cb41ce",
                 "img_tags": "Ансамбль Дорут Тилловат – «Дом размышления», attractions, uzbekistan tourism",
-                "slug": "/attractions/ansambl-dorut-tillovat",
+                "slug": "/attractions/ansambl-dorut-tillovat-dom-razmyshleniya",
                 "city": "Кашкадарьинская"
             }
         ]
@@ -599,6 +970,64 @@
                     "video": "",
                     "paragraphs": [
                         "Есть еще одна легенда о пещере Хазрата Дауда. Однажды царь Давид решил сразиться с огромным воином – Голиафом. Волшебным образом джинны перенесли царя в пещеру поблизости от Самарканда, чтобы Давид смог собраться с силами перед боем. Но сверхъестественные существа ифриты узнали, где пребывает Дауд, и на своих спинах принесли Голиафа. Святой Дауд был не готов к битве и был вынужден бежать, но Голиаф его настигал. И тогда святой обратился к Богу с просьбой о защите. Господь на пути раскидывал камни и громадные валуны. Дауд руками отбрасывал камни, расчищая себе дорогу. Он не сразу заметил, что в его руках буквально плавятся камни. Подбежав к пещере, Дауд расплавил вход и укрылся внутри, оставив позади себя разъярённого Голиафа."
+                    ],
+                    "description": "",
+                    "video_desc": ""
+                }
+            ]
+        },
+        {
+            "id": 981723987212831,
+            "header": {
+                "title": "Ансамбль Дорут Тилловат – «Дом размышления»",
+                "description": "",
+                "banner_img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/dor-ut-tilovat.jpg?alt=media&token=b507020f-4a17-4ae3-9d10-86d947049839",
+                "city": "Самарканд",
+                "map_img": "",
+                "map": "",
+                "slug": [
+                    {
+                        "id": 1,
+                        "slug_title": "Достопримечательности",
+                        "slug_path": "/attractions"
+                    },
+                    {
+                        "id": 2,
+                        "slug_title": "Ансамбль Дорут Тилловат – «Дом размышления»",
+                        "slug_path": ""
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "id": 1,
+                    "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/Ensemble%20Dorut%20Tilovat%20-%20House%20of%20Reflection.jpg?alt=media&token=4ca77ac0-f9c2-4684-98ad-c5c880cb41ce",
+                    "img_tags": "Ансамбль Дорут Тилловат – «Дом размышления»",
+                    "video": "",
+                    "paragraphs": [
+                        "Город Шахрисабз до конца XIV века назывался «Кеш», но у этого древнего города были и другие имена: «Дилкеш» – «Радующий сердце», «Куббат ал-илм ва ал-адаб» – «Купол науки и обучения», такое стечение имен не случайно. Издревле город славился своей ученостью, духом просвещения, здесь жили и трудились признанные ученые и толкователи хадисов: наставник отца Амира Темура и самого полководца – Шамсиддин Кулол, знаменитый мусульманский учёный-мухаддис и муфассир Абу Абдулло Мухаммад ибн Исмаил Бухари, хадисоведы Абу Мухаммад ал-Кеший, Абдуллох Мухаммад ас Самаркандий."
+                    ],
+                    "description": "В сердце Шахрисабза, рядом с некрополем барласской знати XIV-XV веков, находится ансамбль Дорут Тилловат – мемориальный комплекс и памятник архитектуры. Название комплекса переводится как «Дом размышления или медитации», был сформирован в 1370-1371 годы. Сегодня можно увидеть три сооружения этого ансамбля – соборную мечеть и два мавзолея, объединенные одним двором. В 1904 году был построен вход – дарвозахона, а в 1917 году был обустроен двор худжрами. Мемориальный комплекс стал формироваться после смерти известного религиозного деятеля Шамсиддина Кулала. Суфий занимал высокое положение в обществе, он носил титул Амири Калол, что означает «Великий эмир». Кроме того, Шамсиддин Кулал был наставником бухарского суфийского учителя Бахауддина Накшбанди. Его деятельность проходила в основном в Несефе (Карши) и Кеше (Шахрисабзе).",
+                    "video_desc": ""
+                },
+                {
+                    "id": 2,
+                    "img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/IMG_2079-0-0-0-0-1602233797.jpg?alt=media&token=ec6b92f8-e0cf-4d56-b996-471c5840f400",
+                    "img_tags": "Ансамбль Дорут Тилловат – «Дом размышления»",
+                    "video": "",
+                    "paragraphs": [
+                        "Имея высокий титул, Шамсиддин Кулал вел скромный и праведный образ жизни, оставался в добром здравии и совсем не хотел возводить для себя мавзолей. Он был простым выходцем из семьи гончаров. Но после его смерти в 1371 году Амир Темур издал указ о захоронении мудреца и приказал возвести мраморное надгробие над ним. Захоронение суфийского деятеля и по сей день является важным местом паломничества. Его захоронение было открыто учеными во время расчистки внутренней части гробницы. Тогда были обнаружены фрагменты надгробия, украшенные надписями и орнаментами растительного мира. Рядом с захоронением Кулала можно увидеть еще одно захоронение, предположительно, рядом покоящегося отца Амира Темура."
+                    ],
+                    "description": "",
+                    "video_desc": ""
+                },
+                {
+                    "id": 3,
+                    "img": "https://firebasestorage.googleapis.com/v0/b/travel-46a1f.appspot.com/o/IMG_2147-0-0-0-0-1602233836.jpg?alt=media&token=40131874-cee5-4adb-978e-f2a57a39062d",
+                    "img_tags": "Ансамбль Дорут Тилловат – «Дом размышления»",
+                    "video": "",
+                    "paragraphs": [
+                        "Второй изящный мавзолей был возведен в 1437-1438 годы и носит название «Гумбази-Сейидон» – «Купол Сейидов». Этот мавзолей был построен на месте кладбища династии Сейидов по распоряжению Улугбека и предназначался для представителей династии темуридов. Некоторые надгробия XV-XVII веков содержат имена термезсĸих Сейидов. Также сюда были привезены плиты из Термеза и Кабула. В ансамбль Дорут Тилловат входит соборная мечеть Кок-гумбаз (Голубой купол). Мечеть была возведена в 1435 году на месте более раннего сооружения домонгольского времени. Пятничная соборная мечеть выделяется своей красотой и архитектурным убранством. На барабане наружного купола можно увидеть цитаты из Корана. Портал украшают геометрические орнаменты из кирпичной мозаики. Ансамбль Дорут Тилловат – это еще одна причина увидеть древний Шахрисабз, познакомиться с самобытной культурой и богатой историей Кашкадарьинской области."
                     ],
                     "description": "",
                     "video_desc": ""

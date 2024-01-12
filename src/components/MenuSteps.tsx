@@ -43,7 +43,7 @@ export default function MenuSteps({
     }
   };
   return (
-    <aside className="w-1/4 bg-white sticky top-20 h-fit p-5 border border-gray-300 rounded-lg max-xl:hidden">
+    <aside className="w-1/4 bg-white sticky top-20 h-fit p-5 border border-gray-300 rounded-lg hidden lg:block">
       <ul className="space-y-2 text-sm pl-4">
         {titles?.map((item: any, i: any) => (
           <li
