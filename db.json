@@ -698,14 +698,6 @@
                 "slug": "/cities/khiva",
                 "description": "Столица Тюркского мира",
                 "img2": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/868778.5ff8ebe11071867dabc3e2ab781c0b56.jpg?alt=media&token=d530b5df-82b4-40e8-9ba4-be814a53ec28"
-            },
-            {
-                "id": 12341123232,
-                "title": "Коканд",
-                "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/8fcf1ff2-b734-11ec-ae1d-061ce7ed910c.800x600.jpeg?alt=media&token=8efa2db8-16ac-4bcb-9775-7f41e8a6666e",
-                "slug": "/cities/kokand",
-                "description": "Город ремесленников",
-                "img2": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/kokand2.jpg?alt=media&token=4f668b19-a64f-4031-baa5-2a6508595632"
             }
         ]
     },
@@ -1090,7 +1082,7 @@
             "title": "Достопримечательности Бухары",
             "date": "01.07.2022",
             "read_time": "5",
-            "slug": "",
+            "slug": "/blogs",
             "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/_DSC3870-Edit-min.webp?alt=media&token=dfb0ee95-65b8-4fe1-866e-f74ca0e1389f"
         },
         {
@@ -1098,7 +1090,7 @@
             "title": "Ичан-Кала - сокровище посреди оазиса",
             "date": "30.06.2022",
             "read_time": "5",
-            "slug": "",
+            "slug": "/blogs",
             "img": "https://firebasestorage.googleapis.com/v0/b/uzbekistan-travel-ea70f.appspot.com/o/a2pku1rvqcg5590df3vfu0ekujtxtou3.webp?alt=media&token=ce6be089-f977-496a-a5a6-b5727aec67bb"
         }
     ]

@@ -13,10 +13,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "WeTravel - website",
+    default:
+      "WeTravel - Национальный Туристический Информационный Центр Узбекистана",
     template: "%s | WeTravel",
   },
-  description: "lorem lorem",
+  description:
+    "Национальный &quot;PR-Центр&quot; создан для продвижения туристического, культурного, природного и спортивного потенциала Узбекистана.",
 };
 
 type Props = {

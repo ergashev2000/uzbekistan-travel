@@ -42,10 +42,10 @@ export default function HeroSwiper({
         navigation
       >
         {data?.map((item: any, index: any) => (
-          <SwiperSlide key={item.id} className="pb-10 pt-24 ml-4">
+          <SwiperSlide key={item.id} className="pb-10 pt-24 ml-4 2xl:ml-5">
             <div
               onClick={() => handleSelectImage(index)}
-              className={`cursor-pointer relative max-w-[400px] h-32 ml-3 transition-all duration-500 rounded-xl overflow-hidden shadow-lg border-2  ${
+              className={`cursor-pointer relative max-w-[400px] 2xl:h-40 h-32 ml-3 transition-all duration-500 rounded-xl overflow-hidden shadow-lg border-2  ${
                 selectedCardIndex === index
                   ? "scale-[120%] border-[#FA7436]"
                   : "scale-100 border-transparent"
@@ -56,7 +56,7 @@ export default function HeroSwiper({
                 alt="Image"
                 width={1000}
                 height={1000}
-                className={`rounded w-full h-[200px] object-cover`}
+                className={`rounded h-full  w-full object-cover`}
               />
             </div>
           </SwiperSlide>

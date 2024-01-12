@@ -76,7 +76,7 @@ export default function Navbar() {
                     {cityMenuRu.map(item => (
                       <motion.li key={item} whileHover={{ scale: 1.05 }}>
                         <Link href={`/cities/${optimizePath(item)}`}>
-                          <div className="font-semibold hover:bg-white 2xl:text-sm 2xl:py-1 xl:text-[15px] px-5 rounded-lg">
+                          <div className="font-semibold hover:bg-white 2xl:text-sm 2xl:py-2 py-1 xl:text-[15px] px-5 rounded-lg">
                             {item}
                           </div>
                         </Link>
@@ -117,7 +117,7 @@ export default function Navbar() {
                     {travelsRu.map(item => (
                       <motion.li key={item} whileHover={{ scale: 1.05 }}>
                         <Link href={`/tourism/${optimizePath(item)}`}>
-                          <div className="font-semibold hover:bg-white 2xl:text-sm 2xl:py-1 xl:text-[15px] px-5 rounded-lg">
+                          <div className="font-semibold hover:bg-white 2xl:text-sm 2xl:py-2 py-1 xl:text-[15px] px-5 rounded-lg">
                             {item}
                           </div>
                         </Link>
@@ -158,7 +158,7 @@ export default function Navbar() {
                     {attractions?.data.map(item => (
                       <motion.li key={item.id} whileHover={{ scale: 1.05 }}>
                         <Link href={`/attractions/${optimizePath(item.title)}`}>
-                          <div className="font-semibold hover:bg-white 2xl:text-sm 2xl:py-1 xl:text-[15px] px-5 rounded-lg line-clamp-">
+                          <div className="font-semibold hover:bg-white 2xl:text-sm 2xl:py-2 py-1 xl:text-[15px] px-5 rounded-lg line-clamp-">
                             {item.title}
                           </div>
                         </Link>
