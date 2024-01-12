@@ -37,7 +37,7 @@ export default function LangChange() {
         >
           <h5 className="font-semibold px-1 pt-1">Select:</h5>
           <Link
-            href={`/${lang === "ru" ? "en" : "ru"}${pathname.substring(3)}`}
+            href={`/en/${pathname.substring(3)}`}
             locale="en"
             className="flex items-center gap-2 px-1"
           >
@@ -58,7 +58,7 @@ export default function LangChange() {
             </label>
           </Link>
           <Link
-            href={`/${lang === "en" ? "ru" : "en"}${pathname.substring(3)}`}
+            href={`/ru/${pathname.substring(3)}`}
             locale="ru"
             className="flex items-center gap-2 p-1"
           >
