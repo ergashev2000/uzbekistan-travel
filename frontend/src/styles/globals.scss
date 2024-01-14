@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './swiper.scss';
+@import './animations.scss';
+@import './loading.scss';
+
+body {
+    background-color: #f7f7f7;
+    // background-color: #FAF8ED;
+}
+
+@layer base {
+    .underline-animation {
+        @apply before:w-full before:h-[1px] before:-bottom-0.5 before:bg-[#FA7436] before:absolute relative before:scale-x-0 before:transition-all before:duration-300 hover:before:scale-x-100 before:origin-left w-max;
+    }
+}
+
+.navbar {
+    background: rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.22650779061624648) 52%, rgba(0, 0, 0, 0.4590007878151261) 82%);
+}
+
+
+.text-effect {
+    font-size: 72px;
+    background: -webkit-linear-gradient(rgba(11, 11, 11, 0.987), rgba(152, 152, 152, 0.313));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.grid-gallery {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+    grid-gap: 20px;
+
+    &.item {
+        position: relative;
+        background-color: #fff;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+    }
+
+}
+
+.bg-custom-blur {
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.bg-element {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.8231464460784313) 0%, rgba(0, 0, 0, 0.6018579306722689) 74%, rgba(0, 0, 0, 0.18449098389355745) 100%);
+}
