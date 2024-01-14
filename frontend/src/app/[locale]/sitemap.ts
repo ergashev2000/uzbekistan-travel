@@ -1,6 +1,7 @@
+// pages/[locale]/sitemap.xml
 import { MetadataRoute } from "next";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default function Sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: "https://wetravel.uz",
@@ -45,4 +46,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
   ];
+}
+
+export function generateStaticParams() {
+  return ["en", "ru"]; 
 }
