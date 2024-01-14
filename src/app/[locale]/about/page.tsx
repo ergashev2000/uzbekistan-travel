@@ -14,7 +14,7 @@ export default function page() {
             height={1000}
             className="w-full h-full rounded-2xl object-cover object-center"
           />
-          <p className="text-5xl absolute left-1/2 -translate-x-1/2 bottom-20 font-semibold text-white">
+          <p className="text-5xl absolute left-1/2 -translate-x-1/2 bottom-2 xl:bottom-20 font-semibold text-white">
             About Us
           </p>
         </div>

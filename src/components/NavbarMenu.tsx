@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { motion, AnimatePresence, MotionConfig } from "framer-motion";
 
-import LogoWhite from "@/assets/images/logo_white.png";
+import LogoWhite from "@/assets/images/logo_white.svg";
 import { FacebookIcon, InstagramIcon, YoutubeIcon } from "@/assets/iconSvg";
 import LangChange from "./LangChange";
 

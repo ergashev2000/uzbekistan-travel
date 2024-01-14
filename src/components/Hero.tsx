@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
   
   return (
     <>
-      <div className="h-screen lg:py-20 flex items-center justify-between">
+      <div className="h-[calc(100vh-100px)] bg-red-500 lg:py-20 flex items-center justify-between">
         <HeroContents data={allData} selectedIndex={selectedCardIndex} />
         <HeroSwiper
           data={allData}

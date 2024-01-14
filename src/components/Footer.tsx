@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { footerMenus } from "@/util/contentMenus";
 
-import LogoFooter from "@/assets/images/logo-dark.png";
+import LogoFooter from "@/assets/images/logo_white.svg";
 import {
   FacebookIcon,
   InstagramIcon,
@@ -101,12 +101,12 @@ export default function Footer() {
               {footerMenus.map((menus, i) => (
                 <ul
                   key={i}
-                  className="w-1/3 text-gray-300 text-[16px] [&>li]:w-fit space-y-2 max-xl:w-full"
+                  className="w-1/3 text-gray-300  text-[16px] [&>li]:w-fit space-y-2 max-xl:w-full"
                 >
                   {menus.map((menu, j) => (
                     <li
                       key={menu.id}
-                      className="first:text-lg max-xl:w-fit max-xl:mx-auto first:text-white first:font-semibold underline-animation first:before:bg-transparent [&>a]:first:cursor-default"
+                      className="first:text-lg max-xl:w-fit max-xl:mx-auto  first:text-white first:font-semibold underline-animation first:before:bg-transparent [&>a]:first:cursor-default"
                     >
                       {j === 0 ? (
                         <h3>{menu.menu}</h3>

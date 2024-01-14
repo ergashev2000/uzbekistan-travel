@@ -13,7 +13,7 @@ import NavbarMenu from "./NavbarMenu";
 import LangChange from "./LangChange";
 
 import { DownIcon } from "@/assets/iconSvg";
-import LogoWhite from "@/assets/images/logo_white.png";
+import LogoWhite from "@/assets/images/logo_white.svg";
 
 import { attractions, cityMenuRu, travelsRu } from "../../db.json";
 
@@ -31,11 +31,11 @@ export default function Navbar() {
       <div className="fixed backdrop-blur bg-black bg-opacity-40 w-full z-20 transition-all duration-500 hidden xl:block">
         <div className="flex items-center justify-between container mx-auto py-2 ">
           <Link href={"/"}>
-            <div className="xl:w-28 2xl:w-40 w-28">
+            <div className="2xl:w-40 w-28">
               <Image
                 src={LogoWhite}
-                alt="Uzbekistan travel logo"
-                className="w-full"
+                alt="WeTravel logo"
+                className="w-full object-contain"
                 width={100}
                 height={40}
               />
