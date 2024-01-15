@@ -24,7 +24,7 @@ const CitiesCard = ({ city }: { city: any }) => {
           alt={city.title}
           width={1000}
           height={1000}
-          className="w-full h-[220px]"
+          className="w-full h-[220px] object-cover"
         />
         {city.img2 && (
           <Image
@@ -32,7 +32,7 @@ const CitiesCard = ({ city }: { city: any }) => {
             alt=""
             width={1000}
             height={1000}
-            className={`w-full h-[220px] transition-opacity duration-300 cursor-pointer absolute top-0 left-0 opacity-${
+            className={`w-full h-[220px] transition-opacity duration-300 cursor-pointer absolute top-0 left-0 object-cover opacity-${
               isHovered ? "100" : "0"
             }`}
           />

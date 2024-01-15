@@ -14,17 +14,19 @@ export default function page() {
             height={1000}
             className="w-full h-full rounded-2xl object-cover object-center"
           />
-          <p className="text-5xl absolute left-1/2 -translate-x-1/2 bottom-2 xl:bottom-20 font-semibold text-white">
+          <p className="absolute left-1/2 -translate-x-1/2 bottom-2 xl:bottom-20 font-semibold text-white text-lg xl:text-4xl">
             About Us
           </p>
         </div>
-        <div>
+        <div className="py-10">
           <h2 className="text-center text-2xl font-semibold">Wetravel.uz</h2>
           <p className="font-semibold text-gray-700">
-            This project is not intended for commercial purposes. Copyrighted
-            materials will be removed from the site at the request of the
-            author.
-            <br />
+            История создания нашей организации начинается с начала 2018 года,
+            когда Правительство Узбекистана решило показать всему миру всю
+            красоту нашей страны, самобытность ее древних городов и уникальность
+            неизведанных ранее маршрутов!
+          </p>
+          <p className='mt-5'>
             Contact with the developer:{" "}
             <Link
               href={"https://t.me/islomjon5747"}
