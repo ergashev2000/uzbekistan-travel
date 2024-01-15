@@ -15,5 +15,15 @@
         "keywords": "uzbekistan travel, tourism, explore, vacation, adventure, journey, destination, travel, wetravel",
         "image": "https://firebasestorage.googleapis.com/v0/b/express24-5ec15.appspot.com/o/1.png?alt=media&token=4bce2ff4-fc98-4837-be59-1f0d4a49ed44"
 
+    },
+    "Titles": {
+        "topCities": "Top Cities of Uzbekistan",
+        "cities": "Cities of Uzbekistan",
+        "attractions": "Attractions",
+        "about": "What people say about Uzbekistan.",
+        "gallery": "Photo gallery",
+        "tourismForAll": "Tourism for all",
+        "hotels": "Luxury Hotels in Uzbekistan",
+        "blog": "Get update with latest blog"
     }
 }

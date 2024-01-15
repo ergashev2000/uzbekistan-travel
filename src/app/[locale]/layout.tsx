@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 import Providers from "@/util/Providers";
@@ -11,16 +10,6 @@ import "../../styles/globals.scss";
 import { getTranslations } from "next-intl/server";
 
 const inter = Inter({ subsets: ["latin"] });
-
-// export const metadata: Metadata = {
-//   title: {
-//     default:
-//       "WeTravel - Национальный Туристический Информационный Центр Узбекистана",
-//     template: "%s | WeTravel",
-//   },
-//   description:
-//     "Национальный &quot;PR-Центр&quot; создан для продвижения туристического, культурного, природного и спортивного потенциала Узбекистана.",
-// };
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
@@ -48,14 +37,14 @@ export async function generateMetadata({
 
     twitter: {
       card: "/icon.png",
-      title: `Wetravel - ${t("title")}`,
+      title: `${t("title")} | WeTravel.uz`,
       description: t("description"),
       images: {
         url: t("image"),
       },
     },
     openGraph: {
-      title: `Wetravel - ${t("title")}`,
+      title: `${t("title")} | WeTravel.uz`,
       description: t("description"),
     },
     robots: {

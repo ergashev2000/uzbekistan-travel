@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 
 import { hotels } from "../../db.json";
 import { MapPinIcon } from "@/assets/iconSvg";
+import { useTranslations } from "next-intl";
 
 export default function Hotels() {
   const ref = useRef<HTMLDivElement>(null);
@@ -17,6 +18,8 @@ export default function Hotels() {
     target: ref,
     offset: ["0 1", "1.33 1"],
   });
+
+      const t = useTranslations("Titles");
 
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [1, 1]);
@@ -32,7 +35,7 @@ export default function Hotels() {
       <section>
         <div className="py-2 xl:py-5">
           <h2 className="text-lg py-5 xl:text-3xl 2xl:text-4xl font-semibold w-fit   flex items-center gap-2 [&>div]:hover:ml-2 [&>div]:hover:opacity-100 transition-all duration-300 flex-wrap max-xl:mb-0">
-            Luxury Hotels in <span className="text-[#FA7436]">Uzbekistan</span>
+            <span className="text-[#FA7436]"> {t("hotels")}</span>
           </h2>
           <div className="default-swiper">
             <CustomSwiper between={30} slidesNumber={3.6} navigation loop>

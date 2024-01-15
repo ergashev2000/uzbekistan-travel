@@ -6,14 +6,16 @@ import { ArrowIcon } from "@/assets/iconSvg";
 
 import { allblogs } from "../../db.json";
 import { Fragment } from "react";
+import { useTranslations } from "next-intl";
 
 export default function Blog() {
+  const t = useTranslations("Titles");
   return (
     <section>
       <div className="py-5 xl:py-14">
         <Link href={"/blogs"} className="block w-fit">
           <h2 className="xl:text-3xl 2xl:text-4xl text-lg font-semibold w-fit my-5 flex items-center gap-2 [&>div]:hover:ml-2 [&>div]:hover:opacity-100 transition-all duration-300 flex-wrap">
-            Get update with<span className="text-[#FA7436]">latest blog</span>
+            <span className="text-[#FA7436]"> {t("blog")}</span>
             <div className="transition-all duration-300 opacity-0 ">
               <ArrowIcon />
             </div>

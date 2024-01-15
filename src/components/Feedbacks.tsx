@@ -5,6 +5,7 @@ import FeedbackCard from "./FeedbackCard";
 
 import { useScroll, useTransform } from "framer-motion";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function Feedbacks() {
   const ref = useRef<HTMLDivElement>(null);
@@ -12,6 +13,8 @@ export default function Feedbacks() {
     target: ref,
     offset: ["0 1", "1.33 1"],
   });
+
+  const t = useTranslations("Titles");
 
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [1, 1]);
@@ -27,8 +30,7 @@ export default function Feedbacks() {
         <div className="flex items-center py-10 gap-10 max-xl:flex-col max-xl:py-0 max-xl:gap-2">
           <div className="space-y-5 w-max max-xl:w-full">
             <h2 className="text-3xl 2xl:text-4xl font-semibold">
-              What people say{" "}
-              <span className="text-[#FA7436]">about Uzbekistan.</span>
+              <span className="text-[#FA7436]"> {t("about")}</span>
             </h2>
             <p className="text-gray-600">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae

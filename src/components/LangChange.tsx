@@ -5,13 +5,14 @@ import React, { useEffect, useState } from "react";
 import RussiaFlag from "@/assets/icons/russia-flag.svg";
 import EnglishFlag from "@/assets/icons/english-flag.svg";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function LangChange() {
   const params = useParams();
   const pathname = usePathname();
   const [isChecked, setIsChecked] = useState<boolean>(false);
-  const [lang, setLang] = useState(params?.locale);
-
+  const [lang, setLang] = useState(params?.locale || "en");
+    
   const handleCheckLang = (e: any) => setLang(e.target.value);
 
   return (

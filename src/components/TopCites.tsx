@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import { allcities } from "../../db.json";
 
 import { ArrowIcon } from "@/assets/iconSvg";
+import { useTranslations } from "next-intl";
 
 export default function TopCites() {
   const ref = useRef<HTMLDivElement>(null);
@@ -16,6 +17,8 @@ export default function TopCites() {
     target: ref,
     offset: ["0 1", "1.33 1"],
   });
+
+  const t = useTranslations("Titles")
 
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [1, 1]);
@@ -29,10 +32,10 @@ export default function TopCites() {
       }}
     >
       <section>
-        <div className="pb-10 xl:py-10">
+        <div className="py-5 xl:py-16">
           <Link href={"/cities"} className="w-fit block">
-            <h2 className="text-lg xl:text-3xl 2xl:text-4xl font-semibold w-max my-10 max-xl:my-4 flex items-center gap-2 [&>div]:hover:ml-2 [&>div]:hover:opacity-100 transition-all duration-300">
-              Top Cities of <span className="text-[#FA7436]">Uzbekistan</span>
+            <h2 className="text-lg xl:text-3xl 2xl:text-4xl font-semibold w-max my-10 max-xl:my-4 flex items-center gap-2 [&>div]:hover:ml-2 [&>div]:hover:opacity-100 transition-all duration-300 text-[#FA7436]">
+              {t("topCities")}
               <div className="transition-all duration-300 opacity-0">
                 <ArrowIcon />
               </div>
