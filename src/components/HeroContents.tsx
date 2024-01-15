@@ -12,6 +12,7 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import { ArrowIcon, BgElement } from "@/assets/iconSvg";
+import useMobileDetect from "@/hooks/useMobileDetect";
 
 export default function HeroContents({
   data,
@@ -22,6 +23,8 @@ export default function HeroContents({
 }) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const swiperRef = useRef<any | null>(null);
+
+  const isMobile = useMobileDetect();
 
   const handleSelectImage = (index: number) => {
     if (swiperRef.current) {
@@ -34,6 +37,9 @@ export default function HeroContents({
   }, [selectedIndex]);
 
   useEffect(() => {
+    if (isMobile) {
+      return;
+    }
     const videoElement = videoRef.current;
 
     if (videoElement) {
@@ -45,11 +51,12 @@ export default function HeroContents({
 
       return () => clearTimeout(timeoutId);
     }
-  }, []);
+  }, [isMobile]);
 
   useEffect(() => {
     const newVideoSrc = data[selectedIndex]?.banner_video;
-    if (newVideoSrc) {
+
+    if (!isMobile && newVideoSrc) {
       if (videoRef.current) {
         videoRef.current.src = newVideoSrc;
         videoRef.current.load();
@@ -67,11 +74,11 @@ export default function HeroContents({
         }, posterDisplayTime);
       }
     }
-  }, [data, selectedIndex]);
+  }, [data, selectedIndex, isMobile]);
 
   return (
     <>
-      {data[selectedIndex]?.banner_video ? (
+      {data[selectedIndex]?.banner_video && !isMobile ? (
         <video
           ref={videoRef}
           loop
@@ -84,7 +91,7 @@ export default function HeroContents({
       ) : (
         <Image
           src={data[selectedIndex]?.banner_img}
-          alt="lorem"
+          alt={data[selectedIndex]?.title}
           width={1000}
           height={1000}
           className="absolute inset-0 w-full h-full object-cover"
@@ -92,7 +99,7 @@ export default function HeroContents({
       )}
       <Image
         src={data[selectedIndex]?.banner_img}
-        alt="lorem"
+        alt={data[selectedIndex]?.title}
         width={1000}
         height={1000}
         className="absolute inset-0 w-full h-full object-cover block xl:hidden"

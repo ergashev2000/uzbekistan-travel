@@ -24,7 +24,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
-    title: `Wetravel - ${t("title")}`,
+    title: ` ${t("title")} | WeTravel.uz`,
     description: t("description"),
     keywords: t("keywords"),
     applicationName: t("title"),

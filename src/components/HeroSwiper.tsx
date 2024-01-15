@@ -21,6 +21,7 @@ export default function HeroSwiper({
 }) {
   const swiperRef = useRef<any | null>(null);
 
+
   const handleSelectImage = (index: number) => {
     setSelectedCardIndex(index);
     if (swiperRef.current) {
