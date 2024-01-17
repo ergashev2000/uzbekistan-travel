@@ -40,7 +40,7 @@ export default function Footer() {
                   </p>
                 </div>
                 <div>
-                  <Link href={"mailto: abc@example.com"}>
+                  <Link href={"mailto: mn-frinfo@nationalprcentre.com"}>
                     <span className="text-sm font-semibold underline-animation hover:text-[#FA7436] transition-all duration-300">
                       mn-frinfo@nationalprcentre.com
                     </span>
@@ -65,21 +65,21 @@ export default function Footer() {
 
               <ul className="flex gap-5 items-center max-xl:justify-center">
                 <li>
-                  <Link href={"/"}>
+                  <Link href={"https://www.instagram.com/"}>
                     <span className="w-10 h-10 rounded-full bg-gray-200 flex justify-center items-center text-black hover:bg-[#ea6070] hover:text-white transition-all duration-500">
                       <InstagramIcon />
                     </span>
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/"}>
+                  <Link href={"https://facebook.com/"}>
                     <span className="w-10 h-10 rounded-full bg-gray-200 flex justify-center items-center text-black hover:bg-[#4267B2] hover:text-white transition-all duration-500">
                       <FacebookIcon />
                     </span>
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/"}>
+                  <Link href={"https://www.youtube.com/"}>
                     <span className="w-10 h-10 rounded-full bg-gray-200 flex justify-center items-center text-black hover:bg-[#c4302b] hover:text-white transition-all duration-500">
                       <YoutubeIcon />
                     </span>
@@ -123,7 +123,7 @@ export default function Footer() {
           </div>
 
           <p className="pt-10 text-center text-sm text-gray-200">
-            Copyright © 2018-2023
+            Copyright © 2023. Create by Islomjon
           </p>
         </div>
       </div>
