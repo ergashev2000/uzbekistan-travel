@@ -47,3 +47,16 @@ export const feedbackBreakpoints = {
     slidesPerView: 2,
   },
 };
+
+
+export const blogBreakpoints = {
+  320: {
+    slidesPerView: 1,
+  },
+  768: {
+    slidesPerView: 2,
+  },
+  1024: {
+    slidesPerView: 2.4,
+  }
+};

@@ -1,26 +1,23 @@
 import { ReactNode } from "react";
-import { Inter } from "next/font/google";
+import { Lato } from "next/font/google";
+import { getTranslations } from "next-intl/server";
 
 import Providers from "@/util/Providers";
 import ProviderNextIntl from "@/util/ProviderNextIntl";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+const lato = Lato({ subsets: ["latin"], weight: "400" });
 import "../../styles/globals.scss";
-import { getTranslations } from "next-intl/server";
-
-const inter = Inter({ subsets: ["latin"] });
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
   params: { locale: string };
 }
 
-
 export async function generateMetadata({
   params: { locale },
 }: LocaleLayoutProps) {
-  
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
@@ -74,14 +71,14 @@ export default async function LocaleLayout({
 }: Props) {
   return (
     <html lang={locale}>
-      <body className={inter.className}>
-        <ProviderNextIntl locale={locale}>
-          <Providers>
+      <body className={lato.className}>
+        <Providers>
+          <ProviderNextIntl locale={locale}>
             <Navbar />
             <main className="container mx-auto px-3">{children}</main>
             <Footer />
-          </Providers>
-        </ProviderNextIntl>
+          </ProviderNextIntl>
+        </Providers>
       </body>
     </html>
   );

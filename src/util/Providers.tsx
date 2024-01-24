@@ -1,13 +1,20 @@
 "use client";
 
-import { Provider } from "react-redux";
-import store from "@/redux/store";
+import React from "react";
+import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { ReactQueryStreamedHydration } from "@tanstack/react-query-next-experimental";
 
-function Providers({ children }: React.PropsWithChildren) {
+function Providers({ children }: React.PropsWithChildren<{}>) {
+  const [client] = React.useState(() => new QueryClient());
+
   return (
-    <Provider store={store}>
-      {children}
-    </Provider>
+    <QueryClientProvider client={client}>
+      <ReactQueryStreamedHydration>
+        {children}
+        <ReactQueryDevtools initialIsOpen={false} />
+      </ReactQueryStreamedHydration>
+    </QueryClientProvider>
   );
 }
 

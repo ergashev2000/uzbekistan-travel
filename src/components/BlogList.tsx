@@ -5,7 +5,7 @@ import { allblogs } from "../../db.json";
 export default function BlogList() {
   return (
     <>
-      {allblogs?.map((item: any) => (
+      {allblogs?.slice(0,1)?.map((item: any) => (
         <div
           key={item.id}
           className="max-w-lg w-full hover:shadow-lg p-2 rounded-2xl cursor-pointer hover:bg-white transition-all duration-500"

@@ -4,13 +4,12 @@ function optimizePath(title: string | undefined | null) {
   }
 
   const removedSymbolsTitle = title
-    .replace(/–/g, "") // Remove en dash
-    .replace(/«/g, "") // Remove opening double angle quotation mark
-    .replace(/»/g, ""); // Remove closing double angle quotation mark
+    .trim()
+    .replace(/–/g, "")
+    .replace(/«/g, "")
+    .replace(/»/g, "");
 
-  const replacedTitle = removedSymbolsTitle
-    .replace(/\s+/g, "-") // Replace spaces with hyphens
-    .toLowerCase(); // Convert to lowercase
+  const replacedTitle = removedSymbolsTitle.replace(/\s+/g, "-").toLowerCase();
 
   return replacedTitle
     .split("")

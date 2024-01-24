@@ -21,17 +21,17 @@ type BannerT = {
 const Hero: React.FC = () => {
   const [selectedCardIndex, setSelectedCardIndex] = useState(0);
   const [allData, setAllData] = useState<BannerT[]>();
-  const loc = useLocale();
+  const locale = useLocale();
 
   useEffect(() => {
     if (data) {
-      if (loc === "ru") {
+      if (locale === "ru") {
         setAllData(data?.banner_data_ru);
       } else {
         setAllData(data?.banner_data_en);
       }
     }
-  }, [loc]);
+  }, [locale]);
 
   if (!allData) {
     return <Loading/>

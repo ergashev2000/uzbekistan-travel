@@ -9,7 +9,7 @@ export default function page() {
         <div className="w-full xl:h-[500px] lg:h-[400px] h-[200px] xl:pt-20 pt-2 mb-3 relative">
           <Image
             src={BannerImg}
-            alt="About"
+            alt="About Wetravel.uz"
             width={1000}
             height={1000}
             className="w-full h-full rounded-2xl object-cover object-center"
@@ -26,7 +26,7 @@ export default function page() {
             красоту нашей страны, самобытность ее древних городов и уникальность
             неизведанных ранее маршрутов!
           </p>
-          <p className='mt-5'>
+          <p className="mt-5">
             Contact with the developer:{" "}
             <Link
               href={"https://t.me/islomjon5747"}
