@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Arizonia&display=swap);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -71,4 +73,35 @@ body {
 .bg-element {
     background: rgb(0, 0, 0);
     background: radial-gradient(circle, rgba(0, 0, 0, 0.8231464460784313) 0%, rgba(0, 0, 0, 0.6018579306722689) 74%, rgba(0, 0, 0, 0.18449098389355745) 100%);
+}
+
+// Text
+.header-text-effect {
+    position: relative;
+    font-weight: 600;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    font-size: 200px;
+    letter-spacing: 0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: rgba(238, 238, 238, 0.872);
+    text-shadow: 6px 6px #D8C4C3;
+    line-height: 160px;
+
+}
+
+.arizonia-fonts {
+    font-family: 'Arizonia', sans-serif;
+}
+
+.banner-radius {
+    border-radius: 62% 38% 32% 68% / 36% 43% 47% 64%;
+}
+
+.test span{
+    -webkit-box-decoration-break: clone;
+    background: #fff;
+    box-shadow: 0.4em 0 0 #fff, -0.4em 0 0 #fff;
 }

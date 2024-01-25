@@ -15,7 +15,7 @@ export default function Page() {
       <TopCites />
       <Cities />
       <Attractions />
-      <Feedbacks />
+      {/* <Feedbacks /> */}
       <GalleryCards />
       <TourismForAll />
       <Hotels />
