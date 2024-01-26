@@ -1,6 +1,7 @@
 import Attractions from "@/components/Attractions";
 import Blog from "@/components/Blog";
 import Cities from "@/components/Cities";
+import CountryWeather from "@/components/CountryWeather";
 import Feedbacks from "@/components/Feedbacks";
 import GalleryCards from "@/components/GalleryCards";
 import Hero from "@/components/Hero";
@@ -15,6 +16,7 @@ export default function Page() {
       <TopCites />
       <Cities />
       <Attractions />
+      <CountryWeather/>
       {/* <Feedbacks /> */}
       <GalleryCards />
       <TourismForAll />
